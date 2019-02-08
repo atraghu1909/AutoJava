@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="testSetPath" value="B2B Automation\Business Procedures" />
+	<parameter name="testSetName" value="Regression - SIT1" />
+	<parameter name="testSetNumber" value="8004" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Manual Mortgage and HELOC Setup - HOK">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Var Rate Closed Term Mortgage Fix Pay" />
+		<parameter name="term" value="+168M" />
+		<parameter name="renewalPeriod" value="36M" />
+		<parameter name="paymentFrequency" value="e0Y e1M e0W o1D e0F" />
+		<parameter name="hokProducts" value="M, H" />
+		<parameter name="hokCollateralValues" value="345000, 365000" />
+		<parameter name="hokCommitments" value="327750, 346750" />
+		<parameter name="hokInsuranceCompanies" value="CMHC," />
+		<parameter name="hokInsuranceNumbers" value="20056009," />
+		<parameter name="hokMarginSpreads" value="+0.50," />
+		<parameter name="hokPostedRates" value="5.25,4.75" />
+		<parameter name="gds" value="39" />
+		<parameter name="tds" value="49" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX007" />
+		</classes>
+	</test>
+
+
+</suite> 

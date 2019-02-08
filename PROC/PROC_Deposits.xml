@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Deposits">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="testSetPath" value="B2B Automation\Business Procedures" />
+	<parameter name="testSetName" value="Regression - SIT1" />
+	<parameter name="testSetNumber" value="8004" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Non Registered GIC Purchase - Client Owned via Broker">
+		<parameter name="customerType" value="Personal" />
+		<parameter name="branch" value="B2B Branch 607" />
+		<parameter name="productGroup" value="Broker - Non Registered Deposits" />
+		<parameter name="product" value="Non-Redeemable Simple Annual" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_DS_XX001" />
+		</classes>
+	</test>
+
+	<test name="Non Registered GIC Purchase - Nominee via Broker">
+		<parameter name="customerType" value="Non Personal" />
+		<parameter name="ownerType" value="Nominee" />
+		<parameter name="branch" value="Branch 247" />
+		<parameter name="productGroup" value="Broker - Non Registered Deposits" />
+		<parameter name="product" value="Non-Redeemable Simple Quarterly" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_DS_XX001" />
+		</classes>
+	</test>
+
+	<test name="Non Registered GIC Purchase - Client Owned via Retail">
+		<parameter name="customerType" value="Personal" />
+		<parameter name="branch" value="826 CENT.PRETS MONT." />
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Redeemable Simple Annual" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_DS_XX001" />
+		</classes>
+	</test>
+
+	<test name="Non Registered GIC Modification (Financial Changes)">
+		<parameter name="branch" value="B2B Branch 607" />
+		<parameter name="customerType" value="Personal" />
+		<parameter name="productGroup" value="Broker - Non Registered Deposits" />
+		<parameter name="product" value="Non-Redeemable Simple Monthly" />
+		<parameter name="newProduct" value="Non-Redeemable Simple Semi-Annually" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_DS_XX002" />
+		</classes>
+	</test>
+
+	<test name="Non Registered GIC Re-Registration">
+		<parameter name="productSimple" value="Non-Redeemable Simple Monthly" />
+		<parameter name="productCompound" value="Non-Redeemable Compound Annual" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_DS_XX003" />
+		</classes>
+	</test>
+
+	<test name="Internal Transfer from RRSP to RRIF">
+		<parameter name="productSimple" value="Non-Redeemable Simple Monthly" />
+		<parameter name="productCompound" value="Non-Redeemable Compound Annual" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_DS_RF011" />
+		</classes>
+	</test>
+
+</suite> 

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Common Procedures">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="testSetPath" value="B2B Automation\Business Procedures" />
+	<parameter name="testSetName" value="Regression - SIT1" />
+	<parameter name="testSetNumber" value="8004" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="New Client or Non Client set up">
+		<classes>
+			<class name="testcases.PROC.PROC_BB_REB_OP001" />
+		</classes>
+	</test>
+
+	<test name="Beneficiary ID Set-up and Administration in T24">
+		<parameter name="agentProduct" value="Deposit Commission Plan" />
+		<parameter name="namedDepositProductGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="namedDepositProduct" value="Multi Rate 5 Year GIC" />
+		<parameter name="nomineeDepositProductGroup" value="Broker - Non Registered Deposits" />
+		<parameter name="nomineeDepositProduct" value="Non-Redeemable Simple Quarterly" />
+		<parameter name="loanProductGroup" value="Personal Loans" />
+		<parameter name="loanProduct" value="Investment Loan Fixed Rate" />
+		<parameter name="mortgageProductGroup" value="Retail Mortgages" />
+		<parameter name="mortgageProduct" value="Fixed Rate Open Term Mortgage" />
+		<classes>
+			<class name="testcases.PROC.PROC_BB_REB_OP002" />
+		</classes>
+	</test>
+
+	<test name="Notes - Contact Log">
+		<parameter name="customerType" value="Personal" />
+		<classes>
+			<class name="testcases.PROC.PROC_BB_REB_OP003" />
+		</classes>
+	</test>
+
+	<test name="Notes - Memos">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Investment Loan Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_BB_REB_OP004" />
+		</classes>
+	</test>
+
+	<test name="Returned Mail Hold Output Loans">
+		<parameter name="customerType" value="Personal" />
+		<classes>
+			<class name="testcases.PROC.PROC_BB_REB_SP005" />
+		</classes>
+	</test>
+
+	<test name="Non-Client CIF Administration">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Investment Loan Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_BB_REB_OP006" />
+		</classes>
+	</test>
+
+</suite> 

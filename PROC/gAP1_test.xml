@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GAP">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="testSetPath" value="B2B Automation\Business Procedures" />
+	<parameter name="testSetName" value="Regression - SIT1" />
+	<parameter name="testSetNumber" value="8004" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	
+	<test name="gap1">
+		<classes>
+			<class name="gAP1" />
+		</classes>
+	</test>
+</suite> 

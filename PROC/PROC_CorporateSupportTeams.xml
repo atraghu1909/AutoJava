@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Corporate Support Teams">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="testSetPath" value="B2B Automation\Business Procedures" />
+	<parameter name="testSetName" value="Regression - SIT1" />
+	<parameter name="testSetNumber" value="8004" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Adjusting Delinquent Balance">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="RRSP Personal Loan Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_BB_ACM_SP001" />
+		</classes>
+	</test>
+
+	<test name="History Report">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="RRSP Personal Loan Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_BB_ACM_OP003" />
+		</classes>
+	</test>
+
+	<test name="Debit Memo Procedure">
+		<parameter name="product" value="RRSP Personal Loan Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_AM_PR003" />
+		</classes>
+	</test>
+
+	<test name="IL Collections">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="RRSP Personal Loan Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_BB_ACM_OP004" />
+		</classes>
+	</test>
+
+	<test name="Mortgages and HELOC Collections">
+		<parameter name="branch" value="B2B Branch 623" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="HELOC" />
+		<classes>
+			<class name="testcases.PROC.PROC_BB_ACM_OP004" />
+		</classes>
+	</test>
+
+	<test name="ULOCs, RPS, and TFSA Collections">
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="Unsecured Line of Credit" />
+		<classes>
+			<class name="testcases.PROC.PROC_BB_ACM_OP004" />
+		</classes>
+	</test>
+
+	<test name="Missed Payments - Loan Extension">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="RRSP Personal Loan Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_BB_ACM_OP005" />
+		</classes>
+	</test>
+
+	<test name="Clearing Arrears for Missed Payments">
+		<parameter name="branch" value="B2B Branch 623" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="HELOC" />
+		<classes>
+			<class name="testcases.PROC.PROC_BB_ACM_OP005" />
+		</classes>
+	</test>
+
+	<test name="Write-Offs">
+		<parameter name="product" value="RRSP Personal Loan Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_AM_PR011" />
+		</classes>
+	</test>
+
+	<test
+		name="Loan Collection - Bankruptcy, Consumer Proposal, Credit Counselling">
+		<parameter name="product" value="RRSP Personal Loan Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_AM_PR012" />
+		</classes>
+	</test>
+
+</suite> 

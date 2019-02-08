@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="SAE">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="testSetPath" value="B2B Automation\Business Procedures" />
+	<parameter name="testSetName" value="Regression - SIT1" />
+	<parameter name="testSetNumber" value="8004" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+<!--
+	<test name="Transit">
+		<parameter name="customerType" value="Non Personal" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<parameter name="branch" value="LAURENTIAN BANK - 526" />
+		<classes>
+			<class name="testcases.PROC.PROC_SAE_XX001" />
+		</classes>
+	</test>
+
+	<test name="Clients">
+		<classes>
+			<class name="testcases.PROC.PROC_SAE_XX002" />
+		</classes>
+	</test>
+-->
+
+	<test name="Limit">
+		<parameter name="customerType" value="Non Personal" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_SAE_XX003" />
+		</classes>
+	</test>
+<!--
+	<test name="Creation of Collateral">
+		<parameter name="customerType" value="Non Personal" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_SAE_XX004" />
+		</classes>
+	</test>
+
+	<test name="Loans">
+		<parameter name="customerType" value="Non Personal" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_SAE_XX005" />
+		</classes>
+	</test>
+
+	<test name="Reserve Account">
+		<parameter name="customerType" value="Non Personal" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_SAE_XX006" />
+		</classes>
+	</test>
+
+	<test name="Disbursement">
+		<parameter name="customerType" value="Non Personal" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<parameter name="branch" value="LAURENTIAN BANK - 526" />
+		<classes>
+			<class name="testcases.PROC.PROC_SAE_XX007" />
+		</classes>
+	</test>
+	<test name="Arrangement Overview">
+		<parameter name="customerType" value="Non Personal" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<parameter name="branch" value="LAURENTIAN BANK - 526" />
+		<classes>
+			<class name="testcases.PROC.PROC_SAE_XX008" />
+		</classes>
+	</test>
+
+	<test name="Research">
+		<parameter name="customerType" value="Non Personal" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_SAE_XX009" />
+		</classes>
+	</test>
+	<test name="Vostro Account">
+		<parameter name="customerType" value="Non Personal" />
+		<parameter name="productGroup" value="Servicing Accounts" />
+		<parameter name="product" value="Vostro Account" />
+		<classes>
+			<class name="testcases.PROC.PROC_SAE_XX010" />
+		</classes>
+	</test>
+
+	<test name="Taxes">
+		<parameter name="customerType" value="Non Personal" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_SAE_XX011" />
+		</classes>
+	</test>
+
+	<test name="Loan Activities and Fees Management">
+		<parameter name="customerType" value="Non Personal" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_SAE_XX012" />
+		</classes>
+	</test>
+
+	<test name="Simulations">
+		<parameter name="customerType" value="Non Personal" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<parameter name="branch" value="LAURENTIAN BANK - 523" />
+		<classes>
+			<class name="testcases.PROC.PROC_SAE_XX013" />
+		</classes>
+	</test>
+
+	<test name="Financial Transactions - Manual Payment">
+		<parameter name="testType" value="Manual Payment" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_SAE_XX014" />
+		</classes>
+	</test>
+	<test name="Financial Transactions - UNC Account">
+		<parameter name="testType" value="UNC Account" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_SAE_XX014" />
+		</classes>
+	</test>
+
+	<test name="Financial Transactions - Standing Order">
+		<parameter name="testType" value="Standing Order" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_SAE_XX014" />
+		</classes>
+	</test>
+
+	<test name="Financial Transactions - Principal Decrease">
+		<parameter name="testType" value="Principal Decrease" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_SAE_XX014" />
+		</classes>
+	</test>
+
+	<test name="Financial Transactions - Full Payoff">
+		<parameter name="testType" value="Full Payoff" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_SAE_XX014" />
+		</classes>
+	</test>
+
+	<test name="Financial Transactions - Partial Payoff">
+		<parameter name="testType" value="Partial Payoff" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_SAE_XX014" />
+		</classes>
+	</test>
+
+	<test name="Financial Transactions - AdHoc Charges">
+		<parameter name="testType" value="AdHoc Charges" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_SAE_XX014" />
+		</classes>
+	</test>
+
+	<test name="Financial Transactions - EFT Payments">
+		<parameter name="testType" value="EFT Payments" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_SAE_XX014" />
+		</classes>
+	</test>
+
+	<test name="Financial Transactions - Balance Adjustment">
+		<parameter name="testType" value="Balance Adjustment" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_SAE_XX014" />
+		</classes>
+	</test>
+
+	<test name="Financial Transactions - Write Off">
+		<parameter name="testType" value="Write Off" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_SAE_XX014" />
+		</classes>
+	</test>
+
+	<test name="Syndication">
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<parameter name="customerType" value="Non Personal" />
+		<classes>
+			<class name="testcases.PROC.PROC_SAE_XX015" />
+		</classes>
+	</test>
+-->
+</suite> 

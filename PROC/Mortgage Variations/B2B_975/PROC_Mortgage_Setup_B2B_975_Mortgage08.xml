@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="testSetPath" value="B2B Automation\Business Procedures" />
+	<parameter name="testSetName" value="Regression - SIT1" />
+	<parameter name="testSetNumber" value="8004" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Manual Mortgage and HELOC Setup - Mortgage">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="collateralValue" value="345000" />
+		<parameter name="collateralCode" value="2" />
+		<parameter name="collateralNumberOfApts" value="3" />
+		<parameter name="commitment" value="327750" />
+		<parameter name="term" value="+300M" />
+		<parameter name="insuranceCompany" value="Genworth" />
+		<parameter name="insuranceNumber" value="3005600008" />
+		<parameter name="renewalPeriod" value="36M" />
+		<parameter name="paymentFrequency" value="e0Y e1M e0W o12D e0F" />
+		<parameter name="gds" value="43" />
+		<parameter name="tds" value="53" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX007" />
+		</classes>
+	</test>
+
+
+</suite> 

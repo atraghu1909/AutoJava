@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Mortgage - Manual Setup Scenarios">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="testSetPath" value="B2B Automation\Business Procedures" />
+	<parameter name="testSetName" value="Regression - SIT1" />
+	<parameter name="testSetNumber" value="8004" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Manual Mortgage and HELOC Setup - Mortgage">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX007" />
+		</classes>
+	</test>
+
+	<test name="Manual Mortgage and HELOC Setup - HELOC">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="HELOC" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX007" />
+		</classes>
+	</test>
+
+	<test name="Manual Mortgage and HELOC Setup - HOK">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="hokProducts" value="M,M,H" />
+		<parameter name="hokCollateralValues" value="100000,100000,50000" />
+		<parameter name="hokCommitments" value="90000,90000,45000" />
+		<parameter name="hokInsuranceCompanies" value="Cmhc,Cmhc,Cmhc" />
+		<parameter name="hokInsuranceNumbers" value="12345678,12345678,12345678" />
+		<parameter name="hokMarginSpreads" value=" , , " />
+		<parameter name="hokPostedRates" value="4.79,4.79,4.79" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX007" />
+		</classes>
+	</test>
+
+	<test name="Manual Mortgage and HELOC Setup - Mortgage with IAD">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="withIAD" value="true" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX007" />
+		</classes>
+	</test>
+
+	<test name="Manual Mortgage and HELOC Setup - Mortgage with Escrow">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="withEscrow" value="true" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX007" />
+		</classes>
+	</test>
+
+	<test
+		name="Manual Mortgage and HELOC Setup - Mortgage with Settlement via Banking">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="withSettleViaBanking" value="true" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX007" />
+		</classes>
+	</test>
+
+	<test name="Manual Mortgage and HELOC Setup - HELOC with Fixed Payment">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="HELOC" />
+		<parameter name="withFixedPayment" value="true" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX007" />
+		</classes>
+	</test>
+
+	<test name="Manual Mortgage and HELOC Setup - HELOC with IAD">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="HELOC" />
+		<parameter name="withIAD" value="true" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX007" />
+		</classes>
+	</test>
+
+</suite> 

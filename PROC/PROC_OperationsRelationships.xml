@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Operation Relationships">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="testSetPath" value="B2B Automation\Business Procedures" />
+	<parameter name="testSetName" value="Regression - SIT1" />
+	<parameter name="testSetNumber" value="8004" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Dealer Setup">
+		<parameter name="depositAgentCommissionPlan" value="Deposit Commission Plan" />
+		<parameter name="mortgageAgentCommissionPlan" value="Dummy Commission Plan" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_OR_PR038" />
+		</classes>
+	</test>
+
+	<test name="Advisor Setup">
+		<parameter name="depositAgentCommissionPlan" value="Deposit Commission Plan" />
+		<parameter name="bankingAgentCommissionPlan" value="Dummy Commission Plan" />
+		<parameter name="mortgageAgentCommissionPlan" value="Dummy Commission Plan" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_OR_PR039" />
+		</classes>
+	</test>
+
+	<test name="Dealer and Advisor Administration">
+		<parameter name="advisorCommissionPlan" value="Dummy Commission Plan" />
+		<parameter name="agentCommissionPlan" value="Dummy Commission Plan" />
+		<parameter name="productLine" value="Lending" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Investment Loan Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_SF_ORA_OP001" />
+		</classes>
+	</test>
+
+	<test name="Address Dealer Advisor">
+		<parameter name="agentCommissionPlan" value="Account Dummy Commission Plan" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Chequing Account" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_OR_PR029" />
+		</classes>
+	</test>
+
+</suite> 

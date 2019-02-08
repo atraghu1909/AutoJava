@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="testSetPath" value="B2B Automation\Business Procedures" />
+	<parameter name="testSetName" value="Regression - SIT1" />
+	<parameter name="testSetNumber" value="8004" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Manual Mortgage and HELOC Setup - Mortgage">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Var Rate Closed Term Mortgage Fix Pay" />
+		<parameter name="commitment" value="190000" />
+		<parameter name="term" value="+168M" />
+		<parameter name="insuranceNumber" value="20056001" />
+		<parameter name="renewalPeriod" value="36M" />
+		<parameter name="postedRate" value="4.75" />
+		<parameter name="paymentFrequency" value="e0Y e0M e1W o1D e0F" />
+		<parameter name="withSettleViaBanking" value="true" />
+		<parameter name="gds" value="30" />
+		<parameter name="tds" value="40" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX007" />
+		</classes>
+	</test>
+
+
+</suite> 

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="completeLoans">
+
+	<parameter name="globalEnvironment" value="SIT1" />
+	<parameter name="globalTestSetPath" value="B2B Automation\Business Procedures" />
+	<parameter name="globalTestSetName" value="Regression - SIT1" />
+	<parameter name="globalTestSetNumber" value="8004" />
+
+	<suite-files>
+		<suite-file path="./PROC_Loans_InvestmentFixed.xml" />
+		<suite-file path="./PROC_Loans_InvestmentVariable.xml" />
+		<suite-file path="./PROC_Loans_RRSPFixed.xml" />
+		<suite-file path="./PROC_Loans_RRSPVariable.xml" />
+		<suite-file path="./PROC_Loans_TFSAFixed.xml" />
+		<suite-file path="./PROC_Loans_TFSAVariable.xml" />
+	</suite-files>
+
+	<test name="Reconciliations of Internal Accounts and GLs">
+		<parameter name="productGroup" value="Personal Loans" />
+		<classes>
+			<class name="testcases.PROC.PROC_BB_ILA_XX005" />
+		</classes>
+	</test>
+	
+</suite> 

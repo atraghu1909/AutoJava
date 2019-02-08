@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="completeSuite">
+
+	<parameter name="globalEnvironment" value="SIT1" />
+	<parameter name="globalTestSetPath" value="B2B Automation\Business Procedures" />
+	<parameter name="globalTestSetName" value="Regression - SIT1" />
+	<parameter name="globalTestSetNumber" value="8004" />
+
+	<suite-files>
+		<suite-file path="./PROC_Banking.xml" />
+		<suite-file path="./PROC_CommonProcedures.xml" />
+		<suite-file path="./PROC_CorporateSupportTeams.xml" />
+		<suite-file path="./PROC_Deposits.xml" />
+		<suite-file path="./PROC_Finance.xml" />
+		<suite-file path="./PROC_Loans.xml" />
+		<suite-file path="./PROC_Mortgage.xml" />
+		<suite-file path="./PROC_Mortgage_ManualSetup_Variations.xml" />
+		<suite-file path="./PROC_OperationsRelationships.xml" />
+		<suite-file path="./PROC_SAEs.xml" />
+	</suite-files>
+
+</suite> 

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="testSetPath" value="B2B Automation\Business Procedures" />
+	<parameter name="testSetName" value="Regression - SIT1" />
+	<parameter name="testSetNumber" value="8004" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Loan Payment">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Investment Loan Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_BB_ILA_OP001" />
+		</classes>
+	</test>
+
+	<test name="Loan Account Changes">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Investment Loan Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_BB_ILA_OP004" />
+		</classes>
+	</test>
+
+	<test name="Returned Cheque Processing">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Investment Loan Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_BB_ILA_OP005" />
+		</classes>
+	</test>
+
+	<test name="PAC Changes">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Investment Loan Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_IL_PR015" />
+		</classes>
+	</test>
+
+	<test name="Loan Rewrites">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Investment Loan Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_IL_PR104" />
+		</classes>
+	</test>
+
+	<test name="Non-Financial Changes for Loans">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Investment Loan Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_BB_ILA_OP007" />
+		</classes>
+	</test>
+
+	<test name="Loan Payoff">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="fixProduct" value="Investment Loan Fixed Rate" />
+		<parameter name="varProduct" value="Investment Loan Variable Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_IL_PR091" />
+		</classes>
+	</test>
+
+	<test name="EFT Reject Processing">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Investment Loan Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_BB_IL_PR108" />
+		</classes>
+	</test>
+
+	<test name="Cash Management - Cheque Issuance">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Investment Loan Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_BB_ILA_XX001" />
+		</classes>
+	</test>
+
+	<test name="Interim Process for Rejected SIT Payments">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Investment Loan Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_BB_ILA_OP006" />
+		</classes>
+	</test>
+
+	<test name="Cash Management - Money Movement">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Investment Loan Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_BB_ILA_XX004" />
+		</classes>
+	</test>
+
+	<test name="Small Balance Report">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Investment Loan Fixed Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_SP_IL_PR120" />
+		</classes>
+	</test>
+
+</suite> 

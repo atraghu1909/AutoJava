@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Banking">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="testSetPath" value="B2B Automation\Business Procedures" />
+	<parameter name="testSetName" value="Regression - SIT1" />
+	<parameter name="testSetNumber" value="8004" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Ad-hoc payout (Cheque or EFT)">
+		<classes>
+			<class name="testcases.PROC.PROC_OP_BS_XX001" />
+		</classes>
+	</test>
+
+	<test name="Fixed transfer set up and administration">
+		<classes>
+			<class name="testcases.PROC.PROC_OP_BS_XX005" />
+		</classes>
+	</test>
+
+	<test name="Deposit by a Cheque or Direct Deposit">
+		<parameter name="depositProductGroup" value="Broker - Non Registered Deposits" />
+		<parameter name="depositProduct" value="Non-Redeemable Simple Monthly" />
+		<classes>
+			<class name="testcases.PROC.PROC_OB_BS_PR002" />
+		</classes>
+	</test>
+
+	<test name="Closing HISA - Chequing Account">
+		<classes>
+			<class name="testcases.PROC.PROC_OP_BS_XX003" />
+		</classes>
+	</test>
+
+	<test name="Client or Non Client information change - T24 Non-fin changes">
+		<classes>
+			<class name="testcases.PROC.PROC_OP_BS_XX002" />
+		</classes>
+	</test>
+
+	<test name="Issuing a Debit Card - Branch">
+		<classes>
+			<class name="testcases.PROC.PROC_OP_BS_XX006" />
+		</classes>
+	</test>
+	
+	<test name="Posting Restrictions - T24 Non-Financial Changes">
+		<classes>
+			<class name="testcases.PROC.PROC_OP_BS_XX007" />
+		</classes>
+	</test>
+	
+	<test name="Reactivating Dormant Account - Duplicate Statement Request">
+		<classes>
+			<class name="testcases.PROC.PROC_OP_BS_XX008" />
+		</classes>
+	</test>
+
+	<test name="Resetting Transaction Date - Duplicate Statement Request">
+		<classes>
+			<class name="testcases.PROC.PROC_OP_BS_XX009" />
+		</classes>
+	</test>
+	
+	<test name="Stop Client Personal Cheque">
+		<classes>
+			<class name="testcases.PROC.PROC_OP_BS_XX010" />
+		</classes>
+	</test>
+	
+	<test name="Hold Cheque Deposits">
+		<classes>
+			<class name="testcases.PROC.PROC_OP_BS_PR026" />
+		</classes>
+	</test>
+	
+	<test name="New HISA Account Setup">
+		<classes>
+			<class name="testcases.PROC.PROC_OP_BS_PR006" />
+		</classes>
+	</test>
+
+</suite> 

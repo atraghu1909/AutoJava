@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Mortgage">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="testSetPath" value="B2B Automation\Business Procedures" />
+	<parameter name="testSetName" value="Regression - SIT1" />
+	<parameter name="testSetNumber" value="8004" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Bridge Loan Process and Disbursement">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Bridge Loan" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX001" />
+		</classes>
+	</test>
+
+	<test name="Mortgage Re-Instatement">
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<classes>
+			<class name="testcases.PROC.PROC_BB_BMA_OP002" />
+		</classes>
+	</test>
+
+	<test name="HELOC Payment Setup and Modification">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="HELOC" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX003" />
+		</classes>
+	</test>
+
+	<test name="Mortgage Non-Financial Changes">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX004" />
+		</classes>
+	</test>
+
+	<test name="Mortgage Repayment Updates">
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX005" />
+		</classes>
+	</test>
+
+	<test name="Reserve Account Operational Procedure">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX008" />
+		</classes>
+	</test>
+
+	<test name="Payment Payout">
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX009" />
+		</classes>
+	</test>
+
+	<test name="Statement Preparation">
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="statement" value="For Information Only" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX010" />
+		</classes>
+	</test>
+
+	<test name="AdHoc Renewal Agreement">
+		<parameter name="renewalProduct" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="product" value="Fixed Rate Open Term Mortgage" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX011" />
+		</classes>
+	</test>
+
+	<test name="Mortgage Renewal Process">
+		<parameter name="product" value="Var Rate Closed Term MG Fix Pay" />
+		<parameter name="renewalProduct" value="Fixed Rate Closed Term Mortgage" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX012" />
+		</classes>
+	</test>
+
+	<test name="Multi-Residential Mixed-Use Renewal">
+		<parameter name="product" value="Multi-Residential MG 5 Pls Fix Rate" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX013" />
+		</classes>
+	</test>
+
+	<test name="Assumption">
+		<parameter name="product" value="Var Rate Closed Term MG Fix Pay" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX014" />
+		</classes>
+	</test>
+
+	<test name="Discharge">
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<classes>
+			<class name="testcases.PROC.PROC_BB_BMA_OP015" />
+		</classes>
+	</test>
+
+	<test name="HOK Product and Limit Consolidation">
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX015" />
+		</classes>
+	</test>
+
+	<test name="Home Improvement Holdback">
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX016" />
+		</classes>
+	</test>
+
+	<test name="Manual Payment">
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX017" />
+		</classes>
+	</test>
+
+	<test name="Mortgage and HELOC Funding Procedure">
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX018" />
+		</classes>
+	</test>
+
+	<test name="Property Insurance Policy Handling">
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<classes>
+			<class name="testcases.PROC.PROC_OP_MG_XX019" />
+		</classes>
+	</test>
+
+</suite> 

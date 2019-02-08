@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="B2B975">
+
+	<parameter name="globalEnvironment" value="SIT1" />
+	<parameter name="globalTestSetPath" value="B2B Automation\Business Procedures" />
+	<parameter name="globalTestSetName" value="Regression - SIT1" />
+	<parameter name="globalTestSetNumber" value="8004" />
+
+	<suite-files>
+		<suite-file path="./PROC_Mortgage_Setup_B2B_975_Mortgage02.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_B2B_975_Mortgage03.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_B2B_975_Mortgage04.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_B2B_975_Mortgage05.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_B2B_975_Mortgage06.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_B2B_975_Mortgage07.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_B2B_975_Mortgage08.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_B2B_975_Mortgage09.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_B2B_975_Mortgage10.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_B2B_975_Mortgage11.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_B2B_975_Mortgage12.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_B2B_975_Mortgage13.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_B2B_975_HOK01.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_B2B_975_HOK02.xml" />
+	</suite-files>
+
+</suite> 
