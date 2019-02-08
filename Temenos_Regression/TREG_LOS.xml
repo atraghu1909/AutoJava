@@ -1,0 +1,2416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="TRAIN" />
+	<parameter name="testSetPath" value="B2B Automation\DataGen" />
+	<parameter name="testSetName" value="SIT1" />
+	<parameter name="testSetNumber" value="2353" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	 
+	<test name="TREG_LOS_0_1">
+		<parameter name="testType" value="Parameter" />
+		<parameter name="targetCommand" value="CAPL.H.LOS.PARAM,CAMB" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_0_2">
+		<parameter name="testType" value="Parameter" />
+		<parameter name="targetCommand" value="CAPL.H.LOS.ASSET.TABLE,CAMB" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_0_3">
+		<parameter name="testType" value="Parameter" />
+		<parameter name="targetCommand" value="CAPL.H.LOS.LIAB.TABLE,CAMB" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_0_4">
+		<parameter name="testType" value="Parameter" />
+		<parameter name="targetCommand" value="CAPL.H.LOS.COLL.TABLE,CAMB" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_0_5">
+		<parameter name="testType" value="Parameter" />
+		<parameter name="targetCommand" value="CAPL.H.LOS.PURPOSE.CODE,CAMB" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_0_6">
+		<parameter name="testType" value="Parameter" />
+		<parameter name="targetCommand" value="CAPL.H.LOS.RPY.MON.TABLE,CAMB" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_0_7">
+		<parameter name="testType" value="Parameter" />
+		<parameter name="targetCommand" value="CAPL.H.LOS.PAY.METHOD,CAMB" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test> 
+	
+	<test name="TREG_LOS_1_1">
+		<parameter name="testType" value="Enquiry" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PROFILE.SEARCH" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_2_1">
+		<parameter name="testType" value="Enquiry" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_3_1">
+		<parameter name="testType" value="Enquiry" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_4_1">
+		<parameter name="testType" value="Enquiry" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.ACCT.DETAILS" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_5_1">
+		<parameter name="testType" value="Enquiry" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.SEARCH" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_6_1">
+		<parameter name="testType" value="Enquiry" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_7_1">
+		<parameter name="testType" value="Enquiry" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.ACCT.DETAILS.AA" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_8_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.CUS" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="ID" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_9_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.FIR.NAME[1,30]" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="GIVEN.NAMES" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_10_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.LAS.NAME[1,30]" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="FAMILY.NAMES" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_11_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.MID.NAME[1,30]" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="GIVEN.NAMES" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_12_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.FAM.NAME[1,20]" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="FAMILIAR.NAME" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_13_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.TITLE[1,10]" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="CIF.TITLE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_14_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.GENDER" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="GENDER" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_15_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.DATE.OF.BIRTH" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="DATE.OF.BIRTH" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_16_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.SIN.NO" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="SIN.NO" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_17_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.MAR.STATUS[1,20]" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="MARITAL.STATUS" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_18_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.HOME.PHONE.NO" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="PHONE.1,1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_19_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.CELL.PHONE.NO" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="PHONE.1,2" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_20_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.WORK.PHONE.NO" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="EMP.PHONE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_21_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.WORK.PHONE.EXT" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="EMP.PH.EXT" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_22_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.FAX.NO" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="FAX.1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_23_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.STREET[1,40]" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="LEGAL.ADDRESS1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_24_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.TOWN.COUNTRY[1,20]" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="LEGAL.CITY" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_25_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.PROV" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="LEGAL.STATE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_26_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.POST.CODE" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="LEGAL.PCODE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_27_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.ADDR.CNT" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="LEGAL.COUNTRY" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_28_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.RES.STATUS" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="RESIDENCE.STATUS" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_29_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.STAT" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="0" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_30_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.EMP.NAME[1,30]" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="EMPLOYER.NAME" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_31_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.POSITION[1,30]" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="DETAIL.EMP.DESC" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_32_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.PHONE.NO" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="EMP.PHONE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_33_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.PHONE.EXT" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="EMP.PH.EXT" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_34_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.EMP.TYPE[1,2]" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="EMP.STATUS" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_35_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.EMP.DESC[1,30]" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="DETAIL.EMP.DESC" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_36_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.START.DATE" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="EMPLOYEMENT.START" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_37_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.SALARY" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="SALARY" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_46_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.REST.CODE" />
+		<parameter name="originalApplication" value="Account" />
+		<parameter name="originalField" value="POSTING.RESTRICT:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_48_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.REST.DESC[1,60]" />
+		<parameter name="originalApplication" value="Posting Restrict" />
+		<parameter name="originalField" value="DESCRIPTION:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_50_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.REST.EXP.DATE" />
+		<parameter name="originalApplication" value="Account" />
+		<parameter name="originalField" value="PR.EXPIRY.DATE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_54_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.CURRENCY" />
+		<parameter name="originalApplication" value="Account" />
+		<parameter name="originalField" value="CURRENCY" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_56_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.NET.ASSET" />
+		<parameter name="originalApplication" value="Account" />
+		<parameter name="originalField" value="ONLINE.CLEARED.BAL" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_57_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.AVAIL.BAL" />
+		<parameter name="originalApplication" value="Account" />
+		<parameter name="originalField" value="WORKING.BALANCE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_59_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.HOLD.AMT" />
+		<parameter name="originalApplication" value="Account" />
+		<parameter name="originalField" value="LOCKED.AMOUNT:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_63_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.CUST.NAME" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="SHORT.NAME:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_66_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.SUB.TYPE" />
+		<parameter name="originalApplication" value="Account" />
+		<parameter name="originalField" value="LN.SUB.TYPE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_68_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.COLLATERAL.CODE" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="LOS.COLL.CODE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_69_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.MPM.NO" />
+		<parameter name="originalApplication" value="Account" />
+		<parameter name="originalField" value="MPM.NO" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_70_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.NET.LIAB" />
+		<parameter name="originalApplication" value="Account" />
+		<parameter name="originalField" value="WORKING.BALANCE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>	
+	
+	<test name="TREG_LOS_78_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="Y.CUST.NAME" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="SHORT.NAME" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_92_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.ACCT.DETAILS.AA" />
+		<parameter name="fieldName" value="Y.ACCT" />
+		<parameter name="originalApplication" value="Account" />
+		<parameter name="originalField" value="ARRANGEMENT.ID" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_95_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.ACCT.DETAILS.AA" />
+		<parameter name="fieldName" value="Y.MPM.NO" />
+		<parameter name="originalApplication" value="Account" />
+		<parameter name="originalField" value="MPM.NO" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_102_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.ACCT.DETAILS.AA" />
+		<parameter name="fieldName" value="Y.CURR.BAL" />
+		<parameter name="originalApplication" value="Limit" />
+		<parameter name="originalField" value="TOTAL.OS:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_110_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.ACCT.DETAILS.AA" />
+		<parameter name="fieldName" value="Y.LINK.ACCT" />
+		<parameter name="originalApplication" value="Cash Pool" />
+		<parameter name="originalField" value="LINK.ACCT" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_114_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.ACCT.DETAILS.AA" />
+		<parameter name="fieldName" value="Y.CUS.NO" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="OWNER" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_115_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.ACCT.DETAILS.AA" />
+		<parameter name="fieldName" value="Y.CUS.NAME" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="SHORT.NAME:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_116_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.ACCT.DETAILS.AA" />
+		<parameter name="fieldName" value="Y.REL.CODE" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="ROLE:1:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_123_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.ACCT.DETAILS.AA" />
+		<parameter name="fieldName" value="Y.COLL.CODE" />
+		<parameter name="originalApplication" value="Limit" />
+		<parameter name="originalField" value="COLLAT.CODE:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_124_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.ACCT.DETAILS.AA" />
+		<parameter name="fieldName" value="Y.COLL.DESC" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="DESCRIPTION:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_125_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.ACCT.DETAILS.AA" />
+		<parameter name="fieldName" value="Y.COLL.ADR.LINE1" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="CA.ADR.LINE1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	<test name="TREG_LOS_126_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.ACCT.DETAILS.AA" />
+		<parameter name="fieldName" value="Y.COLL.ADR.LINE2" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="CA.ADR.LINE2" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_127_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.ACCT.DETAILS.AA" />
+		<parameter name="fieldName" value="Y.COLL.ADR.LINE3" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="CA.ADR.LINE3" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_128_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.ACCT.DETAILS.AA" />
+		<parameter name="fieldName" value="Y.COLL.TOWN.CITY" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="TOWN.CITY" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_129_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.ACCT.DETAILS.AA" />
+		<parameter name="fieldName" value="Y.COLL.PROV" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="CA.PROVINCE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_130_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.ACCT.DETAILS.AA" />
+		<parameter name="fieldName" value="Y.COLL.POST.CODE" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="CA.POST.CODE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	<test name="TREG_LOS_131_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.ACCT.DETAILS.AA" />
+		<parameter name="fieldName" value="Y.COLL.CNTRY" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="CRA.COUNTRY.CDE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_132_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.ACCT.DETAILS.AA" />
+		<parameter name="fieldName" value="Y.COLL.VALUE" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="NOMINAL.VALUE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_133_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.ACCT.DETAILS.AA" />
+		<parameter name="fieldName" value="Y.PR.CHG" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="CA.PRIOR.CHARGE:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_134_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.ACCT.DETAILS.AA" />
+		<parameter name="fieldName" value="Y.PR.CHG.AMT" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="CA.PRIOR.CH.AMT:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_135_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.ACCT.DETAILS.AA" />
+		<parameter name="fieldName" value="Y.PR.CHG.IN" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="CA.PRIOR.INST:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_136_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.ACCT.DETAILS.AA" />
+		<parameter name="fieldName" value="Y.PR.CHG.INSTI" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="CA.PRIOR.OUR.IN:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_137_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PROFILE.SEARCH" />
+		<parameter name="fieldName" value="CustomerNumber" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="ID" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_138_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PROFILE.SEARCH" />
+		<parameter name="fieldName" value="CustomerFirstName" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="SHORT.NAME:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_139_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PROFILE.SEARCH" />
+		<parameter name="fieldName" value="CustomerLastName" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="NAME.1:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_140_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PROFILE.SEARCH" />
+		<parameter name="fieldName" value="DateOfBirth" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="DATE.OF.BIRTH" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_141_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PROFILE.SEARCH" />
+		<parameter name="fieldName" value="Gender" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="GENDER" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_142_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PROFILE.SEARCH" />
+		<parameter name="fieldName" value="SIN" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="SIN.NO" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_143_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PROFILE.SEARCH" />
+		<parameter name="fieldName" value="Status" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="CUSTOMER.STATUS" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_144_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.SEARCH" />
+		<parameter name="fieldName" value="MPMNubmer" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="MPM.NO" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_145_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.SEARCH" />
+		<parameter name="fieldName" value="Status" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="STATUS" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_146_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.SEARCH" />
+		<parameter name="fieldName" value="CollateralDescription" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.ADR.LINE1,TOWN.CITY,CAD.PROVINCE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_147_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.SEARCH" />
+		<parameter name="fieldName" value="CustomerNumber" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CUSTOMER:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_148_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.SEARCH" />
+		<parameter name="fieldName" value="CustomerName" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CUSTOMER.NAME:1" />
+		<classes> 
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_149_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.SEARCH" />
+		<parameter name="fieldName" value="RelationshipCode" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CCS.MPM.CUS.ROLE:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_150_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="BusinessCustomerNumber" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="ID" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_151_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="BusinessSubType1Code" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="SECTOR(KEY)" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_152_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="BusinessSubType1Description" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="SECTOR(DESC)" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_153_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="BusinessSubType2Code" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="INDUSTRY(KEY)" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_154_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="BusinessSubType2Description" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="INDUSTRY(DESC)" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_155_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="BranCode" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="CO.CODE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_156_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="BranchDescription" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="COMPANY.BOOK" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_157_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="GeneralTrustMemberNumber" />
+		<parameter name="originalApplication" value="" />
+		<parameter name="originalField" value="" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_158_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="RetailHoldingCompany" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="RETAIL.HOLD.CO" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_159_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="BusinessName" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="ENT.ORG.NAME" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_160_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="TradeName" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="TRADE.NAME:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>	
+	
+	<test name="TREG_LOS_161_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="SIN" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="SIN.NO" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_162_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="BusinessNumber" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="CORP.NO" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_163_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="IncorporationNumber" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="CORP.NO" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_164_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="PrimaryContact" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="TEXT" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_165_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="TelephoneNumber" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="EMP.PHONE.1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_166_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="TelephoneNumberExtention" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="EMP.PH.EXT.1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_167_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="OtherPhoneNumber" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="EMP.PHONE.2" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_168_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="InternetMail" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="EMAIL.1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_169_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="FAX.NUMBER" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="FAX.1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_170_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="TenureDate" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="MEMBER.SINCE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>	
+	
+	<test name="TREG_LOS_171_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="OfficerCode" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="ACCOUNT.OFFECER(KEY)" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_172_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="OfficerCode" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="ACCOUNT.OFFECER(NAME)" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_173_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="StandardIndustryCode" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="NAICS.CODE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_174_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="StandardIndustryCodeDescription" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="CCS.NAICS.DESC" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_175_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="AnnualSales" />
+		<parameter name="originalApplication" value="" />
+		<parameter name="originalField" value="" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_176_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="NumberOfEmployees" />
+		<parameter name="originalApplication" value="" />
+		<parameter name="originalField" value="" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_177_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="LastYearEndUpdate" />
+		<parameter name="originalApplication" value="" />
+		<parameter name="originalField" value="" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_178_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="FiscalyearEnd" />
+		<parameter name="originalApplication" value="" />
+		<parameter name="originalField" value="" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_179_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="AccessCode" />
+		<parameter name="originalApplication" value="" />
+		<parameter name="originalField" value="" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_180_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="AccessDescription" />
+		<parameter name="originalApplication" value="" />
+		<parameter name="originalField" value="" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>	
+	
+	<test name="TREG_LOS_181_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="RiskRatingCode" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="RISK.RATING" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_182_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="RiskRatingDesription" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="RISK.RATING" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_183_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="IncorporationPlace" />
+		<parameter name="originalApplication" value="" />
+		<parameter name="originalField" value="" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_184_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="IncorporationDate" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="BIRTH.INCORP.DATE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_185_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="NumberOfSignersRequired" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="NO.OF.SIGNERS" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_186_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="InBusinessSince" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="BIRTH.INCORP.DATE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_187_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="Website" />
+		<parameter name="originalApplication" value="" />
+		<parameter name="originalField" value="" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_191_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="RestrictionCode" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="POSTING.RESTRICT:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_193_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="Restriction.Description" />
+		<parameter name="originalApplication" value="Posting Restrict" />
+		<parameter name="originalField" value="DESCRIPTION:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_196_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="LegalAddressLine1" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="LEGAL.ADDRESS.1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_197_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="LegalAddressLine2" />
+		<parameter name="originalApplication" value="" />
+		<parameter name="originalField" value="" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_198_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="LegalAddressLine3" />
+		<parameter name="originalApplication" value="" />
+		<parameter name="originalField" value="" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_199_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="LegalCity" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="LEGAL.CITY" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_200_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="LegalProvinceCode" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="LEGAL.STATE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>	
+	
+	<test name="TREG_LOS_201_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="LegalPostalCode" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="LEGAL.PCODE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_202_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="LegalCountryCode" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="LEGAL.COUNTRY" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_203_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="CustomerNumber" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="REL.CUSTOMER" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_204_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="RelationShipCode" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="REL.CODE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_205_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="FullLegalName" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="NAME.1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_206_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="SIN" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="SIN.NO" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_207_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="GenderCode" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="GENDER" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_208_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="DateOfBirth" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="DATE.OF.BIRTH" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_209_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="Age" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="DATE.OF.BIRTH" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_210_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="HomePhoneNumber" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="PHONE.1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_214_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="CurrencyCode" />
+		<parameter name="originalApplication" value="Account" />
+		<parameter name="originalField" value="CURRENCY" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_216_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="Balance" />
+		<parameter name="originalApplication" value="Account" />
+		<parameter name="originalField" value="ONLINE.CLEARED.BAL" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_217_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="AvailableBalance" />
+		<parameter name="originalApplication" value="Account" />
+		<parameter name="originalField" value="ONLINE.CLEARED.BAL" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_219_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="HoldAmount" />
+		<parameter name="originalApplication" value="Account" />
+		<parameter name="originalField" value="LOCKED.AMOUNT:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_220_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="MaturityDate" />
+		<parameter name="originalApplication" value="Account" />
+		<parameter name="originalField" value="MATURITY.DATE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_222_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="CustomerNumber" />
+		<parameter name="originalApplication" value="Account" />
+		<parameter name="originalField" value="ID" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_223_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="CustomerName" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="SHORT.NAME:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_226_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="AccountSubType" />
+		<parameter name="originalApplication" value="Account" />
+		<parameter name="originalField" value="LN.SUB.TYPE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_227_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="CommercialCreditType" />
+		<parameter name="originalApplication" value="" />
+		<parameter name="originalField" value="" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_229_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="AccountCollateralCode" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="COLLATERAL.CODE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_230_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="MPMNumber" />
+		<parameter name="originalApplication" value="Account" />
+		<parameter name="originalField" value="MPM.NO" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_231_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="Balance" />
+		<parameter name="originalApplication" value="Limit" />
+		<parameter name="originalField" value="ONLINE.LIMIT:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_232_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="CreditLimit" />
+		<parameter name="originalApplication" value="Limit" />
+		<parameter name="originalField" value="MAXIMUM.TOTAL" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_233_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="MonthlyPayment" />
+		<parameter name="originalApplication" value="Account" />
+		<parameter name="originalField" value="ACTUAL.AMOUNT" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_235_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="MaturityDate" />
+		<parameter name="originalApplication" value="Account" />
+		<parameter name="originalField" value="CHANGE.DATE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_238_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="CustomerNumber" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="ID" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_239_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="CustomerName" />
+		<parameter name="originalApplication" value="Customer" />
+		<parameter name="originalField" value="SHORT.NAME:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_240_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="CollateralCode" />
+		<parameter name="originalApplication" value="Limit" />
+		<parameter name="originalField" value="COLLATERAL.CODE:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_241_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="CollateralValue" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="NOMINAL.VALUE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_242_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="Model" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="CA.SG.MODEL" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_243_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="Manufacturer" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="CA.SG.MAKE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_244_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="CollateralCode" />
+		<parameter name="originalApplication" value="Limit" />
+		<parameter name="originalField" value="COLLATERAL.CODE:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_245_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="CollateralDescription" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="DESCRIPTION:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_246_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="CollateralAddressLine1" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="CA.ADR.LINE1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_247_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="CollateralAddressLine2" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="CA.ADR.LINE2" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_248_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="CollateralAddressLine3" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="CA.ADR.LINE3" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_249_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="CollateralCity" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="TOWN.CITY" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_250_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="CollateralProvinceCode" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="CA.PROVINCE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_251_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="CollateralPostalCode" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="CA.POST.CODE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_252_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="CollateralCountryCode" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="CRA.COUNRTY.CDE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_253_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.BUSINESS.DETAILS" />
+		<parameter name="fieldName" value="CollateralValue" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="NOMINAL.VALUE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_254_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="MPMNumber" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="MPM.NO" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_255_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="RegisteredLimit" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="REG.LIMIT" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_256_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="RegistrationDate" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.REG.DATE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_259_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="CustomerNumber" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CUSTOMER:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_260_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="CustomerName" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="NAME:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_261_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="RelationshipCode" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="MPM.CUS.ROLE:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_264_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="MembershipNumber" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="LIMIT.REF.CUST" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+
+	<test name="TREG_LOS_266_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="CreditLimit" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="CR.LIMIT" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_267_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="maturityDate" />
+		<parameter name="originalApplication" value="Collateral" />
+		<parameter name="originalField" value="MATURITY.DATE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_268_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="AccountStatus" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="STATUS" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_269_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="CollateralSeq" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="SEQ.NO" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_270_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="CollateralCode" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="COLLATERAL.CODE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>	
+	
+	<test name="TREG_LOS_271_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="PropertyCode" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.PROP.CODE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_272_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="Strata" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.PROP.STRATA" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_273_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="Tenure" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.PROP.TENURE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_274_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="Lot" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.PROP.LOT" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_275_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="Section" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.PROP.SECTION" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_276_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="District" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.PROP.DISTRIC" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_277_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="Plan" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.PROP.PLAN" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_278_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="Block" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.PROP.BLOC" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_279_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="Parcel" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.PROP.PARCEL" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_280_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="PIDNumber" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.PROP.PID.NO" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>	
+	
+	<test name="TREG_LOS_281_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="MiscCollateralDescription" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="MISC.COLL.DESC" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_282_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="AddressLine1" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.ADR.LINE1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_283_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="AddressLine2" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.ADR.LINE2" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_284_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="City" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="TOWN.CITY" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_285_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="Province" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CAD.PROVINCE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_286_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="PostleCode" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.POST.CODE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_287_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="CountryCode" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CRA.COUNTRY.CDE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_288_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="PurchasePrice" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.SG.PURCH.PR" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_289_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="Value" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="TM.NOMINAL.VAL" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_290_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="ValueType" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.VALUE.TYPE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>	
+	
+	<test name="TREG_LOS_291_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="ValuationDate" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.APPR.DATE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_292_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="InsuranceType" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.INS.TYPE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_293_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="InsuranceCompany" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.INS.COMPANY" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_294_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="InsuranceExpiryDate" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.INS.EXP.DATE" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_295_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="EarthquakeInsurance" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.QUAKE.RIDER" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_296_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="MarketArea" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.PROP.MK.AREA" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_297_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.PERSONAL.DETAILS" />
+		<parameter name="fieldName" value="PriorCharge" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.PRIOR.CHARGE:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_298_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="PriorChargeAmount" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="CA.PRIOR.CH.AMT:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_299_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="PriorChargeInternalFlag" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="INTERNAL" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_300_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="PriorChargeInstitution" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="INSTITUTION" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>	
+	
+	<test name="TREG_LOS_301_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="SubsequentChargeAmount" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="MPM.SUB.CHARGE:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_302_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="SubsequentChargeInstitution" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="MPM.SUB.CHG.INS:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+	<test name="TREG_LOS_303_1">
+		<parameter name="testType" value="Enquiry Field" />
+		<parameter name="targetCommand" value="ENQ CAMB.E.LOS.MPM.DETAILS" />
+		<parameter name="fieldName" value="SubsequentChargeData" />
+		<parameter name="originalApplication" value="Collateral Right" />
+		<parameter name="originalField" value="MPM.SUB.CHG.DT:1" />
+		<classes>
+			<class name="testcases.TREG.TREG_LOS" />
+		</classes>
+	</test>
+	
+</suite><!-- Suite -->
