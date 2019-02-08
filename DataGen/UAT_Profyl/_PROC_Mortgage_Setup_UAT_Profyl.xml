@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="UAT Profyl - Suite">
+
+	<parameter name="globalEnvironment" value="MG2" />
+	<parameter name="globalTestSetPath" value="B2B Automation\Business Procedures" />
+	<parameter name="globalTestSetName" value="Regression - MG2" />
+	<parameter name="globalTestSetNumber" value="10104" />
+
+	<suite-files>
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_Mortgage01.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_Mortgage02.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_Mortgage03.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_Mortgage04.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_Mortgage05.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_Mortgage06.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_Mortgage07.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_Mortgage08.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_Mortgage09.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_Mortgage10.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_Mortgage11.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_Mortgage12.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_Mortgage13.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_Mortgage14.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_Mortgage15.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_Mortgage16.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_Mortgage17.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_BridgeLoan01.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_BridgeLoan02.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_BridgeLoan03.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_BridgeLoan04.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_BridgeLoan05.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_BridgeLoan06.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_BridgeLoan07.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_BridgeLoan08.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_HELOC01.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_HELOC02.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_HELOC03.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_HELOC04.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_HELOC05.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_HELOC06.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_HELOC07.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_HELOC08.xml" />
+		<suite-file path="./PROC_Mortgage_Setup_UAT_Profyl_HELOC09.xml" />
+	</suite-files>
+
+</suite>

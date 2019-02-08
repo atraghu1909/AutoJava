@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="UAT Profyl - Mortgage 13">
+	<parameter name="environment" value="MG2" />
+	<parameter name="testSetPath" value="B2B Automation\Business Procedures" />
+	<parameter name="testSetName" value="Regression - MG2" />
+	<parameter name="testSetNumber" value="10104" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Manual Mortgage and HELOC Setup - Mortgage">
+		<parameter name="branch" value="B2B Branch 623" />
+		<parameter name="customerType" value="Personal" />
+		<parameter name="owners" value="1" />
+		<parameter name="ownerRoles" value="BORROWER.OWNER" />
+		<parameter name="limitAllocations" value="100.00" />
+		<parameter name="taxLiabilities" value="100.00" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Var Rate Closed Term MG Fix Pay" />
+		<parameter name="effectiveDate" value="-57d" />
+		<parameter name="collateralValue" value="300000" />
+		<parameter name="collateralCode" value="6" />
+		<parameter name="collateralOccupancy" value="Owner" />
+		<parameter name="collateralNumberOfApts" value="1" />
+		<parameter name="lifeInsurance" value="None" />
+		<parameter name="disabilityInsurance" value="None" />
+		<parameter name="commitment" value="270000" />
+		<parameter name="term" value="25Y" />
+		<parameter name="insuranceCompany" value="Cmhc" />
+		<parameter name="insuranceNumber" value="20000007" />
+		<parameter name="renewalPeriod" value="5Y" />
+		<parameter name="marginSpread" value="" />
+		<parameter name="postedRate" value="4.79" />
+		<parameter name="paymentFrequency" value="e0Y e0M e1W o1D e0F" />
+		<parameter name="withIAD" value="false" />
+		<parameter name="withEscrow" value="true" />
+		<parameter name="withSettleViaBanking" value="false" />
+		<parameter name="withFixedPayment" value="false" />
+		<parameter name="gds" value="40" />
+		<parameter name="tds" value="50" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangementData" />
+		</classes>
+	</test>
+
+</suite>

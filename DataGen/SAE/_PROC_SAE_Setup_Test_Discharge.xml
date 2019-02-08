@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="SAE Discharge - Suite">
+
+	<parameter name="environment" value="SIT1" />
+	<parameter name="testSetPath" value="B2B Automation\Business Procedures" />
+	<parameter name="testSetName" value="Regression - SIT1" />
+	<parameter name="testSetNumber" value="8004" />
+
+	<suite-files>
+		<suite-file path="./PROC_SAE_Setup_Test_Discharge_Mortgage01.xml" />
+		<suite-file path="./PROC_SAE_Setup_Test_Discharge_Mortgage02.xml" />
+		<suite-file path="./PROC_SAE_Setup_Test_Discharge_Mortgage03.xml" />
+		<suite-file path="./PROC_SAE_Setup_Test_Discharge_Mortgage04.xml" />
+		<suite-file path="./PROC_SAE_Setup_Test_Discharge_Mortgage05.xml" />
+		<suite-file path="./PROC_SAE_Setup_Test_Discharge_Mortgage06.xml" />
+		<suite-file path="./PROC_SAE_Setup_Test_Discharge_Mortgage07.xml" />
+		<suite-file path="./PROC_SAE_Setup_Test_Discharge_Mortgage08.xml" />
+		<suite-file path="./PROC_SAE_Setup_Test_Discharge_Mortgage09.xml" />
+		<suite-file path="./PROC_SAE_Setup_Test_Discharge_Mortgage10.xml" />
+		<suite-file path="./PROC_SAE_Setup_Test_Discharge_Mortgage11.xml" />
+		<suite-file path="./PROC_SAE_Setup_Test_Discharge_Mortgage12.xml" />
+		<suite-file path="./PROC_SAE_Setup_Test_Discharge_Mortgage13.xml" />
+		<suite-file path="./PROC_SAE_Setup_Test_Discharge_Mortgage14.xml" />
+		<suite-file path="./PROC_SAE_Setup_Test_Discharge_Mortgage15.xml" />
+		<suite-file path="./PROC_SAE_Setup_Test_Discharge_Mortgage16.xml" />
+		<suite-file path="./PROC_SAE_Setup_Test_Discharge_Mortgage17.xml" />
+		<suite-file path="./PROC_SAE_Setup_Test_Discharge_Mortgage18.xml" />
+		<suite-file path="./PROC_SAE_Setup_Test_Discharge_Mortgage19.xml" />
+		<suite-file path="./PROC_SAE_Setup_Test_Discharge_Mortgage20.xml" />
+	</suite-files>
+
+</suite>

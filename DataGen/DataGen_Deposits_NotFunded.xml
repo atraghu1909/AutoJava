@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="testSetPath" value="B2B Automation\DataGen" />
+	<parameter name="testSetName" value="SIT1" />
+	<parameter name="testSetNumber" value="2353" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Create Arrangement - Action Cdn S&amp;P TSE60 7Y 2014-06-09">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Action Cdn S&amp;P/TSE60 7Y 2014-06-09" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Action Cdn Gwth 5Yr 2013-10-28">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Action Cdn Gwth 5Yr 2013-10-28" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Action GIC Blue Chip 2Yrs">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Action GIC Blue Chip 2Yrs" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Action GIC Blue Chip 3Yr 2014-12-15">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Action GIC Blue Chip 3Yr 2014-12-15" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Action GIC Blue Chip 5Yr 2012-12-14">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Action GIC Blue Chip 5Yr 2012-12-14" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Cashable Simple Annually">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Cashable Simple Annually" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Cashable Compound Annually">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Cashable Compound Annually" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Cashable Simple at Maturity">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Cashable Simple at Maturity" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Cashable Simple Monthly">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Cashable Simple Monthly" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Cashable Simple Quarterly">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Cashable Simple Quarterly" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Cashable Simple Semi Annually">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Cashable Simple Semi Annually" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Multi Rate 3 Year GIC">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Multi Rate 3 Year GIC" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Multi Rate 5 Year GIC">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Multi Rate 5 Year GIC" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Multi Rate GIC">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Multi Rate GIC" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Non-Redeemable Simple Annual">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Non-Redeemable Simple Annual" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Non-Redeemable Compound Annual">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Non-Redeemable Compound Annual" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Non-Redeemable Simple at Maturity">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Non-Redeemable Simple at Maturity" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Non-Redeemable Simple Monthly">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Non-Redeemable Simple Monthly" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Non-Redeemable Simple Quarterly">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Non-Redeemable Simple Quarterly" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Non-Redeemable Simple Semi Annual">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Non-Redeemable Simple Semi Annual" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Redeemable Simple Annual">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Redeemable Simple Annual" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Redeemable Compound Annual">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Redeemable Compound Annual" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Redeemable Simple at Maturity">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Redeemable Simple at Maturity" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Redeemable Simple Monthly">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Redeemable Simple Monthly" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Redeemable Simple Quarterly">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Redeemable Simple Quarterly" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Redeemable Simple Semi Annual">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Redeemable Simple Semi Annual" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+
+</suite> 

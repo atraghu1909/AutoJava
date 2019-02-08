@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="testSetPath" value="B2B Automation\DataGen" />
+	<parameter name="testSetName" value="SIT1" />
+	<parameter name="testSetNumber" value="2353" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Create Arrangement - Personal Chequing">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Personal Chequing" />
+		<parameter name="quantity" value="10" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - HISA Personal">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="HISA Personal" />
+		<parameter name="quantity" value="10" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Unlimited Chequing">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Unlimited Chequing" />
+		<parameter name="quantity" value="10" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Personal Loan Secured Fixed Rate">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="quantity" value="5" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Personal Loan Secured Var Rate">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Var Rate" />
+		<parameter name="quantity" value="5" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Secured Line of Credit">
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="Secured Line of Credit" />
+		<parameter name="quantity" value="5" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Fixed Rate Closed Term Mortgage">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="quantity" value="10" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Fixed Rate Open Term Mortgage">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Open Term Mortgage" />
+		<parameter name="quantity" value="10" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Var Rate Closed Term MG Fix Pay">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Var Rate Closed Term MG Fix Pay" />
+		<parameter name="quantity" value="5" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Commercial Term Loans Fixed Rate">
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<parameter name="quantity" value="10" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Commercial Term Loans Var Rate">
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Var Rate" />
+		<parameter name="quantity" value="10" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+
+</suite> 

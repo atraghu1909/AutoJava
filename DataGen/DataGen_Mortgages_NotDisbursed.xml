@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="TRAIN" />
+	<parameter name="testSetPath" value="B2B Automation\DataGen" />
+	<parameter name="testSetName" value="Training" />
+	<parameter name="testSetNumber" value="2402" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Create Arrangement - Mortgages AGF Trust (grandfathered)">
+		<parameter name="branch" value="Branch 603" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Mortgages AGF Trust (grandfathered)" />
+		<parameter name="effectiveDate" value="-2m" />
+		<parameter name="amortization" value="25Y" />
+		<parameter name="renewalTerm" value="5Y" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Bridge Loan">
+		<parameter name="branch" value="B2B Branch 623" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Bridge Loan" />
+		<parameter name="effectiveDate" value="-0d" />
+		<parameter name="quantity" value="20" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Convertible Mortgage">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Convertible Mortgage" />
+		<parameter name="quantity" value="2" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Fixed Rate Closed Term Mortgage">
+		<parameter name="branch" value="Branch 603" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="quantity" value="10" />
+		<parameter name="effectiveDate" value="-3m" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Fixed Rate Open Term Mortgage">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Open Term Mortgage" />
+		<parameter name="quantity" value="2" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - HELOC">
+		<parameter name="branch" value="Branch 603" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="HELOC" />
+		<parameter name="quantity" value="2" />
+		<parameter name="effectiveDate" value="-3m" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - HELOC CMHC AGF Trust(Grandfathered)">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="HELOC CMHC AGF Trust(Grandfathered)" />
+		<parameter name="quantity" value="2" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Real Estate Mortgage(grandfathered)">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Real Estate Mortgage(grandfathered)" />
+		<parameter name="quantity" value="2" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Var Rate Closed Term MG Fix Pay">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Var Rate Closed Term MG Fix Pay" />
+		<parameter name="quantity" value="2" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Var Rate Closed Term Mrtg Var Pay">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Var Rate Closed Term Mrtg Var Pay" />
+		<parameter name="quantity" value="2" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+</suite> 

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="SAE Discharge 03">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="testSetPath" value="B2B Automation\Business Procedures" />
+	<parameter name="testSetName" value="Regression - SIT1" />
+	<parameter name="testSetNumber" value="8004" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Loans">
+		<parameter name="branch" value="LAURENTIAN BANK - 526" />
+		<parameter name="customerType" value="Non Personal" />
+		<parameter name="owners" value="1" />
+		<parameter name="ownerRoles" value="BORROWER.OWNER" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Multi-Residential MG 5 Pls Var Rate" />
+		<parameter name="commitment" value="170000" />
+		<parameter name="term" value="21Y" />
+		<parameter name="paymentFrequency" value="e0Y e0M e2W o2D e0F" />
+		<parameter name="paymentType" value="LINEAR" />
+		<parameter name="withDisbursement" value="false" />
+		<parameter name="withEscrow" value="true" />
+		<parameter name="withReserveAccount" value="true" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangementData" />
+		</classes>
+	</test>
+
+</suite>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="testSetPath" value="B2B Automation\DataGen" />
+	<parameter name="testSetName" value="SIT1" />
+	<parameter name="testSetNumber" value="2353" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Test Statement - One Customer on One Statement (English)">
+		<parameter name="branch" value="B2B Branch 817" />
+		<parameter name="ownership" value="Single" />
+		<parameter name="quantity" value="32" />
+		<parameter name="status" value="Current" />
+		<parameter name="effectiveDate" value="-3m" />
+		<parameter name="numberOfProducts" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_testStatements" />
+		</classes>
+	</test>
+	<test name="Test Statement - One Customer on One Statement (French)">
+		<parameter name="branch" value="B2B Branch 817" />
+		<parameter name="ownership" value="Single" />
+		<parameter name="quantity" value="32" />
+		<parameter name="status" value="Current" />
+		<parameter name="effectiveDate" value="-3m" />
+		<parameter name="language" value="FR" />
+		<parameter name="numberOfProducts" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_testStatements" />
+		</classes>
+	</test> 
+	<test
+		name="Test Statement - One Customer on One Statement (Out of Province)">
+		<parameter name="branch" value="B2B Branch 817" />
+		<parameter name="ownership" value="Single" />
+		<parameter name="quantity" value="16" />
+		<parameter name="status" value="Current" />
+		<parameter name="effectiveDate" value="-3m" />
+		<parameter name="addressDetails" value="Out of Province" />
+		<parameter name="numberOfProducts" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_testStatements" />
+		</classes>
+	</test>
+	<test name="Test Statement - One Customer on One Statement (U.S.)">
+		<parameter name="branch" value="B2B Branch 817" />
+		<parameter name="ownership" value="Single" />
+		<parameter name="quantity" value="16" />
+		<parameter name="status" value="Current" />
+		<parameter name="effectiveDate" value="-3m" />
+		<parameter name="addressDetails" value="U.S. Address" />
+		<parameter name="numberOfProducts" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_testStatements" />
+		</classes>
+	</test>
+	<test name="Test Statement - One Customer on One Statement (International)">
+		<parameter name="branch" value="B2B Branch 817" />
+		<parameter name="ownership" value="Single" />
+		<parameter name="quantity" value="16" />
+		<parameter name="status" value="Current" />
+		<parameter name="effectiveDate" value="-3m" />
+		<parameter name="addressDetails" value="International" />
+		<parameter name="numberOfProducts" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_testStatements" />
+		</classes>
+	</test>
+ 	<test name="Test Statement - One Customer on One Statement (Advisor Mailing Preference = Courrier)">
+		<parameter name="branch" value="B2B Branch 817" />
+		<parameter name="ownership" value="Single" />
+		<parameter name="quantity" value="16" />
+		<parameter name="status" value="Current" />
+		<parameter name="effectiveDate" value="-3m" />
+		<parameter name="addressDetails" value="Courrier" />
+		<parameter name="numberOfProducts" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_testStatements" />
+		</classes>
+	</test>
+	<test name="Test Statement - Two Customers on One Statement (English)">
+		<parameter name="branch" value="B2B Branch 817" />
+		<parameter name="ownership" value="Two" />
+		<parameter name="quantity" value="12" />
+		<parameter name="status" value="Current" />
+		<parameter name="effectiveDate" value="-3m" />
+		<parameter name="numberOfProducts" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_testStatements" />
+		</classes>
+	</test>
+	<test
+		name="Test Statement - Two Customers on One Statement (Different Languages)">
+		<parameter name="branch" value="B2B Branch 817" />
+		<parameter name="ownership" value="Two" />
+		<parameter name="quantity" value="8" />
+		<parameter name="status" value="Current" />
+		<parameter name="effectiveDate" value="-3m" />
+		<parameter name="language" value="Both" />
+		<parameter name="numberOfProducts" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_testStatements" />
+		</classes>
+	</test>
+	<test
+		name="Test Statement - Two Customers on One Statement (Different Disclosure Preference)">
+		<parameter name="branch" value="B2B Branch 817" />
+		<parameter name="ownership" value="Two" />
+		<parameter name="quantity" value="8" />
+		<parameter name="status" value="Current" />
+		<parameter name="effectiveDate" value="-3m" />
+		<parameter name="addressDetails" value="Different Disclosure Preference" />
+		<parameter name="numberOfProducts" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_testStatements" />
+		</classes>
+	</test>
+	<test name="Test Statement - Four Customers on One Statement">
+		<parameter name="branch" value="B2B Branch 817" />
+		<parameter name="ownership" value="Four" />
+		<parameter name="quantity" value="8" />
+		<parameter name="status" value="Current" />
+		<parameter name="effectiveDate" value="-3m" />
+		<parameter name="numberOfProducts" value="2" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_testStatements" />
+		</classes>
+	</test>
+	<test
+		name="Test Statement - One Customer on Multiple Statements (Same Address)">
+		<parameter name="branch" value="B2B Branch 817" />
+		<parameter name="ownership" value="Single" />
+		<parameter name="quantity" value="6" />
+		<parameter name="status" value="Current" />
+		<parameter name="effectiveDate" value="-3m" />
+		<parameter name="numberOfProducts" value="2" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_testStatements" />
+		</classes>
+	</test>
+	<test
+		name="Test Statement - Two Customers on Multiple Statements (Same Address)">
+		<parameter name="branch" value="B2B Branch 817" />
+		<parameter name="ownership" value="Two" />
+		<parameter name="quantity" value="8" />
+		<parameter name="status" value="Current" />
+		<parameter name="effectiveDate" value="-3m" />
+		<parameter name="numberOfProducts" value="2" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_testStatements" />
+		</classes>
+	</test>
+	<test
+		name="Test Statement - Two Customers on Multiple Statements (Different Addresses)">
+		<parameter name="branch" value="B2B Branch 817" />
+		<parameter name="ownership" value="Two" />
+		<parameter name="quantity" value="6" />
+		<parameter name="status" value="Current" />
+		<parameter name="effectiveDate" value="-3m" />
+		<parameter name="addressDetails" value="Different Addresses" />
+		<parameter name="numberOfProducts" value="2" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_testStatements" />
+		</classes>
+	</test>
+	<test
+		name="Test Statement - One Customer on One Statement (Multiple Activities)">
+		<parameter name="branch" value="B2B Branch 817" />
+		<parameter name="ownership" value="One" />
+		<parameter name="quantity" value="4" />
+		<parameter name="status" value="Current with Multiple Activities" />
+		<parameter name="effectiveDate" value="-11m" />
+		<parameter name="numberOfProducts" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_testStatements" />
+		</classes>
+	</test>
+	
+</suite> 

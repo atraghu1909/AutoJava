@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="testSetPath" value="B2B Automation\DataGen" />
+	<parameter name="testSetName" value="SIT1" />
+	<parameter name="testSetNumber" value="2353" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+ 
+	<test name="Create Arrangement - Unlimited Chequing">
+		<parameter name="branch" value="B2B Branch 817" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Unlimited Chequing" />
+		<parameter name="quantity" value="10" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - HISA Personal">
+		<parameter name="branch" value="B2B Branch 817" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="HISA Personal" />
+		<parameter name="quantity" value="5" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - HISA Business">
+		<parameter name="branch" value="B2B Branch 817" />
+		<parameter name="productGroup" value="Business Accounts" />
+		<parameter name="product" value="HISA Business" />
+		<parameter name="quantity" value="5" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	<test name="Create Arrangement - Unsecured Line of Credit">
+		<parameter name="branch" value="B2B Branch 817" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="Unsecured Line of Credit" />
+		<parameter name="quantity" value="2" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createArrangement" />
+		</classes>
+	</test>
+	
+</suite> 

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="testSetPath" value="B2B Automation\DataGen" />
+	<parameter name="testSetName" value="SIT1" />
+	<parameter name="testSetNumber" value="2353" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	
+	<!--  
+	<test name="Create Agent - Account LOC Commission Plan">
+		<parameter name="productGroup" value="Broker Agent" />
+		<parameter name="product" value="Account LOC Commission Plan" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createAgent" />
+		</classes>
+	</test>
+	-->
+	<test name="Create Agent - Dummy Commission Plan">
+       <!--  <parameter name="branch" value="B2B Branch 817" /> -->
+		<parameter name="productGroup" value="Broker Agent" />
+		<parameter name="product" value="Dummy Commission Plan" />
+		<parameter name="quantity" value="10" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createAgent" />
+		</classes>
+	</test>
+	<!--  
+	<test name="Create Agent - Deposit Commission Plan">
+		<parameter name="productGroup" value="Broker Agent" />
+		<parameter name="product" value="Deposit Commission Plan" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createAgent" />
+		</classes>
+	</test>
+	<test name="Create Agent - DLC VB GT 52p.c. Commission Plan">
+		<parameter name="productGroup" value="Broker Agent" />
+		<parameter name="product" value="DLC VB GT 52% Commission Plan" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createAgent" />
+		</classes>
+	</test>
+	<test name="Create Agent - DLC VB LT 52p.c. Commission Plan">
+		<parameter name="productGroup" value="Broker Agent" />
+		<parameter name="product" value="DLC VB LT 52% Commission Plan" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createAgent" />
+		</classes>
+	</test>
+	<test name="Create Agent - General Broker Commission Plan">
+		<parameter name="productGroup" value="Broker Agent" />
+		<parameter name="product" value="General Broker Commission Plan" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createAgent" />
+		</classes>
+	</test>
+	<test name="Create Agent - PFS Commission Plan">
+		<parameter name="productGroup" value="Broker Agent" />
+		<parameter name="product" value="PFS Commission Plan" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createAgent" />
+		</classes>
+	</test>
+	<test name="Create Agent - PMPP Commission Plan">
+		<parameter name="productGroup" value="Broker Agent" />
+		<parameter name="product" value="PMPP Commission Plan" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createAgent" />
+		</classes>
+	</test>
+	<test name="Create Agent - RBC Commission Plan">
+		<parameter name="productGroup" value="Broker Agent" />
+		<parameter name="product" value="RBC Commission Plan" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createAgent" />
+		</classes>
+	</test>
+	<test name="Create Agent - TMACC Commission Plan">
+		<parameter name="productGroup" value="Broker Agent" />
+		<parameter name="product" value="TMACC Commission Plan" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createAgent" />
+		</classes>
+	</test>
+	<test name="Create Agent - Royalty-Trailer Commission Plan">
+		<parameter name="productGroup" value="Broker Agent" />
+		<parameter name="product" value="Royalty-Trailer Commission Plan" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createAgent" />
+		</classes>
+	</test>
+	<test name="Create Agent - Verico-Trailer Commission Plan">
+		<parameter name="productGroup" value="Broker Agent" />
+		<parameter name="product" value="Verico-Trailer Commission Plan" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createAgent" />
+		</classes>
+	</test>
+	<test name="Create Agent - Royalty-Upfront Commission Plan">
+		<parameter name="productGroup" value="Broker Agent" />
+		<parameter name="product" value="Royalty-Upfront Commission Plan" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createAgent" />
+		</classes>
+	</test>
+	<test name="Create Agent - Verico-Upfront Commission Plan">
+		<parameter name="productGroup" value="Broker Agent" />
+		<parameter name="product" value="Verico-Upfront Commission Plan" />
+		<parameter name="quantity" value="1" />
+		<classes>
+			<class name="testcases.DataGen.DataGen_createAgent" />
+		</classes>
+	</test>
+	-->
+	
+</suite> 
