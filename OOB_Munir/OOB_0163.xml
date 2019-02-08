@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="OOB_154_01">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="HISA Personal" />
+		<parameter name="action" value="Amend" />
+		<parameter name="tab" value="Calculation Source" />
+		<classes>
+			<class name="testcases.OOB.OOB_0163_01" />
+		</classes>
+	</test>
+	<test name="OOB_154_02">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="HISA Personal" />
+		<parameter name="action" value="Amend" />
+		<parameter name="tab" value="Calculation Source" />
+		<classes>
+			<class name="testcases.OOB.OOB_0163_01" />
+		</classes>
+	</test>
+
+	<test name="OOB_163_01">
+		<parameter name="productLine" value="Accounts" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="HISA Personal" />
+		<parameter name="action" value="View" />
+		<parameter name="tab" value="Property Conditions" />
+		<classes>
+			<class name="testcases.OOB.OOB_0163_01" />
+		</classes>
+	</test>
+	
+	<test name="OOB_164_01">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="HISA Personal" />
+		<parameter name="action" value="View" />
+		<parameter name="tab" value="Property Conditions" />
+		<classes>
+			<class name="testcases.OOB.OOB_0163_01" />
+		</classes>
+	</test>
+	
+	<test name="OOB_164_02">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="HISA Personal" />
+		<parameter name="action" value="View" />
+		<parameter name="tab" value="Property Conditions" />
+		<classes>
+			<class name="testcases.OOB.OOB_0163_01" />
+		</classes>
+	</test>
+	
+	<test name="OOB_136_01">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="HISA Personal" />
+		<parameter name="action" value="Amend" />
+		<parameter name="tab" value="Property Conditions" />
+		<classes>
+			<class name="testcases.OOB.OOB_0163_01" />
+		</classes>
+	</test>
+	
+	<test name="OOB_0074_01">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="HISA Personal" />
+		<parameter name="action" value="View" />
+		<parameter name="tab" value="Calculation Source" />
+		<classes>
+			<class name="testcases.OOB.OOB_0163_01" />
+		</classes>
+	</test>
+	
+	<test name="OOB_0074_02">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="HISA Personal" />
+		<parameter name="action" value="View" />
+		<parameter name="tab" value="Calculation Source" />
+		<classes>
+			<class name="testcases.OOB.OOB_0163_01" />
+		</classes>
+	</test>
+	
+	<test name="OOB_0039_01">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="PARENT-Personal Chequing" />
+		<parameter name="action" value="Manage" />
+		<parameter name="tab" value="Manage" />
+		<parameter name="fields" value="AVAILABLE.DATE" />
+		<classes>
+			<class name="testcases.OOB.OOB_0163_01" />
+		</classes>
+	</test>
+	<test name="OOB_0039_02">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Personal Chequing" />
+		<parameter name="action" value="Manage" />
+		<parameter name="tab" value="Manage" />
+		<parameter name="fields" value="AVAILABLE.DATE" />
+		<classes>
+			<class name="testcases.OOB.OOB_0163_01" />
+		</classes>
+	</test>
+	
+	</suite> <!-- Suite -->

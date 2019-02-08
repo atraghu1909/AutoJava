@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	
+	<test name="OOBH_41">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="customer" value="190038" />
+		<parameter name="creditAccount" value="AA162152Z7K5" />
+		<classes>
+			<class name="testcases.OOB.OOBH_41" />
+		</classes>
+	</test>
+	
+	<test name="OOBH_42">
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<parameter name="customer" value="190038" />
+		<parameter name="creditAccount" value="AA162152Z7K5" />
+		<classes>
+			<class name="testcases.OOB.OOBH_41" />
+		</classes>
+	</test>
+	 
+	<test name="OOBH_43">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Unsecured Fixed Rate" />
+		<parameter name="customer" value="190038" />
+		<parameter name="creditAccount" value="AA162152Z7K5" />
+		<classes>
+			<class name="testcases.OOB.OOBH_41" />
+		</classes>
+	</test>
+	
+	</suite> <!-- Suite -->

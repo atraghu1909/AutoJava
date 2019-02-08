@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="environment" value="SIT1"/>
+	<parameter name="runUrl" value="about:blank"/>
+	<parameter name="runBrowser" value="firefox"/>
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen"/>
+		<listener class-name="testLibs.HTMLReporter"/>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+	</listeners>
+
+	<test name="OOB_0073_02_1">
+		<parameter name="customer" value="100095108"/>
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="B2B Bank Chequing Account"/>
+		<parameter name="interestCategory" value="Credit Interest"/>
+		<parameter name="actionToPerform" value="Set Rate to Zero"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0073_02"/>
+		</classes>
+	</test>
+
+	<test name="OOB_0073_02_2">
+		<parameter name="customer" value="100095110"/>
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="B2B Bank Chequing Account"/>
+		<parameter name="interestCategory" value="Credit Interest"/>
+		<parameter name="actionToPerform" value="None"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0073_02"/>
+		</classes>
+	</test>
+
+	<test name="OOB_0073_02_3">
+		<parameter name="customer" value="100095112"/>
+		<parameter name="productGroup" value="Personal Loans"/>
+		<parameter name="product" value="Personal Loan Unsecured Fixed Rate"/>
+		<parameter name="interestCategory" value="Principal Interest"/>
+		<parameter name="actionToPerform" value="None"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0073_02"/>
+		</classes>
+	</test>
+	<test name="OOB_0073_02_4">
+		<parameter name="customer" value="100095115"/>
+		<parameter name="productGroup" value="Retail - Non Registered Deposits"/>
+		<parameter name="product" value="Multi Rate 3 Year GIC"/>
+		<parameter name="interestCategory" value="Deposit Interest"/>
+		<parameter name="actionToPerform" value="None"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0073_02"/>
+		</classes>
+	</test>
+
+	<test name="OOB_0073_02_5">
+		<parameter name="customer" value="100095117"/>
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="B2B Bank Chequing Account"/>
+		<parameter name="interestCategory" value="Credit Interest"/>
+		<parameter name="actionToPerform" value="Backdated Credit"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0073_02"/>
+		</classes>
+	</test>
+	<test name="OOB_0073_02_6">
+		<parameter name="customer" value="100095122"/>
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="B2B Bank Chequing Account"/>
+		<parameter name="interestCategory" value="Credit Interest"/>
+		<parameter name="actionToPerform" value="Backdated Debit"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0073_02"/>
+		</classes>
+	</test>
+	<test name="OOB_0073_02_7">
+		<parameter name="customer" value="100095126"/>
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="B2B Bank Chequing Account"/>
+		<parameter name="interestCategory" value="Credit Interest"/>
+		<parameter name="actionToPerform" value="Rate Change"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0073_02"/>
+		</classes>
+	</test>
+	<test name="OOB_0073_02_9">
+		<parameter name="customer" value="100095127"/>
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="B2B Bank Chequing Account"/>
+		<parameter name="interestCategory" value="Credit Interest"/>
+		<parameter name="actionToPerform" value="Reverse Credit Interest"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0073_02"/>
+		</classes>
+	</test>
+	<test name="OOB_0073_02_10">
+		<parameter name="customer" value="100095131"/>
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="B2B Bank Chequing Account"/>
+		<parameter name="interestCategory" value="Credit Interest"/>
+		<parameter name="actionToPerform" value="Reverse Debit Interest"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0073_02"/>
+		</classes>
+	</test>
+	<test name="OOB_0073_08_1">
+		<parameter name="customer" value="100095134"/>
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="B2B Bank Chequing Account"/>
+		<parameter name="interestCategory" value="Debit Interest"/>
+		<parameter name="actionToPerform" value="Set Rate to Zero"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0073_02"/>
+		</classes>
+	</test>
+	<test name="OOB_0073_08_2">
+		<parameter name="customer" value="100095137"/>
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="B2B Bank Chequing Account"/>
+		<parameter name="interestCategory" value="Debit Interest"/>
+		<parameter name="actionToPerform" value="None"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0073_02"/>
+		</classes>
+	</test>
+	<test name="OOB_0073_08_3">
+		<parameter name="customer" value="100095142"/>
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="B2B Bank Chequing Account"/>
+		<parameter name="interestCategory" value="Debit Interest"/>
+		<parameter name="actionToPerform" value="Backdated Credit"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0073_02"/>
+		</classes>
+	</test>
+	<test name="OOB_0073_08_4">
+		<parameter name="customer" value="100095144"/>
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="B2B Bank Chequing Account"/>
+		<parameter name="interestCategory" value="Debit Interest"/>
+		<parameter name="actionToPerform" value="Backdated Debit"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0073_02"/>
+		</classes>
+	</test>
+	<test name="OOB_0073_08_5">
+		<parameter name="customer" value="100095146"/>
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="B2B Bank Chequing Account"/>
+		<parameter name="interestCategory" value="Debit Interest"/>
+		<parameter name="actionToPerform" value="Rate Change"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0073_02"/>
+		</classes>
+	</test>
+	<test name="OOB_0073_08_7">
+		<parameter name="customer" value="100095151"/>
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="B2B Bank Chequing Account"/>
+		<parameter name="interestCategory" value="Debit Interest"/>
+		<parameter name="actionToPerform" value="Reverse Credit Interest"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0073_02"/>
+		</classes>
+	</test>
+	<test name="OOB_0073_08_8">
+		<parameter name="customer" value="100095155"/>
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="B2B Bank Chequing Account"/>
+		<parameter name="interestCategory" value="Debit Interest"/>
+		<parameter name="actionToPerform" value="Reverse Debit Interest"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0073_02"/>
+		</classes>
+	</test>
+</suite>

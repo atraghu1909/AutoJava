@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	 
+	<test name="OOBH_44">
+		<parameter name="customer" value="190038" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="DECREASE ACTIVITY FOR COMMITMENT" />
+		<classes>
+			<class name="testcases.OOB.OOBH_44" />
+		</classes>
+	</test>
+
+	<test name="OOBH_45">
+		<parameter name="customer" value="190038" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="Secured Line of Credit" />
+		<parameter name="activity" value="DECREASE ACTIVITY FOR COMMITMENT" />
+		<classes>
+			<class name="testcases.OOB.OOBH_44" />
+		</classes>
+	</test>
+	
+	<test name="OOBH_46">
+		<parameter name="customer" value="190038" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Unsecured Fixed Rate" />
+		<parameter name="activity" value="DECREASE ACTIVITY FOR COMMITMENT" />
+		<classes>
+			<class name="testcases.OOB.OOBH_44" />
+		</classes>
+	</test>
+	
+	<test name="OOBH_47">
+		<parameter name="customer" value="190038" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="INCREASE ACTIVITY FOR COMMITMENT" />
+		<classes>
+			<class name="testcases.OOB.OOBH_44" />
+		</classes>
+	</test>
+	
+	<test name="OOBH_48">
+		<parameter name="customer" value="190038" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="Secured Line of Credit" />
+		<parameter name="activity" value="INCREASE ACTIVITY FOR COMMITMENT" />
+		<classes>
+			<class name="testcases.OOB.OOBH_44" />
+		</classes>
+	</test>
+	
+	<test name="OOBH_49">
+		<parameter name="customer" value="190038" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Unsecured Fixed Rate" />
+		<parameter name="activity" value="INCREASE ACTIVITY FOR COMMITMENT" />
+		<classes>
+			<class name="testcases.OOB.OOBH_44" />
+		</classes>
+	</test>
+	 
+	</suite> <!-- Suite -->

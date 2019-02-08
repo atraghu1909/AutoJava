@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	 
+	<test name="OOB_139_01">
+		<parameter name="customer" value="100095443" />
+		<parameter name="type" value="Create Arrangement" />
+		<parameter name="fieldToModify" value="Charge" />
+		<parameter name="amount" value="25.00" />
+		<classes>
+			<class name="testcases.OOB.OOB_0139_01" />
+		</classes>
+	</test>
+	
+	<test name="OOB_139_02">
+	 	<parameter name="customer" value="100095443" />
+		<parameter name="type" value="Update Arrangement" />
+		<parameter name="fieldToModify" value="Charge" />
+		<parameter name="amount" value="25.00" />
+		<classes>
+			<class name="testcases.OOB.OOB_0139_01" />
+		</classes>
+	</test>
+	
+	<test name="OOB_139_03">
+		<parameter name="customer" value="100095443" />
+		<parameter name="type" value="Create Arrangement" />
+		<parameter name="fieldToModify" value="Monthly Fee" />
+		<parameter name="amount" value="7.50" />
+		<classes>
+			<class name="testcases.OOB.OOB_0139_01" />
+		</classes>
+	</test>
+	
+	<test name="OOB_139_04">
+		<parameter name="customer" value="100095443" />
+		<parameter name="type" value="Update Arrangement" />
+		<parameter name="fieldToModify" value="Monthly Fee" />
+		<parameter name="amount" value="7.50" />
+		<classes>
+			<class name="testcases.OOB.OOB_0139_01" />
+		</classes>
+	</test>
+	
+	<test name="OOB_139_05">
+		<parameter name="customer" value="100095443" />
+		<parameter name="type" value="Create Arrangement" />
+		<parameter name="fieldToModify" value="Interest" />
+		<parameter name="amount" value="1.25" />
+		<classes>
+			<class name="testcases.OOB.OOB_0139_01" />
+		</classes>
+	</test>
+	
+	<test name="OOB_139_06">
+		<parameter name="customer" value="100095443" />
+		<parameter name="type" value="Update Arrangement" />
+		<parameter name="fieldToModify" value="Interest" />
+		<parameter name="amount" value="1.25" />
+		<classes>
+			<class name="testcases.OOB.OOB_0139_01" />
+		</classes>
+	</test>
+	
+	</suite> <!-- Suite -->

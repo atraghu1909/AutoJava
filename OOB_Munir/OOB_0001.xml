@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="OOB_0001_01">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Personal Chequing" />
+		<parameter name="customer" value="191120" />
+		<classes>
+			<class name="testcases.OOB.OOB_0001_01" />
+		</classes>
+	</test>
+
+	<test name="OOB_0001_02">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Cashable Simple Annually" />
+		<parameter name="customer" value="191120" />
+		<classes>
+			<class name="testcases.OOB.OOB_0001_01" />
+		</classes>
+	</test>
+
+	<test name="OOB_0001_03">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="customer" value="191120" />
+
+		<classes>
+			<class name="testcases.OOB.OOB_0001_01" />
+		</classes>
+	</test>
+
+	<!--  <test name="OOB_0001_04">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Personal Chequing" />
+		<parameter name="customer" value="191120" />
+		<classes>
+			<class name="testcases.OOB.OOB_0001_04" />
+		</classes>
+	</test>  -->
+
+	<test name="OOB_0001_05">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Personal Chequing" />
+		<parameter name="customer" value="100091963" />
+
+		<classes>
+			<class name="testcases.OOB.OOB_0001_05" />
+		</classes>
+	</test>
+	
+	<test name="OOB_0002_01">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="customer" value="191120" />
+		<classes>
+			<class name="testcases.OOB.OOB_0001_01" />
+		</classes>
+	</test>
+	<test name="OOB_0002_02">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Cashable Simple Annually" />
+		<parameter name="customer" value="191120" />
+		<classes>
+			<class name="testcases.OOB.OOB_0001_01" />
+		</classes>
+	</test>
+	<test name="OOB_0002_03">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="customer" value="191120" />
+		<classes>
+			<class name="testcases.OOB.OOB_0001_01" />
+		</classes>
+	</test>
+	
+	<!--  <test name="OOB_0002_04">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Personal Chequing" />
+		<parameter name="customer" value="191120" />
+
+		<classes>
+			<class name="testcases.OOB.OOB_0001_04" />
+		</classes>
+	</test>  -->
+
+	<test name="OOB_192_01">
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Demand Loans" />
+		<parameter name="customer" value="191120" />
+		<classes>
+			<class name="testcases.OOB.OOB_0001_01" />
+		</classes>
+	</test>
+	<test name="OOB_192_02">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Investment Loan Fixed Rate" />
+		<parameter name="customer" value="191120" />
+		<classes>
+			<class name="testcases.OOB.OOB_0001_01" />
+		</classes>
+	</test>
+	<test name="OOB_192_03">
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="Unsecured Line of Credit" />
+		<parameter name="customer" value="191120" />
+		<classes>
+			<class name="testcases.OOB.OOB_0001_01" />
+		</classes>
+	</test>
+	<test name="OOB_192_04">
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Convertible Mortgage" />
+		<parameter name="customer" value="191120" />
+		<classes>
+			<class name="testcases.OOB.OOB_0001_01" />
+		</classes>
+	</test>
+
+	<test name="OOB_122_01">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Personal Chequing" />
+		<parameter name="customer" value="191120" />
+		<parameter name="fields" value="ACCOUNT.TITLE.2:1" />
+		<parameter name="values" value="Test" />
+		<classes>
+			<class name="testcases.OOB.OOB_0001_01" />
+		</classes>
+	</test>
+
+	<test name="OOB_RG122_01">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Personal Chequing" />
+		<parameter name="customer" value="191120" />
+		<parameter name="fields" value="ACCOUNT.TITLE.2:1" />
+		<parameter name="values" value="Test" />
+		<classes>
+			<class name="testcases.OOB.OOB_0001_01" />
+		</classes>
+	</test>
+
+	<test name="OOB_166_01">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Multi Rate 3 Year GIC" />
+		<parameter name="customer" value="191120" />
+
+		<classes>
+			<class name="testcases.OOB.OOB_0001_01" />
+		</classes>
+	</test>
+
+	<test name="OOB_166_02">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Multi Rate 3 Year GIC" />
+		<parameter name="customer" value="100091963" />
+
+		<classes>
+			<class name="testcases.OOB.OOB_0001_05" />
+		</classes>
+	</test>
+
+	<test name="OOB_875_01">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Multi Rate 3 Year GIC" />
+		<parameter name="customer" value="191120" />
+
+		<classes>
+			<class name="testcases.OOB.OOB_0001_01" />
+		</classes>
+	</test>
+	  
+	<test name="OOBH_191">
+		<parameter name="productGroup" value="Commercial Loans"/>
+		<parameter name="product" value="Commercial Term Loans Fixed Rate"/>
+		<parameter name="customer" value="191552"/>
+		<parameter name="currency" value="USD"/>
+		
+		<classes>
+			<class name="testcases.OOB.OOB_0001_01"/>
+		</classes>
+	</test>
+
+</suite> 

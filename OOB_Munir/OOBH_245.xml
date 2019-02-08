@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="OOBH_245">
+		<parameter name="numberOfCustomers" value="1" />
+		<parameter name="numberOfCollaterals" value="1" />
+		<parameter name="provinceOfPrimaryCIF" value="ON" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<classes>
+			<class name="testcases.OOB.OOBH_245" />
+		</classes>
+	</test>
+
+	<test name="OOBH_246">
+		<parameter name="numberOfCustomers" value="1" />
+		<parameter name="numberOfCollaterals" value="1" />
+		<parameter name="provinceOfPrimaryCIF" value="QC" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<classes>
+			<class name="testcases.OOB.OOBH_245" />
+		</classes>
+	</test>
+	<test name="OOBH_247">
+		<parameter name="numberOfCustomers" value="1" />
+		<parameter name="numberOfCollaterals" value="1" />
+		<parameter name="provinceOfPrimaryCIF" value="BC" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<classes>
+			<class name="testcases.OOB.OOBH_245" />
+		</classes>
+	</test>
+	<test name="OOBH_248">
+		<parameter name="numberOfCustomers" value="1" />
+		<parameter name="numberOfCollaterals" value="2" />
+		<parameter name="provinceOfPrimaryCIF" value="ON" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<classes>
+			<class name="testcases.OOB.OOBH_245" />
+		</classes>
+	</test>
+	<test name="OOBH_249">
+		<parameter name="numberOfCustomers" value="1" />
+		<parameter name="numberOfCollaterals" value="1" />
+		<parameter name="provinceOfPrimaryCIF" value="AB" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<classes>
+			<class name="testcases.OOB.OOBH_245" />
+		</classes>
+	</test>
+	<test name="OOBH_250">
+		<parameter name="numberOfCustomers" value="1" />
+		<parameter name="numberOfCollaterals" value="1" />
+		<parameter name="provinceOfPrimaryCIF" value="None" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Var Rate" />
+		<classes>
+			<class name="testcases.OOB.OOBH_245" />
+		</classes>
+	</test>
+	<test name="OOBH_251">
+		<parameter name="numberOfCustomers" value="1" />
+		<parameter name="numberOfCollaterals" value="0" />
+		<parameter name="provinceOfPrimaryCIF" value="ON" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<classes>
+			<class name="testcases.OOB.OOBH_245" />
+		</classes>
+	</test>
+	<test name="OOBH_252">
+		<parameter name="numberOfCustomers" value="2" />
+		<parameter name="numberOfCollaterals" value="0" />
+		<parameter name="provinceOfPrimaryCIF" value="ON" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Open Term Mortgage" />
+		<classes>
+			<class name="testcases.OOB.OOBH_245" />
+		</classes>
+	</test>
+	<test name="OOBH_253">
+		<parameter name="numberOfCustomers" value="2" />
+		<parameter name="numberOfCollaterals" value="1" />
+		<parameter name="provinceOfPrimaryCIF" value="None" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Var Rate" />
+		<classes>
+			<class name="testcases.OOB.OOBH_245" />
+		</classes>
+	</test>
+
+</suite><!-- Suite -->

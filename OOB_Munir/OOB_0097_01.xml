@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="environment" value="SIT1"/>
+	<parameter name="runUrl" value="about:blank"/>
+	<parameter name="runBrowser" value="firefox"/>
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen"/>
+		<listener class-name="testLibs.HTMLReporter"/>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+	</listeners>
+
+
+	<test name="OOB_097_01">
+		<parameter name="testType" value="Link Plan to Product"/>
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="B2B Bank Chequing Account"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0097_01"/>
+		</classes>
+	</test>
+
+	<test name="OOB_097_02">
+		<parameter name="testType" value="Link Arrangement to Plan"/>
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="B2B Bank Chequing Account"/>
+		<parameter name="customer" value="100095392"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0097_01"/>
+		</classes>
+	</test>
+
+	<test name="OOB_100_01">
+		<parameter name="testType" value="Add Plan"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0097_01"/>
+		</classes>
+	</test>
+
+	<test name="OOB_100_02">
+		<parameter name="testType" value="Remove Plan"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0097_01"/>
+		</classes>
+	</test>
+
+	<test name="OOB_100_03">
+		<parameter name="testType" value="Change Plan"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0097_01"/>
+		</classes>
+	</test>
+
+	<test name="OOB_148_01">
+		<parameter name="testType" value="Add Plan"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0097_01"/>
+		</classes>
+	</test>
+
+</suite><!-- Suite -->

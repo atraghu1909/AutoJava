@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="completeSuite">
+
+	<parameter name="globalEnvironment" value="SIT1" />
+	<parameter name="globalTestSetPath" value="B2B Automation\Regression" />
+	<parameter name="globalTestSetName" value="Week of 11-Sept-2017" />
+	<parameter name="globalTestSetNumber" value="2401" />
+
+    <suite-files>
+    	   <suite-file path="./_smokeTest.xml" />
+    	   <suite-file path="./OOB_0001.xml" />
+    	   <suite-file path="./OOB_0005.xml" />
+    	    <suite-file path="./OOB_0006.xml" />
+           <suite-file path="./OOB_0033.xml" />
+           <suite-file path="./OOB_0034.xml" />
+           <suite-file path="./OOB_0035.xml" />
+           <suite-file path="./OOB_0047_01.xml" />
+           <suite-file path="./OOB_0048.xml" />
+           <suite-file path="./OOB_0055_01.xml" />
+           <suite-file path="./OOB_0056.xml" />
+           <suite-file path="./OOB_0058.xml" />
+           <suite-file path="./OOB_0073.xml" />
+           <suite-file path="./OOB_0076_01.xml" />
+           <suite-file path="./OOB_0081.xml" />
+           <suite-file path="./OOB_0087.xml" />
+           <suite-file path="./OOB_0088.xml" />
+           <suite-file path="./OOB_0096.xml" />
+           <suite-file path="./OOB_0097_01.xml" />
+           <suite-file path="./OOB_0104_01.xml" />
+           <suite-file path="./OOB_0115.xml" />
+           <suite-file path="./OOB_0120.xml" />
+           <suite-file path="./OOB_0121.xml" />
+           <suite-file path="./OOB_0123.xml" />
+           <suite-file path="./OOB_0127.xml" />
+           <suite-file path="./OOB_0135.xml" />
+           <suite-file path="./OOB_0137.xml" />           
+           <suite-file path="./OOB_0139.xml" /> 
+           <suite-file path="./OOB_0142.xml" /> 
+           <suite-file path="./OOB_0143.xml" /> 
+           <suite-file path="./OOB_0147_01.xml" />        
+           <suite-file path="./OOB_0163.xml" />
+           <suite-file path="./OOB_0177.xml" />
+           <suite-file path="./OOB_0179.xml" />       
+           <suite-file path="./OOB_0193.xml" />         
+           <suite-file path="./OOB_0508.xml" />  
+           <suite-file path="./OOB_0515.xml" /> 
+           <suite-file path="./OOB_151.xml" />                   
+           <suite-file path="./OOBH_120.xml" />
+           <suite-file path="./OOBH_128.xml" />
+           <suite-file path="./OOBH_146.xml" /> 
+           <suite-file path="./OOBH_17.xml" />
+           <suite-file path="./OOBH_176.xml" />
+           <suite-file path="./OOBH_187.xml" />
+           <suite-file path="./OOBH_19.xml" />
+           <suite-file path="./OOBH_199.xml" />
+           <suite-file path="./OOBH_33.xml" />
+           <suite-file path="./OOBH_41.xml" />
+           <suite-file path="./OOBH_44.xml" />
+           <suite-file path="./OOBH_50.xml" />
+           <suite-file path="./OOBH_245.xml" />
+           <suite-file path="./OOTB_0013_01.xml" />
+    </suite-files>
+    
+</suite> 

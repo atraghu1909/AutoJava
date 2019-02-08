@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank"/>
+	<parameter name="runBrowser" value="firefox"/>
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen"/>
+		<listener class-name="testLibs.HTMLReporter"/>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+	</listeners>
+
+	<test name="OOBH_199">
+		<parameter name="customer" value="191552" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="fields" value="PAYMENT.TYPE:1,PAYMENT.METHOD:1" />
+		<parameter name="values" value="PRINCIPAL,Due" />
+		<classes>
+			<class name="testcases.OOB.OOBH_199" />
+		</classes>
+	</test>
+	
+	<test name="OOBH_200">
+		<parameter name="customer" value="191552" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="fields" value="PAYMENT.TYPE:1,PAYMENT.METHOD:1" />
+		<parameter name="values" value="PRINCIPAL,Capitalise" />
+		<classes>
+			<class name="testcases.OOB.OOBH_199" />
+		</classes>
+	</test>
+	
+	<test name="OOBH_201">
+		<parameter name="customer" value="191552" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="fields" value="PAYMENT.TYPE:1,PAYMENT.METHOD:1" />
+		<parameter name="values" value="PRINCIPAL,Maintain" />
+		<classes>
+			<class name="testcases.OOB.OOBH_199" />
+		</classes>
+	</test>
+
+	<!-- <test name="OOBH_202">
+		<parameter name="customer" value="191552" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="fields" value="PAYMENT.TYPE:1,PAYMENT.METHOD:1" />
+		<parameter name="values" value="PRINCIPAL,Pay" />
+		<classes>
+			<class name="testcases.OOB.OOBH_199" />
+		</classes>
+	</test> -->
+ 
+	<test name="OOBH_203">
+		<parameter name="customer" value="191552" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="fields" value="PAYMENT.TYPE:2,PAYMENT.METHOD:2,PAYMENT.FREQ:2" />
+		<parameter name="values" value="INTEREST,Due,e0Y e0M e0W e0D e0F" />
+		<classes>
+			<class name="testcases.OOB.OOBH_199" />
+		</classes>
+	</test>
+
+</suite><!-- Suite -->

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="environment" value="TRAIN"/>
+	<parameter name="runUrl" value="about:blank"/>
+	<parameter name="runBrowser" value="firefox"/>
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen"/>
+		<listener class-name="testLibs.HTMLReporter"/>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+	</listeners>
+
+	<test name="OOB_123_01">
+		<parameter name="productGroup" value="Personal Lines of Credit"/>
+		<parameter name="product" value="Secured Line of Credit"/>
+		<parameter name="customer" value="100092755"/>
+		<parameter name="limitAmount" value="20000"/>
+		<parameter name="amount" value="5000"/>
+		<parameter name="payingAccount" value="AA17339ZHY4K"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0123"/>
+		</classes>
+	</test> 
+	<test name="OOB_0123_01">
+		<parameter name="productGroup" value="Personal Loans"/>
+		<parameter name="product" value="Personal Loan Secured Fixed Rate"/>
+		<parameter name="customer" value="100092758"/>
+		<parameter name="limitAmount" value="20000"/>
+		<parameter name="amount" value="5000"/>
+		<parameter name="payingAccount" value="AA1733902ZTL"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0123"/>
+		</classes>
+	</test>
+	
+	 <test name="OOBH_190">
+		<parameter name="productGroup" value="Commercial Loans"/>
+		<parameter name="product" value="Commercial Term Loans Var Rate"/>		
+		<!-- <parameter name="customer" value="100093039"/> -->
+		<parameter name="customer" value="100001823"/>
+		<parameter name="limitAmount" value="20000"/>
+		<parameter name="amount" value="5000"/>
+		<parameter name="CCY" value="USD"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0123"/>
+		</classes>
+	</test>
+	
+	<test name="OOBH_175A">
+		<parameter name="productGroup" value="Commercial Loans"/>
+		<parameter name="product" value="Commercial Term Loans Fixed Rate"/>
+		<parameter name="customer" value="100092761"/>
+		<parameter name="limitAmount" value="20000"/>
+		<parameter name="amount" value="5000"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0123"/>
+		</classes>
+	</test>
+
+	<test name="OOBH_175B">
+		<parameter name="productGroup" value="Personal Loans"/>
+		<parameter name="product" value="Personal Loan Secured Fixed Rate"/>
+		<parameter name="customer" value="100092763"/>
+		<parameter name="limitAmount" value="20000"/>
+		<parameter name="amount" value="5000"/>
+
+		<classes>
+			<class name="testcases.OOB.OOB_0123"/>
+		</classes>
+	</test>
+
+	<test name="OOBH_175C">
+		<parameter name="productGroup" value="Retail Mortgages"/>
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage"/>
+		<parameter name="customer" value="100092766"/>
+		<parameter name="limitAmount" value="20000"/>
+		<parameter name="amount" value="5000"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0123"/>
+		</classes>
+	</test> 
+	
+</suite>

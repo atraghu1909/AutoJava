@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="OOBH_50">
+		<parameter name="customer" value="100092521" />
+		<parameter name="specialFundsTransfer" value="AA Repayment" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Var Rate" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOBH_50" />
+		</classes>
+	</test>
+
+	<test name="OOBH_51">
+		<parameter name="customer" value="100092521" />
+		<parameter name="specialFundsTransfer" value="AA Repayment" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Var Rate" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOBH_50" />
+		</classes>
+	</test>
+
+	<test name="OOBH_52">
+		<parameter name="customer" value="100092521" />
+		<parameter name="specialFundsTransfer" value="AA Repayment" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="Secured Line of Credit" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOBH_50" />
+		</classes>
+	</test>
+
+	<test name="OOBH_53">
+		<parameter name="customer" value="100092521" />
+		<parameter name="specialFundsTransfer" value="AA Repayment" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="Secured Line of Credit" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOBH_50" />
+		</classes>
+	</test>
+
+	<test name="OOBH_54">
+		<parameter name="customer" value="100092521" />
+		<parameter name="specialFundsTransfer" value="AA Repayment" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOBH_50" />
+		</classes>
+	</test>
+
+	<test name="OOBH_55">
+		<parameter name="customer" value="100092521" />
+		<parameter name="specialFundsTransfer" value="AA Repayment" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOBH_50" />
+		</classes>
+	</test>
+
+	<test name="OOBH_65">
+		<parameter name="customer" value="100092521" />
+		<parameter name="specialFundsTransfer" value="AA Principal Decrease" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Var Rate" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOBH_50" />
+		</classes>
+	</test>
+
+	<test name="OOBH_66">
+		<parameter name="customer" value="100092521" />
+		<parameter name="specialFundsTransfer" value="AA Principal Decrease" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="Secured Line of Credit" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOBH_50" />
+		</classes>
+	</test>
+
+	<test name="OOBH_67">
+		<parameter name="customer" value="100092521" />
+		<parameter name="specialFundsTransfer" value="AA Principal Decrease" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOBH_50" />
+		</classes>
+	</test>
+
+	<test name="OOBH_68">
+		<parameter name="customer" value="100092521" />
+		<parameter name="specialFundsTransfer" value="AA Principal Decrease" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Var Rate" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOBH_50" />
+		</classes>
+	</test>
+
+	<test name="OOBH_69">
+		<parameter name="customer" value="100092521" />
+		<parameter name="specialFundsTransfer" value="AA Principal Decrease" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="Secured Line of Credit" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOBH_50" />
+		</classes>
+	</test>
+
+	<test name="OOBH_70">
+		<parameter name="customer" value="100092521" />
+		<parameter name="specialFundsTransfer" value="AA Principal Decrease" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOBH_50" />
+		</classes>
+	</test>
+
+	<test name="OOBH_178">
+		<parameter name="customer" value="100092521" />
+		<parameter name="specialFundsTransfer" value="AA Disbursement" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Var Rate" />
+		<parameter name="transactionDate" value="20160822" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOBH_50" />
+		</classes>
+	</test>
+
+	<test name="OOBH_71">
+		<parameter name="customer" value="100092521" />
+		<parameter name="specialFundsTransfer" value="AA Pay-Off" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOBH_50" />
+		</classes>
+	</test>
+	 
+	<test name="OOBH_72">
+		<parameter name="customer" value="100092521" />
+		<parameter name="specialFundsTransfer" value="AA Pay-Off" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOBH_50" />
+		</classes>
+	</test>
+
+	<test name="OOBH_73">
+		<parameter name="customer" value="100092521" />
+		<parameter name="specialFundsTransfer" value="AA Pay-Off" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="Secured Line of Credit" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOBH_50" />
+		</classes>
+	</test>
+
+	<test name="OOBH_74">
+		<parameter name="customer" value="100092521" />
+		<parameter name="specialFundsTransfer" value="AA Pay-Off" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOBH_50" />
+		</classes>
+	</test>
+
+	<test name="OOBH_75">
+		<parameter name="customer" value="100092521" />
+		<parameter name="specialFundsTransfer" value="AA Pay-Off" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="Secured Line of Credit" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOBH_50" />
+		</classes>
+	</test>
+
+	<test name="OOBH_76">
+		<parameter name="customer" value="100092521" />
+		<parameter name="specialFundsTransfer" value="AA Pay-Off" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOBH_50" />
+		</classes>
+	</test>
+  
+</suite><!-- Suite -->

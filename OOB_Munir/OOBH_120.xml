@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	 
+	<test name="OOBH_120">
+		<parameter name="customer" value="190034" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="Change and Due ALADMINFEE" />
+		<parameter name="fieldsBefore" value="FIXED.AMOUNT" />
+		<parameter name="valuesBefore" value="5" />
+		<parameter name="fieldsAfter" value="FIXED.AMOUNT" />
+		<parameter name="valuesAfter" value="2.5" />
+		<classes>
+			<class name="testcases.OOB.OOBH_120" />
+		</classes>
+	</test>
+	<test name="OOBH_123">
+		<parameter name="customer" value="190034" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="Change and Due ALNSFFEE" />
+		<parameter name="fieldsBefore" value="FIXED.AMOUNT" />
+		<parameter name="valuesBefore" value="5" />
+		<parameter name="fieldsAfter" value="FIXED.AMOUNT" />
+		<parameter name="valuesAfter" value="2.5" />
+		<classes>
+			<class name="testcases.OOB.OOBH_120" />
+		</classes>
+	</test>
+	
+	<test name="OOBH_126">
+		<parameter name="customer" value="190817" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="B2B Bank LOC - Personal Secured" />
+		<parameter name="activity" value="Change and Due ALNSFFEE" />
+		<parameter name="fieldsBefore" value="FIXED.AMOUNT" />
+		<parameter name="valuesBefore" value="5" />
+		<parameter name="fieldsAfter" value="FIXED.AMOUNT" />
+		<parameter name="valuesAfter" value="2.5" />
+		<classes>
+			<class name="testcases.OOB.OOBH_120" />
+		</classes>
+	</test>
+	<test name="OOBH_152">
+		<parameter name="customer" value="190817" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="Change and Due ALADMINFEE" />
+		<parameter name="fieldsBefore" value="FIXED.AMOUNT" />
+		<parameter name="valuesBefore" value="5" />
+		<parameter name="fieldsAfter" value="FIXED.AMOUNT" />
+		<parameter name="valuesAfter" value="2.5" />
+		<classes>
+			<class name="testcases.OOB.OOBH_120" />
+		</classes>
+	</test>
+
+	</suite> <!-- Suite -->

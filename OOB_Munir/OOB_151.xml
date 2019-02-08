@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="environment" value="SIT1"/>
+	<parameter name="runUrl" value="about:blank"/>
+	<parameter name="runBrowser" value="firefox"/>
+	
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen"/>
+		<listener class-name="testLibs.HTMLReporter"/>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+</listeners>
+
+	<test name="OOB_151_01">
+	<parameter name="testType" value="createFundsHold"/>
+	<parameter name="arrangement" value="840000858216"/>
+	<parameter name="product" value="B2B Bank Chequing Account"/>
+	<parameter name="amount" value="300.00"/>
+	<parameter name="startDate" value="-3M"/>
+	<parameter name="endDate" value="+2M"/>
+	<classes>
+		<class name="testcases.OOB.OOB_151"/>
+	</classes>
+</test> 
+
+ 
+ <test name="OOB_151_02">
+	<parameter name="testType" value="removeFundsHold"/>
+	<parameter name="arrangement" value="840000858248"/>
+	<parameter name="product" value="Personal Chequing"/>
+	<parameter name="amount" value="300.00"/>
+	<parameter name="startDate" value="-3M"/>
+	<parameter name="endDate" value="+2M"/>
+	<classes>
+		<class name="testcases.OOB.OOB_151"/>
+	</classes>
+</test>
+
+
+<test name="OOB_151_03">
+	<parameter name="testType" value="updateAmountFundsHold"/>
+	<parameter name="arrangement" value="840000858267"/>
+	<parameter name="product" value="HISA Personal"/>
+	<parameter name="amount" value="300.00"/>
+	<parameter name="startDate" value="-2M"/>
+	<parameter name="endDate" value="+1M"/>
+	<parameter name="updatedAmount" value="50.00"/>
+	<classes>
+		<class name="testcases.OOB.OOB_151"/>
+	</classes>
+</test>
+
+<test name="OOB_151_04">
+	<parameter name="testType" value="updateAmountFundsHold"/>
+	<parameter name="arrangement" value="840000858054"/>
+	<parameter name="product" value="B2B Bank Chequing Account"/>
+	<parameter name="amount" value="300.00"/>
+	<parameter name="startDate" value="-3M"/>
+	<parameter name="endDate" value="+2D"/>
+	<parameter name="updatedStartDate" value="-3M"/>
+	<parameter name="updatedEndDate" value="+2D"/>
+	<classes>
+		<class name="testcases.OOB.OOB_151"/>
+	</classes>
+</test>
+
+<test name="OOB_151_05">
+	<parameter name="testType" value="createFundsHold"/>
+	<parameter name="arrangement" value="840000925247"/>
+	<parameter name="product" value="Personal Chequing"/>
+	<parameter name="amount" value="300.00"/>
+	<parameter name="startDate" value="-1M"/>
+	<parameter name="endDate" value="+1M"/>
+	<parameter name="actionToPerform" value="Funds Transfer"/>
+	<classes>
+		<class name="testcases.OOB.OOB_151"/>
+	</classes>
+</test>
+
+<test name="OOB_151_06">
+	<parameter name="testType" value="createFundsHold"/>
+	<parameter name="arrangement" value="840000859678"/>
+	<parameter name="product" value="HISA Personal"/>
+	<parameter name="amount" value="300.00"/>
+	<parameter name="startDate" value="-1M"/>
+	<parameter name="endDate" value="+1M"/>
+	<parameter name="actionToPerform" value="Wait for Expiry"/>
+	<classes>
+		<class name="testcases.OOB.OOB_151"/>
+	</classes>
+</test>
+<test name="OOB_184_03">
+	<parameter name="testType" value="createFundsHold"/>
+	<parameter name="arrangement" value="840000859689"/>
+	<parameter name="product" value="B2B Bank Chequing Account"/>
+	<parameter name="amount" value="300.00"/>
+	<parameter name="startDate" value="-1M"/>
+	<parameter name="endDate" value="+1M"/>
+	<classes>
+		<class name="testcases.OOB.OOB_151"/>
+	</classes>
+</test>
+
+<test name="OOB_184_04">
+	<parameter name="testType" value="removeFundsHold"/>
+	<parameter name="arrangement" value="840000858356"/>
+	<parameter name="product" value="Personal Chequing"/>
+	<parameter name="amount" value="300.00"/>
+	<parameter name="startDate" value="-1M"/>
+	<parameter name="endDate" value="+1M"/>
+	<classes>
+		<class name="testcases.OOB.OOB_151"/>
+	</classes>
+</test>
+
+<test name="OOB_184_05">
+	<parameter name="testType" value="createFundsHold"/>
+	<parameter name="arrangement" value="840000859708"/>
+	<parameter name="product" value="B2B Bank Chequing Account"/>
+	<parameter name="amount" value="300.00"/>
+	<parameter name="startDate" value="-1M"/>
+	<parameter name="endDate" value="+1M"/>
+	<parameter name="actionToPerform" value="Wait for Expiry"/>
+	<classes>
+		<class name="testcases.OOB.OOB_151"/>
+	</classes>
+</test>
+
+<test name="OOB_152_01">
+	<parameter name="testType" value="createFundsHold"/>
+	<parameter name="account" value="AA16221Q6GCK"/>
+	<parameter name="product" value="HISA Personal"/>
+	<parameter name="amount" value="300.00"/>
+	<parameter name="startDate" value="-2M"/>
+	<parameter name="endDate" value="+1M"/>
+	<classes>
+		<class name="testcases.OOB.OOB_151"/>
+	</classes>
+</test>  
+
+	</suite><!--  --><!-- Suite -->

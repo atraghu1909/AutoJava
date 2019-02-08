@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	 
+	<test name="OOB_0073_01">
+		<parameter name="customer" value="190334" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="interestCategory" value="Credit Interest" />
+		<classes>
+			<class name="testcases.OOB.OOB_0073_01" />
+		</classes>
+	</test>
+	<test name="OOB_0073_02">
+		<parameter name="customer" value="190334" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="interestCategory" value="Credit Interest" />
+		<parameter name="interestType" value="FIXED.RATE" />
+		<classes>
+			<class name="testcases.OOB.OOB_0073_01" />
+		</classes>
+	</test>
+
+	<!-- <test name="OOB_0073_03">
+		<parameter name="customer" value="190020" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="interestCategory" value="Credit Interest" />
+		<parameter name="interestType" value="TIER.BASE" />
+		<classes>
+			<class name="testcases.OOB.OOB_0073_01" />
+		</classes>
+	</test>
+	<test name="OOB_0073_04">
+		<parameter name="customer" value="190020" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="interestCategory" value="Credit Interest" />
+		<parameter name="interestType" value="MIN.BALANCE.OF.MONTH" />
+		<classes>
+			<class name="testcases.OOB.OOB_0073_01" />
+		</classes>
+	</test>
+	<test name="OOB_0073_05">
+		<parameter name="customer" value="190020" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="interestCategory" value="Credit Interest" />
+		<parameter name="interestType" value="AVG.BALANCE.OF.MONTH" />
+		<classes>
+			<class name="testcases.OOB.OOB_0073_01" />
+		</classes>
+	</test>
+	<test name="OOB_0073_06">
+		<parameter name="customer" value="190020" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="interestCategory" value="Credit Interest" />
+		<parameter name="interestType" value="DAILY.PRODUCT" />
+		<classes>
+			<class name="testcases.OOB.OOB_0073_01" />
+		</classes>
+	</test> -->
+	
+	<test name="OOB_0073_07">
+		<parameter name="customer" value="190020" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="interestCategory" value="Debit Interest" />
+		<classes>
+			<class name="testcases.OOB.OOB_0073_01" />
+		</classes>
+	</test>
+	<test name="OOB_0073_08">
+		<parameter name="customer" value="190020" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="interestCategory" value="Debit Interest" />
+		<parameter name="interestType" value="FIXED.RATE" />
+		<classes>
+			<class name="testcases.OOB.OOB_0073_01" />
+		</classes>
+	</test>
+	
+	<!-- <test name="OOB_0073_09">
+		<parameter name="customer" value="190020" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="interestCategory" value="Debit Interest" />
+		<parameter name="interestType" value="TIER.BASE" />
+		<classes>
+			<class name="testcases.OOB.OOB_0073_01" />
+		</classes>
+	</test>
+	
+	<test name="OOB_0073_10">
+		<parameter name="customer" value="190020" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="interestCategory" value="Debit Interest" />
+		<parameter name="interestType" value="MIN.BALANCE.OF.MONTH" />
+		<classes>
+			<class name="testcases.OOB.OOB_0073_01" />
+		</classes>
+	</test>
+	<test name="OOB_0073_11">
+		<parameter name="customer" value="190020" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="interestCategory" value="Debit Interest" />
+		<parameter name="interestType" value="AVG.BALANCE.OF.MONTH" />
+		<classes>
+			<class name="testcases.OOB.OOB_0073_01" />
+		</classes>
+	</test>
+	<test name="OOB_0073_12">
+		<parameter name="customer" value="190020" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="interestCategory" value="Debit Interest" />
+		<parameter name="interestType" value="DAILY.PRODUCT" />
+		<classes>
+			<class name="testcases.OOB.OOB_0073_01" />
+		</classes>
+	</test> -->
+	
+	</suite> <!-- Suite -->

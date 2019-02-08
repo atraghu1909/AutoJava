@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<!-- <test name="OOB_0127_01">
+		<parameter name="customer" value="192638" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="numberIssued" value="5" />
+		<parameter name="expectation" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0127_01" />
+		</classes>
+	</test> -->
+
+	<test name="OOB_0127_02">
+		<parameter name="customer" value="192638" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="numberIssued" value="5" />
+		<parameter name="expectation" value="true" />
+		<parameter name="stopChequeType" value="1" />
+		<parameter name="numberStopped" value="1" />
+		<classes>
+			<class name="testcases.OOB.OOB_0127_01" />
+		</classes>
+	</test>
+
+	<test name="OOB_0127_03">
+		<parameter name="customer" value="192638" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="numberIssued" value="5" />
+		<parameter name="expectation" value="true" />
+		<parameter name="stopChequeType" value="1" />
+		<parameter name="numberStopped" value="5" />
+		<classes>
+			<class name="testcases.OOB.OOB_0127_01" />
+		</classes>
+	</test>
+
+	<test name="OOB_0127_04">
+		<parameter name="customer" value="192638" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="numberIssued" value="5" />
+		<parameter name="expectation" value="true" />
+		<parameter name="stopChequeType" value="1" />
+		<parameter name="numberStopped" value="5" />
+		<parameter name="revokeStopCheque" value="Yes" />
+		<classes>
+			<class name="testcases.OOB.OOB_0127_01" />
+		</classes>
+	</test>
+
+	<test name="OOB_0127_05">
+		<parameter name="customer" value="192638" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="numberIssued" value="3" />
+		<parameter name="expectation" value="true" />
+		<parameter name="stopChequeType" value="1" />
+		<parameter name="numberStopped" value="3" />
+		<parameter name="revokeStopCheque" value="Yes" />
+		<parameter name="actionAfter" value="Re-Stop Revoked Cheque" />
+		<classes>
+			<class name="testcases.OOB.OOB_0127_01" />
+		</classes>
+	</test>
+
+	<!-- <test name="OOB_0127_06">
+		<parameter name="customer" value="192638" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="numberIssued" value="3" />
+		<parameter name="expectation" value="false" />
+		<parameter name="actionBefore" value="Cheque Paid" />
+		<parameter name="stopChequeType" value="1" />
+		<parameter name="numberStopped" value="3" />
+		<classes>
+			<class name="testcases.OOB.OOB_0127_01" />
+		</classes>
+	</test>
+
+	<test name="OOB_0127_07">
+		<parameter name="customer" value="192638" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="numberIssued" value="2" />
+		<parameter name="expectation" value="false" />
+		<parameter name="stopChequeType" value="1" />
+		<parameter name="numberStopped" value="2" />
+		<parameter name="actionAfter" value="Stop Cheque Paid" />
+		<classes>
+			<class name="testcases.OOB.OOB_0127_01" />
+		</classes>
+	</test>
+
+	<test name="OOB_0127_08">
+		<parameter name="customer" value="192638" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="numberIssued" value="3" />
+		<parameter name="expectation" value="true" />
+		<parameter name="stopChequeType" value="1" />
+		<parameter name="numberStopped" value="3" />
+		<parameter name="actionAfter" value="Set Revoke Date" />
+		<classes>
+			<class name="testcases.OOB.OOB_0127_01" />
+		</classes>
+	</test> -->
+
+	<test name="OOB_0127_09">
+		<parameter name="customer" value="192638" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="numberIssued" value="2" />
+		<parameter name="expectation" value="true" />
+		<parameter name="stopChequeType" value="1" />
+		<parameter name="numberStopped" value="2" />
+		<parameter name="revokeStopCheque" value="Yes" />
+		<parameter name="actionAfter" value="Revoked Cheque Paid" />
+		<classes>
+			<class name="testcases.OOB.OOB_0127_01" />
+		</classes>
+	</test>
+
+	<test name="OOB_0127_11">
+		<parameter name="customer" value="192638" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="numberIssued" value="2" />
+		<parameter name="expectation" value="true" />
+		<parameter name="actionBefore" value="Stop Amount" />
+		<classes>
+			<class name="testcases.OOB.OOB_0127_01" />
+		</classes>
+	</test>
+
+</suite> 

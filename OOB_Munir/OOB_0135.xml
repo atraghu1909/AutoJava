@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+   
+	<test name="OOB_0135_01">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="HISA Personal" />
+		<parameter name="customer" value="190814" />
+		<classes>
+			<class name="testcases.OOB.OOB_0135_01" />
+		</classes>
+	</test>
+	
+	<test name="OOB_0135_02">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Personal Chequing" />
+		<parameter name="customer" value="190814" />
+		<classes>
+			<class name="testcases.OOB.OOB_0135_01" />
+		</classes>
+	</test>
+	
+	<test name="OOB_0135_03">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="customer" value="190814" />
+		<classes>
+			<class name="testcases.OOB.OOB_0135_01" />
+		</classes>
+	</test>
+	
+	<test name="OOB_0135_04">
+		<parameter name="productGroup" value="Business Accounts" />
+		<parameter name="product" value="HISA Business" />
+		<parameter name="customer" value="190814" />
+		<classes>
+			<class name="testcases.OOB.OOB_0135_01" />
+		</classes>
+	</test>
+	
+	<test name="OOB_0135_05">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Cashable Simple Annually" />
+		<parameter name="customer" value="190814" />
+		<classes>
+			<class name="testcases.OOB.OOB_0135_01" />
+		</classes>
+	</test>
+
+	<test name="OOB_0135_06">
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Unsecured Fixed Rate" />
+		<parameter name="customer" value="190814" />
+		<classes>
+			<class name="testcases.OOB.OOB_0135_01" />
+		</classes>
+	</test>
+	
+	</suite> <!-- Suite -->

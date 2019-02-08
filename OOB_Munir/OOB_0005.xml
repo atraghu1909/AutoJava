@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="environment" value="SIT1"/>
+	<parameter name="testSetPath" value="B2B Automation\Release 3\OOB" />
+	<parameter name="testSetName" value="OOB Tests" />
+	<parameter name="testSetNumber" value="704" />
+	<parameter name="runUrl" value="about:blank"/>
+	<parameter name="runBrowser" value="firefox"/>
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen"/>
+		<listener class-name="testLibs.HTMLReporter"/>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+	</listeners>
+
+	 <test name="OOB_0005_01">
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="Personal Chequing"/>
+		<parameter name="fields1" value="CUSTOMER:1,+CUSTOMER:2,+CUSTOMER:3,+CUSTOMER:4,+CUSTOMER:5,+CUSTOMER:6,CUSTOMER.ROLE:1,CUSTOMER.ROLE:2,CUSTOMER.ROLE:3,CUSTOMER.ROLE:4,CUSTOMER.ROLE:5,CUSTOMER.ROLE:6"/>
+		<parameter name="values1" value="100093711,100093712,100093713,100093714,100093715,100093716,OWNER,BORROWER.OWNER,COBORROWER,JOINT.OWNER,LEGAL.OWNER,POWER.OF.ATTORNEY"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0005"/>
+		</classes>
+	</test>
+
+	<test name="OOB_0005_02">
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="Personal Chequing"/>
+		<parameter name="fields1" value="CUSTOMER:1,+CUSTOMER:2,CUSTOMER.ROLE:1,CUSTOMER.ROLE:2"/>
+		<parameter name="values1" value="100093711,100093712,OWNER,JOINT.OWNER"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0005"/>
+		</classes>
+	</test>
+
+	<test name="OOB_0005_03">
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="Personal Chequing"/>
+		<parameter name="fields1" value="CUSTOMER:1,+CUSTOMER:2,CUSTOMER.ROLE:1,CUSTOMER.ROLE:2"/>
+		<parameter name="values1" value="100093711,100093712,OWNER,JOINT.OWNER"/>
+		<parameter name="fields2" value="CUSTOMER:1,CUSTOMER.ROLE:1"/>
+		<parameter name="values2" value="100093711,OWNER"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0005"/>
+		</classes>
+	</test>
+
+	<test name="OOB_119_01">
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="Personal Chequing"/>
+		<parameter name="fields1" value="CUSTOMER:1,CUSTOMER.ROLE:1"/>
+		<parameter name="values1" value="100093711,OWNER"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0005"/>
+		</classes>
+	</test>
+
+	<test name="OOB_119_02">
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="Personal Chequing"/>
+		<parameter name="fields1" value="CUSTOMER:1,+CUSTOMER:2,CUSTOMER.ROLE:1,CUSTOMER.ROLE:2"/>
+		<parameter name="values1" value="100093711,100093712,OWNER,JOINT.OWNER"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0005"/>
+		</classes>
+	</test>
+
+	<test name="OOB_119_03">
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="Personal Chequing"/>
+		<parameter name="fields1" value="CUSTOMER:1,+CUSTOMER:2,CUSTOMER.ROLE:1,CUSTOMER.ROLE:2"/>
+		<parameter name="values1" value="100093711,100093712,OWNER,JOINT.OWNER"/>
+		<parameter name="fields2" value="CUSTOMER:1,CUSTOMER.ROLE:1"/>
+		<parameter name="values2" value="100093711,OWNER"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0005"/>
+		</classes>
+	</test>
+
+	<test name="OOBH_22">
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="Personal Chequing"/>
+		<parameter name="fields1" value="CUSTOMER:1,+CUSTOMER:2,CUSTOMER.ROLE:1,CUSTOMER.ROLE:2"/>
+		<parameter name="values1" value="100093711,100093712,OWNER,JOINT.OWNER"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0005"/>
+		</classes>
+	</test>
+	<test name="OOBH_23">
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="HISA Personal"/>
+		<parameter name="fields1" value="CUSTOMER:1,+CUSTOMER:2,CUSTOMER.ROLE:1,CUSTOMER.ROLE:2"/>
+		<parameter name="values1" value="100093711,100093712,OWNER,JOINT.OWNER"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0005"/>
+		</classes>
+	</test>
+
+	<test name="OOBH_24">
+		<parameter name="productGroup" value="Personal Loans"/>
+		<parameter name="product" value="Personal Loan Unsecured Fixed Rate"/>
+		<parameter name="fields1" value="CUSTOMER:1,+CUSTOMER:2,CUSTOMER.ROLE:1,CUSTOMER.ROLE:2"/>
+		<parameter name="values1" value="100093711,100093712,OWNER,JOINT.OWNER"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0005"/>
+		</classes>
+	</test>
+
+	<test name="OOBH_25">
+		<parameter name="productGroup" value="Retail Mortgages"/>
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage"/>
+		<parameter name="fields1" value="CUSTOMER:1,+CUSTOMER:2,CUSTOMER.ROLE:1,CUSTOMER.ROLE:2"/>
+		<parameter name="values1" value="100093727,100093728,OWNER,JOINT.OWNER"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0005"/>
+		</classes>
+	</test>
+	
+	<test name="OOBH_26">
+		<parameter name="productGroup" value="Commercial Loans"/>
+		<parameter name="product" value="Commercial Term Loans Fixed Rate"/>
+		<parameter name="fields1" value="CUSTOMER:1,+CUSTOMER:2,CUSTOMER.ROLE:1,CUSTOMER.ROLE:2"/>
+		<parameter name="values1" value="100093727,100093728,OWNER,JOINT.OWNER"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0005"/>
+		</classes>
+	</test> 
+	
+	<test name="OOBH_27">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits"/>
+		<parameter name="product" value="Cashable Simple Monthly"/>
+		<parameter name="fields1" value="CUSTOMER:1,+CUSTOMER:2,CUSTOMER.ROLE:1,CUSTOMER.ROLE:2"/>
+		<parameter name="values1" value="100093727,100093728,OWNER,JOINT.OWNER"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0005"/>
+		</classes>
+	</test>
+
+	<test name="OOBH_28">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits"/>
+		<parameter name="product" value="Cashable Simple Annually"/>
+		<parameter name="fields1" value="CUSTOMER:1,+CUSTOMER:2,CUSTOMER.ROLE:1,CUSTOMER.ROLE:2"/>
+		<parameter name="values1" value="100093727,100093728,OWNER,JOINT.OWNER"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0005"/>
+		</classes>
+	</test>
+	<test name="OOBH_86">
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="Personal Chequing"/>
+		<parameter name="fields1" value="CUSTOMER:1,+CUSTOMER:2,CUSTOMER.ROLE:1,CUSTOMER.ROLE:2"/>
+		<parameter name="values1" value="100093711,100093712,OWNER,JOINT.OWNER"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0005"/>
+		</classes>
+	</test>
+	<test name="R1.1_TDTC061">
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="HISA Personal"/>
+		<parameter name="fields1" value="CUSTOMER:1,+CUSTOMER:2,CUSTOMER.ROLE:1,CUSTOMER.ROLE:2"/>
+		<parameter name="values1" value="100093711,100093712,OWNER,POWER.OF.ATTORNEY"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0005"/>
+		</classes>
+	</test>
+
+	<test name="R1.1_TDTC062">
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="B2B Bank Chequing Account"/>
+		<parameter name="fields1" value="CUSTOMER:1,+CUSTOMER:2,CUSTOMER.ROLE:1,CUSTOMER.ROLE:2"/>
+		<parameter name="values1" value="100093711,100093712,GUARANTOR,OWNER"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0005"/>
+		</classes>
+	</test>
+
+	<test name="R1.1_TDTC063">
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="HISA Personal"/>
+		<parameter name="fields1" value="CUSTOMER:1,+CUSTOMER:2,CUSTOMER.ROLE:1,CUSTOMER.ROLE:2"/>
+		<parameter name="values1" value="100093711,100093712,OWNER,JOINT.OWNER"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0005"/>
+		</classes>
+	</test>
+
+	<test name="R1.1_TDTC064">
+		<parameter name="productGroup" value="Personal Loans"/>
+		<parameter name="product" value="Personal Loan Unsecured Fixed Rate"/>
+		<parameter name="fields1" value="CUSTOMER:1,+CUSTOMER:2,CUSTOMER.ROLE:1,CUSTOMER.ROLE:2"/>
+		<parameter name="values1" value="100093711,100093712,OWNER,JOINT.OWNER"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0005"/>
+		</classes>
+	</test>
+
+	<test name="R1.1_TDTC065">
+		<parameter name="productGroup" value="Retail Mortgages"/>
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage"/>
+		<parameter name="fields1" value="CUSTOMER:1,+CUSTOMER:2,CUSTOMER.ROLE:1,CUSTOMER.ROLE:2"/>
+		<parameter name="values1" value="100093727,100093728,OWNER,GUARANTOR"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0005"/>
+		</classes>
+	</test>
+
+	<test name="R1.1_TDTC066">
+		<parameter name="productGroup" value="Commercial Loans"/>
+		<parameter name="product" value="Commercial Term Loans Fixed Rate"/>
+		<parameter name="fields1" value="CUSTOMER:1,+CUSTOMER:2,CUSTOMER.ROLE:1,CUSTOMER.ROLE:2"/>
+		<parameter name="values1" value="100093727,100093728,OWNER,POWER.OF.ATTORNEY"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0005"/>
+		</classes>
+	</test>
+
+	<test name="R1.1_TDTC067">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits"/>
+		<parameter name="product" value="Cashable Simple Monthly"/>
+		<parameter name="fields1" value="CUSTOMER:1,+CUSTOMER:2,CUSTOMER.ROLE:1,CUSTOMER.ROLE:2"/>
+		<parameter name="values1" value="100093727,100093728,JOINT.OWNER,OWNER"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0005"/>
+		</classes>
+	</test>
+
+	<test name="R1.1_TDTC068">
+		<parameter name="productGroup" value="Retail - Non Registered Deposits"/>
+		<parameter name="product" value="Cashable Simple Annually"/>
+		<parameter name="fields1" value="CUSTOMER:1,+CUSTOMER:2,CUSTOMER.ROLE:1,CUSTOMER.ROLE:2"/>
+		<parameter name="values1" value="100093727,100093728,OWNER,POWER.OF.ATTORNEY"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0005"/>
+		</classes>
+	</test>
+
+	<test name="R1.1_TDTC088">
+		<parameter name="productGroup" value="Personal Accounts"/>
+		<parameter name="product" value="HISA Personal"/>
+		<parameter name="fields1" value="CUSTOMER:1,+CUSTOMER:2,CUSTOMER.ROLE:1,CUSTOMER.ROLE:2"/>
+		<parameter name="values1" value="100093711,100093712,OWNER,JOINT.OWNER"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0005"/>
+		</classes>
+	</test>
+
+
+</suite><!-- Suite -->

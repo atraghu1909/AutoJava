@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="environment" value="SIT1"/>
+	<parameter name="runUrl" value="about:blank"/>
+	<parameter name="runBrowser" value="firefox"/>
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen"/>
+		<listener class-name="testLibs.HTMLReporter"/>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+	</listeners>
+
+ 	 
+	<test name="OOB_0096_01">
+		<parameter name="testType" value="createRestriction" />			
+		<parameter name="customer" value="100090960"/>		
+		<parameter name="restrictIdList" value="1"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0096_01"/>
+		</classes>
+	</test>
+	 
+	<test name="OOB_0096_02">
+	 	<parameter name="testType" value="createRestriction" />			
+		<parameter name="customer" value="100090960"/>
+		<parameter name="restrictIdList" value="2"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0096_01"/>
+		</classes>
+	</test>
+	
+	<test name="OOB_0096_03">	
+		<parameter name="testType" value="createRestriction" />		
+		<parameter name="customer" value="100090960"/>
+		<parameter name="restrictIdList" value="3"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0096_01"/>
+		</classes>
+	</test>
+	 
+	<test name="OOB_0096_04">
+		<parameter name="testType" value="createRestriction" />			
+		<parameter name="customer" value="100090960"/>
+		<parameter name="restrictIdList" value="4"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0096_01"/>
+		</classes>
+	</test>
+	
+	<test name="OOB_0096_05">
+		<parameter name="testType" value="createRestriction" />			
+		<parameter name="customer" value="100090960" />
+		<parameter name="restrictIdList" value="5" />
+		<classes>
+			<class name="testcases.OOB.OOB_0096_01" />
+		</classes>
+	</test>
+	
+	<test name="OOB_0096_06">
+		<parameter name="testType" value="createRestriction" />			
+		<parameter name="customer" value="100090960" />
+		<parameter name="restrictIdList" value="6" />
+		<parameter name="actionToPerform" value="Funds Transfer" />
+		<classes>
+			<class name="testcases.OOB.OOB_0096_01" />
+		</classes>
+	</test> 
+	
+	<test name="OOB_0096_07">
+		<parameter name="testType" value="createRestriction" />			
+		<parameter name="customer" value="100090960" />
+		<parameter name="restrictIdList" value="7" />
+		<parameter name="actionToPerform" value="Funds Transfer" />	
+		<classes>
+			<class name="testcases.OOB.OOB_0096_01" />
+		</classes>
+	</test>
+
+	<test name="OOB_0096_08">
+		<parameter name="testType" value="createRestriction" />			
+		<parameter name="customer" value="100090960" />
+		<parameter name="restrictIdList" value="8" />
+		<parameter name="actionToPerform" value="Funds Transfer" />
+		<classes>
+			<class name="testcases.OOB.OOB_0096_01" />
+		</classes>
+	</test>
+	
+	<test name="OOB_0096_09">
+		<parameter name="testType" value="createRestriction" />			
+		<parameter name="customer" value="100090960" />
+		<parameter name="restrictIdList" value="9" />	
+		<parameter name="actionToPerform" value="Funds Transfer" />
+		<classes>
+			<class name="testcases.OOB.OOB_0096_01" />
+		</classes>
+	</test>
+	
+	<test name="OOB_0096_10">
+		<parameter name="testType" value="createRestriction" />	
+		<parameter name="customer" value="100090960" />
+		<parameter name="restrictIdList" value="10" />
+		<parameter name="actionToPerform" value="Funds Transfer" />
+		<classes>
+			<class name="testcases.OOB.OOB_0096_01" />
+		</classes>
+	</test>
+	
+	<test name="OOB_0096_18">
+		<parameter name="testType" value="removeRestriction" />
+		<parameter name="customer" value="100090960" />
+		<parameter name="restrictIdList" value="18" />
+		<classes>
+			<class name="testcases.OOB.OOB_0096_01" />
+		</classes>
+	</test>
+	 
+	<test name="OOB_0096_19">
+		<parameter name="testType" value="removeRestriction" />
+		<parameter name="customer" value="100090960" />
+		<parameter name="restrictIdList" value="3" />
+		<parameter name="actionToPerform" value="Funds Transfer" />
+		<classes>
+			<class name="testcases.OOB.OOB_0096_01" />
+		</classes>
+	</test>
+			
+	<test name="OOB_0096_20">
+		<parameter name="testType" value="createRestriction" />
+		<parameter name="restrictIdList" value="6" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Personal Chequing"/>
+		<parameter name="debitAccount" value="AA17324V0JH6"/>
+		<parameter name="creditAccount" value="AA17313NVLP5"/>		
+		<classes>
+			<class name="testcases.OOB.OOB_0096_02" />
+		</classes>
+	</test>
+	
+	<test name="OOB_0096_21">
+		<parameter name="testType" value="updateRestriction"/>		
+		<parameter name="restrictIdList" value="6"/>
+		<parameter name="updateRestrictIdList" value="2"/>
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Personal Chequing"/>
+		<parameter name="debitAccount" value="AA17313CWSTK"/>
+		<parameter name="creditAccount" value="AA17313NVLP5"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0096_02"/>
+		</classes>
+	</test>
+	
+	<test name="OOB_0096_22">
+		<parameter name="testType" value="updateRestriction"/>
+		<parameter name="restrictIdList" value="6" />
+		<parameter name="updateRestrictIdList" value="3" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Personal Chequing"/>
+		<parameter name="debitAccount" value="AA17313CWSTK"/>
+		<parameter name="creditAccount" value="AA17313NVLP5"/>
+
+		<classes>
+			<class name="testcases.OOB.OOB_0096_02"/>
+		</classes>
+	</test>
+	 
+	<test name="OOB_0096_23">
+		<parameter name="testType" value="updateRestriction"/>
+		<parameter name="restrictIdList" value="6" />
+		<parameter name="updateRestrictIdList" value="1,2" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Personal Chequing"/>
+		<parameter name="debitAccount" value="AA17313CWSTK"/>
+		<parameter name="creditAccount" value="AA17313NVLP5"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0096_02"/>
+		</classes>
+	</test>
+	
+	<test name="OOB_0096_24">
+		<parameter name="testType" value="updateRestriction"/>
+		<parameter name="restrictIdList" value="6" />
+		<parameter name="updateRestrictIdList" value="1" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Personal Chequing"/>
+		<parameter name="actionToPerform" value="Funds Transfer"/>
+		<parameter name="debitAccount" value="AA17313CWSTK"/>
+		<parameter name="creditAccount" value="AA17313NVLP5"/>
+	
+		<classes>
+			<class name="testcases.OOB.OOB_0096_02"/>
+		</classes>
+	</test>
+	
+	<test name="OOB_0096_25">
+		<parameter name="testType" value="removeRestriction"/>
+		<parameter name="restrictIdList" value="3" />
+		<parameter name="updateRestrictIdList" value="1" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Personal Chequing"/>
+		<parameter name="debitAccount" value="AA17313CWSTK"/>
+		<parameter name="creditAccount" value="AA17313NVLP5"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0096_02"/>
+		</classes>
+	</test>
+	   
+	<test name="OOB_0096_26">
+		<parameter name="testType" value="removeRestriction"/>
+		<parameter name="restrictIdList" value="3" />
+		<parameter name="updateRestrictIdList" value="2" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Personal Chequing"/>
+		<parameter name="debitAccount" value="AA17304X9BY3"/>
+		<parameter name="creditAccount" value="AA17313NVLP5"/>
+		<parameter name="actionToPerform" value="Funds Transfer"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0096_02"/>
+		</classes>
+	</test>
+	
+	<!-- <test name="OOB_0096_36">
+		<parameter name="testType" value="createRestriction"/>
+		<parameter name="restrictType" value="Customer"/>
+		<parameter name="restrictIdList" value="4" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Personal Chequing"/>
+		<parameter name="debitAccount" value="AA17313CWSTK"/>
+		<parameter name="debitAccount" value="AA17313NVLP5"/>
+		<parameter name="restrictIdList" value="4"/>
+		<parameter name="startDate" value="20170526"/>
+		<parameter name="endDate" value="20180526"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0096_02"/>
+		</classes>
+	</test>
+	 
+	<test name="OOB_0096_37">
+		<parameter name="testType" value="createRestriction"/>		
+		<parameter name="restrictIdList" value="5" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Personal Chequing"/>
+		<parameter name="debitAccount" value="AA17313CWSTK"/>
+		<parameter name="debitAccount" value="AA17313NVLP5"/>
+		<parameter name="actionToPerform" value="Funds Transfer"/>
+		<parameter name="startDate" value="20170526"/>
+		<parameter name="endDate" value="20180526"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0096_02"/>
+		</classes>
+	</test>
+	<test name="OOB_0096_38">
+		<parameter name="testType" value="createRestriction"/>		
+		<parameter name="restrictIdList" value="6" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Personal Chequing"/>
+		<parameter name="debitAccount" value="AA17313CWSTK"/>
+		<parameter name="debitAccount" value="AA17313NVLP5"/>
+		<parameter name="actionToPerform" value="Funds Transfer"/>
+		<classes>
+			<class name="testcases.OOB.OOB_0096_02"/>
+		</classes>
+	</test>
+	  -->
+	  
+	</suite>

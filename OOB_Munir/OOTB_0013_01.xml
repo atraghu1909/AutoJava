@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="OOTB_0013_01">
+		<parameter name="customer" value="190131" />
+		<parameter name="testType" value="Create" />
+		<parameter name="checkDisplay" value="No" />
+		<parameter name="fields"
+			value="CONTACT.CHANNEL,CONTACT.DESC,CONTACT.DATE,CONTACT.TIME" />
+		<parameter name="values" value="BRANCH,Test Intervention,20161021,11:45" />
+		<classes>
+			<class name="testcases.OOB.OOTB_0013_01" />
+		</classes>
+	</test>
+
+	<test name="OOTB_0013_02">
+		<parameter name="customer" value="190131" />
+		<parameter name="testType" value="Create" />
+		<parameter name="checkDisplay" value="Yes" />
+		<parameter name="fields"
+			value="CONTACT.CHANNEL,CONTACT.DESC,CONTACT.DATE,CONTACT.TIME" />
+		<parameter name="values" value="BRANCH,Test Intervention,20161021,11:45" />
+		<classes>
+			<class name="testcases.OOB.OOTB_0013_01" />
+		</classes>
+	</test>
+
+	<test name="OOTB_0013_03">
+		<parameter name="customer" value="190131" />
+		<parameter name="testType" value="Amend" />
+		<parameter name="checkDisplay" value="No" />
+		<parameter name="fields"
+			value="CONTACT.CHANNEL,CONTACT.DESC,CONTACT.DATE,CONTACT.TIME" />
+		<parameter name="values" value="BRANCH,Test Intervention,20161021,11:45" />
+		<classes>
+			<class name="testcases.OOB.OOTB_0013_01" />
+		</classes>
+	</test>
+
+	<test name="OOTB_0013_04">
+		<parameter name="customer" value="190131" />
+		<parameter name="testType" value="Amend" />
+		<parameter name="checkDisplay" value="Yes" />
+		<parameter name="fields"
+			value="CONTACT.CHANNEL,CONTACT.DESC,CONTACT.DATE,CONTACT.TIME" />
+		<parameter name="values" value="BRANCH,Test Intervention,20161021,11:45" />
+		<classes>
+			<class name="testcases.OOB.OOTB_0013_01" />
+		</classes>
+	</test>
+	<!-- -->
+</suite> <!-- Suite -->

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	 
+	<test name="OOB_0018_01">
+		<classes>
+			<class name="testcases.OOB.OOB_0018_01" />
+		</classes>
+	</test>
+	
+	<test name="OOB_0018_02">
+		<classes>
+			<class name="testcases.OOB.OOB_0018_02" />
+		</classes>
+	</test>
+	
+	<test name="OOB_0018_03">
+		<classes>
+			<class name="testcases.OOB.OOB_0018_03" />
+		</classes>
+	</test>
+	
+	<test name="OOB_0018_04">
+		<classes>
+			<class name="testcases.OOB.OOB_0018_04" />
+		</classes>
+	</test>
+	
+	<test name="OOB_0018_05">
+		<classes>
+			<class name="testcases.OOB.OOB_0018_05" />
+		</classes>
+	</test>
+	
+	<test name="OOB_0018_06">
+		<classes>
+			<class name="testcases.OOB.OOB_0018_06" />
+		</classes>
+	</test>
+	
+	<test name="OOB_0018_07">
+		<classes>
+			<class name="testcases.OOB.OOB_0018_07" />
+		</classes>
+	</test>
+	
+	<test name="OOB_0018_08">
+		<classes>
+			<class name="testcases.OOB.OOB_0018_08" />
+		</classes>
+	</test>
+	
+	<test name="OOB_0018_09">
+		<classes>
+			<class name="testcases.OOB.OOB_0018_09" />
+		</classes>
+	</test>
+	
+	<test name="OOB_0018_10">
+		<classes>
+			<class name="testcases.OOB.OOB_0018_010" />
+		</classes>
+	</test>
+	
+	</suite> <!-- Suite -->

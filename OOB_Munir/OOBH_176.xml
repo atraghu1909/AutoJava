@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="environment" value="SIT1"/>
+	<parameter name="runUrl" value="about:blank"/>
+	<parameter name="runBrowser" value="firefox"/>
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen"/>
+		<listener class-name="testLibs.HTMLReporter"/>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+	</listeners>
+	  
+	<test name="OOBH_176">
+		<parameter name="customer" value="195408"/>
+		<parameter name="fields" value="LIMIT.CURRENCY,INTERNAL.AMOUNT,PROPOSAL.DATE,APPROVAL.DATE"/>		
+		<parameter name="values" value="CAD,200000,-2m,-2m"/>
+		<parameter name="productGroup" value="Retail Mortgages"/>
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage"/>
+		<classes>
+			<class name="testcases.OOB.OOBH_176"/>
+		</classes>
+	</test>
+	
+	</suite><!-- Suite -->

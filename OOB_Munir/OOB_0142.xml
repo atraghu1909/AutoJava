@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="OOB_142_01">
+		<parameter name="testType" value="Product Level" />
+		<parameter name="setting" value="Monthly Fee" />
+		<classes>
+			<class name="testcases.OOB.OOB_0142_01" />
+		</classes>
+	</test> 
+
+	<test name="OOB_142_02">
+		<parameter name="testType" value="Arrangement Level" />
+		<parameter name="setting" value="Monthly Fee" />
+		<parameter name="customer" value="200000876" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="Secured Line of Credit" />
+		<classes>
+			<class name="testcases.OOB.OOB_0142_01" />
+		</classes>
+	</test>
+
+	<test name="OOB_146_01">
+		<parameter name="testType" value="Product Level" />
+		<parameter name="setting" value="Overdraft Limit" />
+		<classes>
+			<class name="testcases.OOB.OOB_0142_01" />
+		</classes>
+	</test>
+
+	<test name="OOB_146_02">
+		<parameter name="testType" value="Arrangement Level" />
+		<parameter name="setting" value="Overdraft Limit" />
+		<parameter name="customer" value="200000876" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Personal Chequing" />
+		<classes>
+			<class name="testcases.OOB.OOB_0142_01" />
+		</classes>
+	</test> 
+</suite> <!-- Suite -->

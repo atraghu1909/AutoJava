@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="OOB_0707_02">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="customer" value="100095190" />
+		<parameter name="actionToPerform" value="Interac charges" />
+		<classes>
+			<class name="testcases.OOB.OOB_0707_01" />
+		</classes>
+	</test>
+
+	<test name="OOB_0707_03">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="customer" value="100095193" />
+		<parameter name="actionToPerform" value="Stop Payment charges" />
+		<classes>
+			<class name="testcases.OOB.OOB_0707_01" />
+		</classes>
+	</test>
+
+	<test name="OOB_0707_04">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="customer" value="100095197" />
+		<parameter name="actionToPerform" value="EFT charges" />
+		<classes>
+			<class name="testcases.OOB.OOB_0707_01" />
+		</classes>
+	</test>
+
+	<test name="OOB_0707_05">
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="customer" value="100095197" />
+		<parameter name="actionToPerform" value="Early Close charges" />
+		<classes>
+			<class name="testcases.OOB.OOB_0707_01" />
+		</classes>
+	</test>
+
+</suite> 

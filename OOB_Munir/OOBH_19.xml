@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="OOBH_19">
+		<parameter name="CIFType" value="Personal" />
+		<classes>
+			<class name="testcases.OOB.OOBH_19" />
+		</classes>
+	</test>
+	<test name="OOBH_20">
+		<parameter name="CIFType" value="Personal" />
+		<parameter name="fields" value="MNEMONIC" />
+		<parameter name="values" value="mnemonic" />
+		<classes>
+			<class name="testcases.OOB.OOBH_19" />
+		</classes>
+	</test>
+	<test name="OOBH_21">
+		<parameter name="CIFType" value="Personal" />
+		<parameter name="fields" value="MNEMONIC" />
+		<parameter name="values" value="mnemonic" />
+		<classes>
+			<class name="testcases.OOB.OOBH_19" />
+		</classes>
+	</test>
+	<test name="OOBH_30">
+		<parameter name="CIFType" value="Personal" />
+		<parameter name="fields" value="SIN.NO" />
+		<parameter name="values" value="571624139" />
+		<classes>
+			<class name="testcases.OOB.OOBH_19" />
+		</classes>
+	</test>
+	<test name="OOBH_31">
+		<parameter name="CIFType" value="Personal" />
+		<parameter name="fields" value="SIN.NO" />
+		<parameter name="values" value="546289133" />
+		<classes>
+			<class name="testcases.OOB.OOBH_19" />
+		</classes>
+	</test>
+	<test name="OOBH_85">
+		<parameter name="CIFType" value="Personal" />
+		<classes>
+			<class name="testcases.OOB.OOBH_19" />
+		</classes>
+	</test>
+	<test name="OOBH_19A">
+		<parameter name="CIFType" value="Personal" />
+		<classes>
+			<class name="testcases.OOB.OOBH_19" />
+		</classes>
+	</test>
+	<test name="OOBH_20A">
+		<parameter name="CIFType" value="Non-Personal" />
+		<classes>
+			<class name="testcases.OOB.OOBH_19" />
+		</classes>
+	</test>
+	<test name="OOBH_21A">
+		<parameter name="CIFType" value="Personal" />
+		<parameter name="fields" value="NATIONALITY,RESIDENCE,Address#STREET:1,ADDR.CNTRY.ID,CITY,US.STATE,POST.CODE:1" />
+		<parameter name="values" value="US,CA,4456 Ottis Street,CA,Toronto,ON,M5E 1W5" />
+		<classes>
+			<class name="testcases.OOB.OOBH_19" />
+		</classes>
+	</test>
+	<test name="R1.1_TDTC058">
+		<parameter name="CIFType" value="Personal" />
+		<parameter name="fields" value="MNEMONIC" />
+		<parameter name="values" value="mnemonic" />
+		<classes>
+			<class name="testcases.OOB.OOBH_19" />
+		</classes>
+	</test>
+
+	<test name="R1.1_TDTC059">
+		<parameter name="CIFType" value="Personal" />
+		<parameter name="fields" value="MNEMONIC" />
+		<parameter name="values" value="mnemonic" />
+		<classes>
+			<class name="testcases.OOB.OOBH_19" />
+		</classes>
+	</test>
+
+	<test name="R1.1_TDTC060">
+		<parameter name="CIFType" value="Personal" />
+		<parameter name="fields" value="MNEMONIC" />
+		<parameter name="values" value="mnemonic" />
+		<classes>
+			<class name="testcases.OOB.OOBH_19" />
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->

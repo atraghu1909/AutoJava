@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	 
+	<test name="OOB_0137_01">
+		<parameter name="arrangement" value="AA16235758ZG" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="testType" value="CR" />
+		<classes>
+			<class name="testcases.OOB.OOB_0137_01" />
+		</classes>
+	</test>
+	
+	<test name="OOB_0137_02">
+		<parameter name="arrangement" value="AA16235758ZG" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="testType" value="DR" />
+		<classes>
+			<class name="testcases.OOB.OOB_0137_01" />
+		</classes>
+	</test>
+	
+	</suite> <!-- Suite -->

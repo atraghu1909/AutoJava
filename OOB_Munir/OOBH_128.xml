@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="environment" value="SIT1"/>
+	<parameter name="runUrl" value="about:blank"/>
+	<parameter name="runBrowser" value="firefox"/>
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen"/>
+		<listener class-name="testLibs.HTMLReporter"/>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+	</listeners>
+
+	
+	<test name="OOBH_128">
+		<parameter name="customer" value="100095208"/>
+		<parameter name="productGroup" value="Retail Mortgages"/>
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage"/>
+		<parameter name="activity" value="Skip Payment"/>
+		<parameter name="authorizeFlag" value="false"/>
+		<classes>
+			<class name="testcases.OOB.OOBH_128"/>
+		</classes>
+	</test>
+
+	<test name="OOBH_129">
+		<parameter name="customer" value="100095213"/>
+		<parameter name="productGroup" value="Retail Mortgages"/>
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage"/>
+		<parameter name="activity" value="Skip Payment"/>
+		<parameter name="authorizeFlag" value="true"/>
+		<classes>
+			<class name="testcases.OOB.OOBH_128"/>
+		</classes>
+	</test>
+
+	<test name="OOBH_227">
+		<parameter name="customer" value="100095221"/>
+		<parameter name="productGroup" value="Retail Mortgages"/>
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage"/>
+		<parameter name="activity" value="Skip Payment"/>
+		<parameter name="authorizeFlag" value="false"/>
+		<classes>
+			<class name="testcases.OOB.OOBH_128"/>
+		</classes>
+	</test>
+
+	<test name="OOBH_228">
+		<parameter name="customer" value="100095221"/>
+		<parameter name="productGroup" value="Retail Mortgages"/>
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage"/>
+		<parameter name="activity" value="Skip Payment"/>
+		<parameter name="authorizeFlag" value="true"/>
+		<classes>
+			<class name="testcases.OOB.OOBH_128"/>
+		</classes>
+	</test>
+
+	<test name="OOBH_229">
+		<parameter name="customer" value="100095221"/>
+		<parameter name="productGroup" value="Retail Mortgages"/>
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage"/>
+		<parameter name="activity" value="Skip Payment"/>
+		<parameter name="authorizeFlag" value="true"/>
+		<parameter name="actionToPerform" value="Capitalise Fee"/>
+		<classes>
+			<class name="testcases.OOB.OOBH_128"/>
+		</classes>
+	</test>
+
+	<test name="OOBH_230">
+		<parameter name="customer" value="100095221"/>
+		<parameter name="productGroup" value="Retail Mortgages"/>
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage"/>
+		<parameter name="activity" value="Skip Payment"/>
+		<parameter name="authorizeFlag" value="true"/>
+		<parameter name="actionToPerform" value="Reverse"/>
+		<classes>
+			<class name="testcases.OOB.OOBH_128"/>
+		</classes>
+	</test>
+
+	<test name="OOBH_231">
+		<parameter name="customer" value="100095221"/>
+		<parameter name="productGroup" value="Personal Loans"/>
+		<parameter name="product" value="Personal Loan Secured Fixed Rate"/>
+		<parameter name="activity" value="Skip Payment"/>
+		<parameter name="authorizeFlag" value="false"/>
+		<classes>
+			<class name="testcases.OOB.OOBH_128"/>
+		</classes>
+	</test>
+
+	<test name="OOBH_232">
+		<parameter name="customer" value="100095221"/>
+		<parameter name="productGroup" value="Personal Loans"/>
+		<parameter name="product" value="Personal Loan Secured Fixed Rate"/>
+		<parameter name="activity" value="Skip Payment"/>
+		<parameter name="authorizeFlag" value="true"/>
+		<classes>
+			<class name="testcases.OOB.OOBH_128"/>
+		</classes>
+	</test>
+
+	<test name="OOBH_233">
+		<parameter name="customer" value="100095221"/>
+		<parameter name="productGroup" value="Personal Loans"/>
+		<parameter name="product" value="Personal Loan Secured Fixed Rate"/>
+		<parameter name="activity" value="Skip Payment"/>
+		<parameter name="authorizeFlag" value="true"/>
+		<parameter name="actionToPerform" value="Do Not Capitalise Fee"/>
+		<classes>
+			<class name="testcases.OOB.OOBH_128"/>
+		</classes>
+	</test>
+
+	<test name="OOBH_234">
+		<parameter name="customer" value="100095221"/>
+		<parameter name="productGroup" value="Personal Loans"/>
+		<parameter name="product" value="Personal Loan Secured Fixed Rate"/>
+		<parameter name="activity" value="Skip Payment"/>
+		<parameter name="authorizeFlag" value="true"/>
+		<parameter name="actionToPerform" value="Reverse"/>
+		<classes>
+			<class name="testcases.OOB.OOBH_128"/>
+		</classes>
+	</test>
+
+	<test name="OOBH_235">
+		<parameter name="customer" value="100095229"/>
+		<parameter name="productGroup" value="Commercial Loans"/>
+		<parameter name="product" value="Commercial Term Loans Fixed Rate"/>
+		<parameter name="activity" value="Skip Payment"/>
+		<parameter name="authorizeFlag" value="false"/>
+		<classes>
+			<class name="testcases.OOB.OOBH_128"/>
+		</classes>
+	</test>
+
+	<test name="OOBH_236">
+		<parameter name="customer" value="100095229"/>
+		<parameter name="productGroup" value="Commercial Loans"/>
+		<parameter name="product" value="Commercial Term Loans Fixed Rate"/>
+		<parameter name="activity" value="Skip Payment"/>
+		<parameter name="authorizeFlag" value="true"/>
+		<classes>
+			<class name="testcases.OOB.OOBH_128"/>
+		</classes>
+	</test>
+
+	<test name="OOBH_237">
+		<parameter name="customer" value="100095229"/>
+		<parameter name="productGroup" value="Commercial Loans"/>
+		<parameter name="product" value="Commercial Term Loans Fixed Rate"/>
+		<parameter name="activity" value="Skip Payment"/>
+		<parameter name="authorizeFlag" value="true"/>
+		<parameter name="actionToPerform" value="Capitalise Fee"/>
+		<classes>
+			<class name="testcases.OOB.OOBH_128"/>
+		</classes>
+	</test>
+
+	<test name="OOBH_238">
+		<parameter name="customer" value="100095229"/>
+		<parameter name="productGroup" value="Commercial Loans"/>
+		<parameter name="product" value="Commercial Term Loans Fixed Rate"/>
+		<parameter name="activity" value="Skip Payment"/>
+		<parameter name="authorizeFlag" value="true"/>
+		<parameter name="actionToPerform" value="Reverse"/>
+		<classes>
+			<class name="testcases.OOB.OOBH_128"/>
+		</classes>
+	</test>
+</suite>

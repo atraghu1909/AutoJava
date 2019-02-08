@@ -1,0 +1,1211 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="OOB_0076_01">
+		<parameter name="customer" value="100094563" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="activity" value="UPDATE ACTIVITY FOR OFFICERS" />
+		<parameter name="fields" value="OTHER.OFFICER:1,OFFICER.ROLE:1" />
+		<parameter name="values" value="2,Collection" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_77">
+		<parameter name="customer" value="100095201" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Var Rate" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="3Y" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_78">
+		<parameter name="customer" value="100095204" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Var Rate" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="3Y" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_79">
+		<parameter name="customer" value="100095206" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="Secured Line of Credit" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="3Y" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_80">
+		<parameter name="customer" value="100095244" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="3Y" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_81">
+		<parameter name="customer" value="100095172" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="3Y" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_82">
+		<parameter name="customer" value="100095250" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="Secured Line of Credit" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="3Y" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_83">
+		<parameter name="customer" value="100095434" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="3Y" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_84">
+		<parameter name="customer" value="100095435" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="3Y" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_93">
+		<parameter name="customer" value="100095399" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="activity" value="Discharge Collateral" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_94">
+		<parameter name="customer" value="100095402" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="Discharge Collateral" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_95">
+		<parameter name="customer" value="100095404" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="Secured Line of Credit" />
+		<parameter name="activity" value="Discharge Collateral" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_96">
+		<parameter name="customer" value="100095406" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="activity" value="Discharge Collateral" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_97">
+		<parameter name="customer" value="100095410" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="Discharge Collateral" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_98">
+		<parameter name="customer" value="100095442" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="Secured Line of Credit" />
+		<parameter name="activity" value="Discharge Collateral" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_101">
+		<parameter name="customer" value="100095438" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="CHANGE ACTIVITY FOR PRINCIPALINT" />
+		<parameter name="fields" value="Periodic#PERIODIC.RATE:1" />
+		<parameter name="values" value="1.15" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_102">
+		<parameter name="customer" value="100046" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="activity" value="CHANGE ACTIVITY FOR PRINCIPALINT" />
+		<parameter name="fields" value="FIXED.RATE:1" />
+		<parameter name="values" value="1.15" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_103">
+		<parameter name="customer" value="100095471" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="Secured Line of Credit" />
+		<parameter name="activity" value="CHANGE ACTIVITY FOR PRINCIPALINT" />
+		<parameter name="fields" value="MARGIN.RATE:1:1" />
+		<parameter name="values" value="1.15" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_104">
+		<parameter name="customer" value="100095472" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="CHANGE ACTIVITY FOR PRINCIPALINT" />
+		<parameter name="fields" value="Periodic#PERIODIC.RATE:1" />
+		<parameter name="values" value="1.15" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_105">
+		<parameter name="customer" value="100095473" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="activity" value="CHANGE ACTIVITY FOR PRINCIPALINT" />
+		<parameter name="fields" value="FIXED.RATE:1" />
+		<parameter name="values" value="1.15" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_106">
+		<parameter name="customer" value="100095475" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="Secured Line of Credit" />
+		<parameter name="activity" value="CHANGE ACTIVITY FOR PRINCIPALINT" />
+		<parameter name="fields" value="MARGIN.RATE:1:1" />
+		<parameter name="values" value="1.15" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_107">
+		<parameter name="customer" value="100095476" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="Secured Line of Credit" />
+		<parameter name="activity" value="Change and Due ALADMINFEE" />
+		<parameter name="fields" value="FIXED.AMOUNT" />
+		<parameter name="values" value="5" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_108">
+		<parameter name="customer" value="10008" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="Change and Due ALADMINFEE" />
+		<parameter name="fields" value="FIXED.AMOUNT" />
+		<parameter name="values" value="5" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_109">
+		<parameter name="customer" value="100568" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="activity" value="Change and Due ALADMINFEE" />
+		<parameter name="fields" value="FIXED.AMOUNT" />
+		<parameter name="values" value="5" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_110">
+		<parameter name="customer" value="100095292" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="Secured Line of Credit" />
+		<parameter name="activity" value="Change and Due ALADMINFEE" />
+		<parameter name="fields" value="FIXED.AMOUNT" />
+		<parameter name="values" value="5" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_111">
+		<parameter name="customer" value="100095295" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="Change and Due ALADMINFEE" />
+		<parameter name="fields" value="FIXED.AMOUNT" />
+		<parameter name="values" value="5" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_112">
+		<parameter name="customer" value="100095296" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="activity" value="Change and Due ALADMINFEE" />
+		<parameter name="fields" value="FIXED.AMOUNT" />
+		<parameter name="values" value="5" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_113">
+		<parameter name="customer" value="100095297" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="Secured Line of Credit" />
+		<parameter name="activity" value="UPDATE ACTIVITY FOR ACTIVITY.CHARGES" />
+		<parameter name="fields" value="APP.METHOD:3:1" />
+		<parameter name="values" value="Defer" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_114">
+		<parameter name="customer" value="100095298" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="UPDATE ACTIVITY FOR ACTIVITY.CHARGES" />
+		<parameter name="fields" value="APP.METHOD:3:1" />
+		<parameter name="values" value="Defer" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_115">
+		<parameter name="customer" value="100095299" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="activity" value="UPDATE ACTIVITY FOR ACTIVITY.CHARGES" />
+		<parameter name="fields" value="APP.METHOD:2:1" />
+		<parameter name="values" value="Defer" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_116">
+		<parameter name="customer" value="100095300" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="Secured Line of Credit" />
+		<parameter name="activity" value="UPDATE ACTIVITY FOR ACTIVITY.CHARGES" />
+		<parameter name="fields" value="APP.METHOD:3:1" />
+		<parameter name="values" value="Defer" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_117">
+		<parameter name="customer" value="100095301" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="UPDATE ACTIVITY FOR ACTIVITY.CHARGES" />
+		<parameter name="fields" value="APP.METHOD:3:1" />
+		<parameter name="values" value="Defer" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_118">
+		<parameter name="customer" value="100095302" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="activity" value="UPDATE ACTIVITY FOR ACTIVITY.CHARGES" />
+		<parameter name="fields" value="APP.METHOD:2:1" />
+		<parameter name="values" value="Defer" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_119">
+		<parameter name="customer" value="100095303" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="Change and Due ALADMINFEE" />
+		<parameter name="fields" value="FIXED.AMOUNT" />
+		<parameter name="values" value="5" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_121">
+		<parameter name="customer" value="100095304" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="Change and Due ALADMINFEE" />
+		<parameter name="fields" value="FIXED.AMOUNT" />
+		<parameter name="values" value="5" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_122">
+		<parameter name="customer" value="100095305" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="Change and Due ALNSFFEE" />
+		<parameter name="fields" value="FIXED.AMOUNT" />
+		<parameter name="values" value="5" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_124">
+		<parameter name="customer" value="100095306" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="Change and Due ALNSFFEE" />
+		<parameter name="fields" value="FIXED.AMOUNT" />
+		<parameter name="values" value="5" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_125">
+		<parameter name="customer" value="100095307" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="B2B Bank LOC - Personal Secured" />
+		<parameter name="activity" value="Change and Due ALNSFFEE" />
+		<parameter name="fields" value="FIXED.AMOUNT" />
+		<parameter name="values" value="5" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_127">
+		<parameter name="customer" value="100095308" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="B2B Bank LOC - Personal Secured" />
+		<parameter name="activity" value="Change and Due ALNSFFEE" />
+		<parameter name="fields" value="FIXED.AMOUNT" />
+		<parameter name="values" value="5" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_144">
+		<parameter name="customer" value="100095309" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="Increase Installment." />
+		<parameter name="fields" value="GROUP.BILL.TYPE:1, GROUP.MIN.AMOUNT:1, RECALC.FREQUENCY" />
+		<parameter name="values" value="PRINCIPAL.BILL, 10, e0Y e1M e0W e0D e0F" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_145">
+		<parameter name="customer" value="100095310" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="Increase Installment." />
+		<parameter name="fields" value="GROUP.BILL.TYPE:1, GROUP.MIN.AMOUNT:1, RECALC.FREQUENCY" />
+		<parameter name="values" value="PRINCIPAL.BILL, 10, e0Y e1M e0W e0D e0F" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_147">
+		<parameter name="customer" value="100095311" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Demand Loans" />
+		<parameter name="activity" value="Increase Installment." />
+		<parameter name="fields" value="GROUP.BILL.TYPE:1, GROUP.MIN.AMOUNT:1, RECALC.FREQUENCY" />
+		<parameter name="values" value="PRINCIPAL.BILL, 10, e0Y e1M e0W e0D e0F" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_148">
+		<parameter name="customer" value="100095312" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Demand Loans" />
+		<parameter name="activity" value="Increase Installment." />
+		<parameter name="fields" value="GROUP.BILL.TYPE:1, GROUP.MIN.AMOUNT:1, 
+		RECALC.FREQUENCY" />
+		<parameter name="values" value="PRINCIPAL.BILL, 10, e0Y e1M e0W e0D e0F" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_149">
+		<parameter name="customer" value="100095313" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="B2B Bank LOC - Personal Secured" />
+		<parameter name="activity" value="Increase Installment." />
+		<parameter name="fields" value="GROUP.BILL.TYPE:1, GROUP.MIN.AMOUNT:1, RECALC.FREQUENCY" />
+		<parameter name="values" value="PRINCIPAL.BILL, 10, e0Y e1M e0W e0D e0F" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_150">
+		<parameter name="customer" value="100095314" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="B2B Bank LOC - Personal Secured" />
+		<parameter name="activity" value="Increase Installment." />
+		<parameter name="fields" value="GROUP.BILL.TYPE:1, GROUP.MIN.AMOUNT:1, RECALC.FREQUENCY" />
+		<parameter name="values" value="PRINCIPAL.BILL, 10, e0Y e1M e0W e0D e0F" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_151">
+		<parameter name="customer" value="100095315" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="Change and Due ALADMINFEE" />
+		<parameter name="fields" value="FIXED.AMOUNT" />
+		<parameter name="values" value="5" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_153">
+		<parameter name="customer" value="100095316" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="UPDATE ACTIVITY FOR CHARGE.OVERRIDE" />
+		<parameter name="fields" value="PROPERTY:1, CHG.AMT:1:1, CHG.ACT.AMT:1:1, CHG.DESC:1:1" />
+		<parameter name="values" value="ALADMINFEE, 500, 250, Test" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_154">
+		<parameter name="customer" value="100095317" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Demand Loans" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="5Y" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_155">
+		<parameter name="customer" value="100095318" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="15Y" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_156">
+		<parameter name="customer" value="100095492" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="9Y" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+	<test name="OOBH_157">
+		<parameter name="customer" value="100095496" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="B2B Bank LOC - Personal Secured" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="5Y" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_158">
+		<parameter name="customer" value="100095320" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Demand Loans" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="5Y" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_159">
+		<parameter name="customer" value="100095321" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="B2B Bank LOC - Personal Secured" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="5Y" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_160">
+		<parameter name="customer" value="100095322" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="9Y" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_161">
+		<parameter name="customer" value="100094592" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Demand Loans" />
+		<parameter name="activity" value="DECREASE ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="CHANGE.AMOUNT" />
+		<parameter name="values" value="-150" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_162">
+		<parameter name="customer" value="100094596" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="DECREASE ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="CHANGE.AMOUNT" />
+		<parameter name="values" value="-150" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_163">
+		<parameter name="customer" value="100095323" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="B2B Bank LOC - Personal Secured" />
+		<parameter name="activity" value="DECREASE ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="CHANGE.AMOUNT" />
+		<parameter name="values" value="-150" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_164">
+		<parameter name="customer" value="100094561" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Demand Loans" />
+		<parameter name="activity" value="DECREASE ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="CHANGE.AMOUNT" />
+		<parameter name="values" value="-150" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_165">
+		<parameter name="customer" value="100094611" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="DECREASE ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="CHANGE.AMOUNT" />
+		<parameter name="values" value="-150" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_166">
+		<parameter name="customer" value="100094620" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="B2B Bank LOC - Personal Secured" />
+		<parameter name="activity" value="DECREASE ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="CHANGE.AMOUNT" />
+		<parameter name="values" value="-150" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_167">
+		<parameter name="customer" value="100094627" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Demand Loans" />
+		<parameter name="activity" value="INCREASE ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="CHANGE.AMOUNT" />
+		<parameter name="values" value="150" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_168">
+		<parameter name="customer" value="100094632" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="INCREASE ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="CHANGE.AMOUNT" />
+		<parameter name="values" value="150" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_169">
+		<parameter name="customer" value="100094644" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="B2B Bank LOC - Personal Secured" />
+		<parameter name="activity" value="INCREASE ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="CHANGE.AMOUNT" />
+		<parameter name="values" value="150" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_170">
+		<parameter name="customer" value="100094651" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Demand Loans" />
+		<parameter name="activity" value="INCREASE ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="CHANGE.AMOUNT" />
+		<parameter name="values" value="150" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_171">
+		<parameter name="customer" value="100094654" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="INCREASE ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="CHANGE.AMOUNT" />
+		<parameter name="values" value="150" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_172">
+		<parameter name="customer" value="100094655" />
+		<parameter name="productGroup" value="Personal Lines of Credit" />
+		<parameter name="product" value="B2B Bank LOC - Personal Secured" />
+		<parameter name="activity" value="INCREASE ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="CHANGE.AMOUNT" />
+		<parameter name="values" value="150" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_213">
+		<parameter name="customer" value="100094672" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="15Y" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_214">
+		<parameter name="customer" value="100094677" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="15Y" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_215">
+		<parameter name="customer" value="100094683" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="8Y" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_216">
+		<parameter name="customer" value="100094687" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="8Y" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_217">
+		<parameter name="customer" value="100094691" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<parameter name="activity" value="Change Payment Frequency" />
+		<parameter name="fields" value="PAYMENT.FREQ:1" />
+		<parameter name="values" value="e0Y e2M e0W e0D e0F" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_218">
+		<parameter name="customer" value="100094694" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<parameter name="activity" value="Change Payment Frequency" />
+		<parameter name="fields" value="PAYMENT.FREQ:1" />
+		<parameter name="values" value="e0Y e2M e0W e0D e0F" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_220">
+		<parameter name="customer" value="100094700" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="15Y" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_221">
+		<parameter name="customer" value="100095325" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="15Y" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_222">
+		<parameter name="customer" value="100095327" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="8Y" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_223">
+		<parameter name="customer" value="100095329" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="8Y" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_224">
+		<parameter name="customer" value="100095331" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="Change Payment Frequency" />
+		<parameter name="fields" value="PAYMENT.FREQ:1" />
+		<parameter name="values" value="e0Y e2M e0W e0D e0F" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_225">
+		<parameter name="customer" value="100095333" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Closed Term Mortgage" />
+		<parameter name="activity" value="Change Payment Frequency" />
+		<parameter name="fields" value="PAYMENT.FREQ:1" />
+		<parameter name="values" value="e0Y e2M e0W e0D e0F" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_239">
+		<parameter name="customer" value="100095335" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="1Y" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_240">
+		<parameter name="customer" value="100095337" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="1Y" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_241">
+		<parameter name="customer" value="100095339" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal 
+		Loan Secured Fixed Rate" />
+		<parameter name="activity" value="CHANGE.TERM 
+		ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="2Y" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_242">
+		<parameter name="customer" value="100095341" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="2Y" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_243">
+		<parameter name="customer" value="100095343" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="activity" value="Change Payment Frequency" />
+		<parameter name="fields" value="PAYMENT.FREQ:1" />
+		<parameter name="values" value="e0Y e1M e0W e0D e0F" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_244">
+		<parameter name="customer" value="100095345" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Personal Loan Secured Fixed Rate" />
+		<parameter name="activity" value="Change Payment Frequency" />
+		<parameter name="fields" value="PAYMENT.FREQ:1" />
+		<parameter name="values" value="e0Y e1M e0W e0D e0F" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOB_844_01">
+		<parameter name="customer" value="100095557" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Open Term Mortgage" />
+		<parameter name="activity" value="CHANGE ACTIVITY FOR PRINCIPALINT" />
+		<parameter name="fields" value="EFFECTIVE.DATE" />
+		<parameter name="values" value="20160916" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOB_844_02">
+		<parameter name="customer" value="100095348" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Open Term Mortgage" />
+		<parameter name="activity" value="CHANGE ACTIVITY FOR PRINCIPALINT" />
+		<parameter name="fields" value="Periodic#PERIODIC.RATE:1" />
+		<parameter name="values" value="8.5" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOB_844_03">
+		<parameter name="customer" value="1000565" />
+		<parameter name="productGroup" value="Retail Mortgages" />
+		<parameter name="product" value="Fixed Rate Open Term Mortgage" />
+		<parameter name="activity" value="UPDATE ACTIVITY FOR SETTLEMENT" />
+		<parameter name="fields" value="PAYIN.ACCOUNT:1:1" />
+		<parameter name="values" value="CAD1070900017623" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_193">
+		<parameter name="customer" value="100095590" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Var Rate" />
+		<parameter name="activity" value="DECREASE ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="CHANGE.AMOUNT" />
+		<parameter name="values" value="-150" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_194">
+		<parameter name="customer" value="100095610" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Var Rate" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="3Y" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_196">
+		<parameter name="customer" value="100095352" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<parameter name="activity" value="DECREASE ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="CHANGE.AMOUNT" />
+		<parameter name="values" value="-150" />
+		<parameter name="authorizeFlag" value="false" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<test name="OOBH_197">
+		<parameter name="customer" value="100095353" />
+		<parameter name="productGroup" value="Commercial Loans" />
+		<parameter name="product" value="Commercial Term Loans Fixed Rate" />
+		<parameter name="activity" value="CHANGE.TERM ACTIVITY FOR COMMITMENT" />
+		<parameter name="fields" value="TERM" />
+		<parameter name="values" value="3Y" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+
+	<!-- <test name="OOB_886_01">
+		<parameter name="customer" value="100095354" />
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Multi Rate 3 Year GIC" />
+		<parameter name="activity" value="NEW ACTIVITY FOR ARRANGEMENT" />
+		<parameter name="fields" value="EFFECTIVE.DATE" />
+		<parameter name="values" value="20160801" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test>
+	
+	<test name="OOB_886_03">
+		<parameter name="customer" value="100095356" />
+		<parameter name="productGroup" value="Retail - Non Registered Deposits" />
+		<parameter name="product" value="Multi Rate 3 Year GIC" />
+		<parameter name="activity" value="NEW ACTIVITY FOR ARRANGEMENT" />
+		<parameter name="fields" value="EFFECTIVE.DATE" />
+		<parameter name="values" value="20161225" />
+		<parameter name="authorizeFlag" value="true" />
+		<classes>
+			<class name="testcases.OOB.OOB_0076_01" />
+		</classes>
+	</test> -->
+
+</suite><!-- Suite -->

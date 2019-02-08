@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="PREPROD" />
+	<parameter name="testSetPath" value="B2B Automation\Release 3\OOB" />
+	<parameter name="testSetName" value="OOB Tests" />
+	<parameter name="testSetNumber" value="704" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<!--  
+    <test name="OOB_0033_01">
+		<parameter name="testType" value="Create CIF" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Personal Chequing" />
+		<parameter name="primaryOfficer" value="1" />
+		<parameter name="fields" value="OTHER.OFFICER:1,+OTHER.OFFICER:2,+OTHER.OFFICER:3,+OTHER.OFFICER:4" />
+		<parameter name="values" value="2,3,4,5" />
+		<classes>
+			<class name="testcases.OOB.OOB_0033_01" />
+		</classes>
+	</test> 
+
+	<test name="OOB_0033_02">
+		<parameter name="testType" value="Create CIF" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Personal Chequing" />
+		<parameter name="primaryOfficer" value="1" />
+		<parameter name="fields" value="OTHER.OFFICER:1,+OTHER.OFFICER:2,+OTHER.OFFICER:3,+OTHER.OFFICER:4" />
+		<parameter name="values" value="2,5,3,4" />
+		<classes>
+			<class name="testcases.OOB.OOB_0033_01" />
+		</classes>
+	</test>	
+
+	<test name="OOB_0033_03">
+		<parameter name="testType" value="Create Arrangement" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Personal Chequing" />
+		<parameter name="customer" value="100092478" />
+		<parameter name="primaryOfficer" value="1" />
+		<parameter name="fields" value="OTHER.OFFICER:1,+OTHER.OFFICER:2,+OTHER.OFFICER:3,+OTHER.OFFICER:4,OFFICER.ROLE:1,OFFICER.ROLE:2,OFFICER.ROLE:3,OFFICER.ROLE:4" />
+		<parameter name="values" value="2,3,4,5,Application,Approval,Collection,Disbursement" />
+		<classes>
+			<class name="testcases.OOB.OOB_0033_01" />
+		</classes>
+	</test>
+
+	 <test name="OOB_0033_04">
+		<parameter name="testType" value="Create Arrangement" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="Personal Chequing" />
+		<parameter name="customer" value="100092478" />
+		<parameter name="primaryOfficer" value="1" />
+		<parameter name="fields" value="OTHER.OFFICER:1,+OTHER.OFFICER:2,+OTHER.OFFICER:3,+OTHER.OFFICER:4,OFFICER.ROLE:1,OFFICER.ROLE:2,OFFICER.ROLE:3,OFFICER.ROLE:4" />
+		<parameter name="values" value="2,5,6,7,Application,Approval,Collection,Disbursement" />
+		<classes>
+			<class name="testcases.OOB.OOB_0033_01" />
+		</classes>
+	</test>
+ 
+	<test name="OOB_0033_05">
+		<parameter name="testType" value="Create CIF" />
+		<parameter name="primaryOfficer" value="1" />
+		<parameter name="fields" value="OTHER.OFFICER:1,+OTHER.OFFICER:2,+OTHER.OFFICER:3" />
+		<parameter name="values" value="5,6,7" />
+		<classes>
+			<class name="testcases.OOB.OOB_0033_01" />
+		</classes>
+	</test> 
+
+	<test name="OOB_0033_06">
+		<parameter name="testType" value="Create Arrangement" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="customer" value="100092478" />
+		<parameter name="primaryOfficer" value="1" />
+		<parameter name="fields" value="OTHER.OFFICER:1,+OTHER.OFFICER:2,+OTHER.OFFICER:3,OFFICER.ROLE:1,OFFICER.ROLE:2,OFFICER.ROLE:3" />
+		<parameter name="values" value="2,3,4,Application,Approval,Collection" />
+		<classes>
+			<class name="testcases.OOB.OOB_0033_01" />
+		</classes>
+	</test>
+
+	<test name="OOB_0033_07">
+		<parameter name="testType" value="Amend CIF" />
+		<parameter name="customer" value="100092478" />
+		<parameter name="primaryOfficer" value="1" />
+		<parameter name="fields" value="OTHER.OFFICER:1,+OTHER.OFFICER:2,+OTHER.OFFICER:3" />
+		<parameter name="values" value="5,6,7" />
+		<classes>
+			<class name="testcases.OOB.OOB_0033_01" />
+		</classes>
+	</test> 
+	<test name="OOB_0033_08">
+		<parameter name="testType" value="Amend Arrangement" />
+		<parameter name="productGroup" value="Personal Accounts" />
+		<parameter name="product" value="B2B Bank Chequing Account" />
+		<parameter name="customer" value="100092478" />		
+		<parameter name="primaryOfficer" value="1" />
+		<parameter name="fields" value="OTHER.OFFICER:1,+OTHER.OFFICER:2,+OTHER.OFFICER:3,OFFICER.ROLE:1,OFFICER.ROLE:2,OFFICER.ROLE:3" />
+		<parameter name="values" value="4,3,2, Application,Approval,Collection" />
+		<classes>
+			<class name="testcases.OOB.OOB_0033_01" />
+		</classes>
+	</test>
+	-->
+	
+	<test name="OOB_0033_09">
+		<parameter name="testType" value="View CIF" />
+		<parameter name="customer" value="999999" />
+		<parameter name="primaryOfficer" value="1" />
+		<parameter name="fields" value="OTHER.OFFICER:1,+OTHER.OFFICER:2,+OTHER.OFFICER:3" />
+		<parameter name="values" value="5,6,7" />
+		<classes>
+			<class name="testcases.OOB.OOB_0033_01" />
+		</classes>
+	</test> 
+
+	<test name="OOB_0033_10">
+		<parameter name="testType" value="View Arrangement" />
+		<parameter name="productGroup" value="Personal Loans" />
+		<parameter name="product" value="Investment Loan Fixed Rate" />
+		<parameter name="customer" value="999999" />
+		<parameter name="primaryOfficer" value="1" />
+		<parameter name="fields" value="OTHER.OFFICER:1,+OTHER.OFFICER:2,+OTHER.OFFICER:3,OFFICER.ROLE:1,OFFICER.ROLE:2,OFFICER.ROLE:3" />
+		<parameter name="values" value="4,3,2,Application,Approval,Collection" />
+		<classes>
+			<class name="testcases.OOB.OOB_0033_01" />
+		</classes>
+	</test>
+
+</suite> 
