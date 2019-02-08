@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+
+	<test name="R2_TDTC016">
+		<parameter name="customers" value="190200" />
+		<parameter name="actionToPerform" value="Link Loan to Reserve Account" />
+		<parameter name="expectation" value="true" />
+		<classes>
+			<class name="testcases.FT.R2_TDTC016" />
+		</classes>
+	</test>
+
+	<test name="R2_TDTC017">
+		<parameter name="customers" value="190200,190300" />
+		<parameter name="actionToPerform" value="Link Loan to Reserve Account" />
+		<parameter name="expectation" value="false" />
+		<classes>
+			<class name="testcases.FT.R2_TDTC016" />
+		</classes>
+	</test>
+
+	<test name="R2_TDTC018">
+		<parameter name="customers" value="195200" />
+		<parameter name="actionToPerform" value="Link Reserve Account to Collateral" />
+		<parameter name="collateralCode" value="999" />
+		<parameter name="expectation" value="true" />
+		<classes>
+			<class name="testcases.FT.R2_TDTC016" />
+		</classes>
+	</test>
+
+	<test name="R2_TDTC019">
+		<parameter name="customers" value="195200,195300" />
+		<parameter name="actionToPerform" value="Link Reserve Account to Collateral" />
+		<parameter name="collateralCode" value="999" />
+		<parameter name="expectation" value="false" />
+		<classes>
+			<class name="testcases.FT.R2_TDTC016" />
+		</classes>
+	</test>
+
+	<test name="R2_TDTC020">
+		<parameter name="customers" value="190200" />
+		<parameter name="actionToPerform" value="Link Reserve Account to Collateral" />
+		<parameter name="collateralCode" value="990" />
+		<parameter name="expectation" value="false" />
+		<classes>
+			<class name="testcases.FT.R2_TDTC016" />
+		</classes>
+	</test>
+
+	<test name="R2_TDTC021">
+		<parameter name="customers" value="190200,190300" />
+		<parameter name="actionToPerform"
+			value="Change Customer of Loan linked to Reserve Account" />
+		<parameter name="expectation" value="false" />
+		<classes>
+			<class name="testcases.FT.R2_TDTC016" />
+		</classes>
+	</test>
+
+	<test name="R2_TDTC021B">
+		<parameter name="customers" value="190200,190300" />
+		<parameter name="actionToPerform"
+			value="Change Customer of Reserve Account linked to Loan" />
+		<parameter name="expectation" value="false" />
+		<classes>
+			<class name="testcases.FT.R2_TDTC016" />
+		</classes>
+	</test>
+
+	<test name="R2_TDTC022">
+		<parameter name="customers" value="190200" />
+		<parameter name="actionToPerform" value="Change Loan linked to Reserve Account" />
+		<parameter name="expectation" value="false" />
+		<classes>
+			<class name="testcases.FT.R2_TDTC016" />
+		</classes>
+	</test>
+
+	<test name="R2_TDTC023">
+		<parameter name="customers" value="190200" />
+		<parameter name="actionToPerform" value="Disburse Loan to Reserve Account" />
+		<parameter name="disbursePercentage" value="100" />
+		<parameter name="expectation" value="true" />
+		<classes>
+			<class name="testcases.FT.R2_TDTC016" />
+		</classes>
+	</test>
+
+	<test name="R2_TDTC024">
+		<parameter name="customers" value="190200" />
+		<parameter name="actionToPerform" value="Disburse Loan to Reserve Account" />
+		<parameter name="disbursePercentage" value="50" />
+		<parameter name="expectation" value="true" />
+		<classes>
+			<class name="testcases.FT.R2_TDTC016" />
+		</classes>
+	</test>
+
+	<test name="R2_TDTC025">
+		<parameter name="customers" value="190200" />
+		<parameter name="actionToPerform"
+			value="Disburse Loan to Reserve Account and Reverse Disbursement" />
+		<parameter name="disbursePercentage" value="100" />
+		<parameter name="expectation" value="true" />
+		<classes>
+			<class name="testcases.FT.R2_TDTC016" />
+		</classes>
+	</test>
+
+	<test name="R2_TDTC026">
+		<parameter name="customers" value="100095236" />
+		<parameter name="actionToPerform"
+			value="Disburse Loan to Reserve Account and Reverse Disbursement" />
+		<parameter name="disbursePercentage" value="50" />
+		<parameter name="expectation" value="true" />
+		<classes>
+			<class name="testcases.FT.R2_TDTC016" />
+		</classes>
+	</test>
+
+</suite>

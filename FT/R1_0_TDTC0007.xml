@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="R1.0_TDTC0007">
+		<parameter name="CIFType" value="Personal" />
+		<parameter name="testType" value="Create" />
+		<classes>
+			<class name="testcases.FT.R1.O_TDTC0007" />
+		</classes>
+	</test>
+
+	<test name="R1.0_TDTC0008">
+		<parameter name="CIFType" value="Personal" />
+		<parameter name="testType" value="View" />
+		<classes>
+			<class name="testcases.FT.R1.O_TDTC0007" />
+		</classes>
+	</test>
+
+	<test name="R1.0_TDTC009">
+		<parameter name="CIFType" value="Personal" />
+		<parameter name="testType" value="Create" />
+		<parameter name="blockCardIssuance" value="yes" />
+		<parameter name="fields" value="BLOCK.CARD.ISSU" />
+		<parameter name="values" value="YES" />
+		<classes>
+			<class name="testcases.FT.R1.O_TDTC0007" />
+		</classes>
+	</test>
+
+	<test name="R1.0_TDTC0010">
+		<parameter name="CIFType" value="Personal" />
+		<parameter name="testType" value="View" />
+		<parameter name="blockCardIssuance" value="yes" />
+		<parameter name="fields" value="BLOCK.CARD.ISSU" />
+		<parameter name="values" value="YES" />
+		<classes>
+			<class name="testcases.FT.R1.O_TDTC0007" />
+		</classes>
+	</test>
+
+	<test name="R1.0_TDTC0011">
+		<parameter name="CIFType" value="Personal" />
+		<parameter name="testType" value="Amend" />
+		<parameter name="fields" value="BLOCK.CARD.ISSU" />
+		<parameter name="values" value="YES" />
+		<classes>
+			<class name="testcases.FT.R1.O_TDTC0007" />
+		</classes>
+	</test>
+</suite>
