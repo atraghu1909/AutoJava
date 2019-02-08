@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="FX.POS.TYPE_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="FX.POS.TYPE" />
+		<parameter name="expectedWorksheet" value="internationalFinance" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="IAS.CLASSIFICATION_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="IAS.CLASSIFICATION" />
+		<parameter name="expectedWorksheet" value="internationalFinance" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="IFRS.ACCT.METHODS_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="IFRS.ACCT.METHODS" />
+		<parameter name="expectedWorksheet" value="internationalFinance" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="IFRS.POSTING.DETAILS_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="IFRS.POSTING.DETAILS" />
+		<parameter name="expectedWorksheet" value="internationalFinance" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="IFRS.SUB.TYPE_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="IFRS.SUB.TYPE" />
+		<parameter name="expectedWorksheet" value="internationalFinance" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="IFRS.ACCRUAL.PARAM_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="IFRS.ACCRUAL.PARAM" />
+		<parameter name="expectedWorksheet" value="internationalFinance" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="IFRS.IMPAIRMENT.CODE_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="IFRS.IMPAIRMENT.CODE" />
+		<parameter name="expectedWorksheet" value="internationalFinance" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

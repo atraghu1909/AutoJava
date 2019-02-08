@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="CAPL.H.TX.PARAMETER_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.TX.PARAMETER" />
+		<parameter name="expectedWorksheet" value="regulatoryTax_B2B" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.TX.FORM.TYPE_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.TX.FORM.TYPE" />
+		<parameter name="expectedWorksheet" value="regulatoryTax_B2B" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.TX.MAPPING_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.TX.MAPPING" />
+		<parameter name="expectedWorksheet" value="regulatoryTax_B2B" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.TX.XML.PARMS_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.TX.XML.PARMS" />
+		<parameter name="expectedWorksheet" value="regulatoryTax_B2B" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

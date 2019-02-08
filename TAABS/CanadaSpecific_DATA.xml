@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="CAPL.H.DH.CHQ.ORDER.PARAM_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.DH.CHQ.ORDER.PARAM" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.DH.CHQ.ORDER.OPTIONS_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.DH.CHQ.ORDER.OPTIONS" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="EB.DH.CHQ.TYPE_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="EB.DH.CHQ.TYPE" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="EB.DH.COLOUR_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="EB.DH.COLOUR" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="EB.CHANNEL_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="EB.CHANNEL" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="PROLENDER.PARAM_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="PROLENDER.PARAM" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="GL.H.EXTRACT.PARAMETER_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="GL.H.EXTRACT.PARAMETER" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.VERAFIN.EXTRACT.PARAM_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.VERAFIN.EXTRACT.PARAM" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.LOS.PARAM_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.LOS.PARAM" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.LOS.ASSET.TABLE_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.LOS.ASSET.TABLE" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.LOS.LIAB.TABLE_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.LOS.LIAB.TABLE" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.LOS.COLL.TABLE_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.LOS.COLL.TABLE" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.LOS.RPY.MON.TABLE_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.LOS.RPY.MON.TABLE" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.LOS.PAY.METHOD_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.LOS.PAY.METHOD" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAMB.H.PARAMETER_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAMB.H.PARAMETER" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.INSURANCE.TYPE_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.INSURANCE.TYPE" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CARD.STATUS_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CARD.STATUS" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CARD.INTERFACE_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CARD.INTERFACE" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CARD.FORMAT_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CARD.FORMAT" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.CARD.ORDER.PRIORITY_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.CARD.ORDER.PRIORITY" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.MAX.CARD.PARAM_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.MAX.CARD.PARAM" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CARD.ACS.DEF_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CARD.ACS.DEF" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CARD.TYPE.IDENTIFIER_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CARD.TYPE.IDENTIFIER" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CARD.LIM.DEF_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CARD.LIM.DEF" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.PROD.PARAM_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.PROD.PARAM" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.PROD.GROUP_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.PROD.GROUP" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.PRODUCTS_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.PRODUCTS" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.ATM.CHARGE.PARAM_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.ATM.CHARGE.PARAM" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.FTCL.PARAMETER_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.FTCL.PARAMETER" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.FTCL.FILE.NAME_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.FTCL.FILE.NAME" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.FTRI.PARAMETER_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.FTRI.PARAMETER" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.RI.REJ.REASON_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.RI.REJ.REASON" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAMB.H.CHECK.PATH.DETAILS_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAMB.H.CHECK.PATH.DETAILS" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAMB.H.AUTOMATE.EXCEPT.DET_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAMB.H.AUTOMATE.EXCEPT.DET" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CUMIS.H.INS.PARAMETER_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CUMIS.H.INS.PARAMETER" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.AKCL.EXEMPT.CATEG.LIS_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.AKCL.EXEMPT.CATEG.LIS" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAMB.DEP.INSUR.PARAM_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAMB.DEP.INSUR.PARAM" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="US.CBR.PARAMETER_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="US.CBR.PARAMETER" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.PAP.DD.PARAM_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.PAP.DD.PARAM" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAMB.PEFP.PARAM_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAMB.PEFP.PARAM" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAMB.AML.PARAM_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAMB.AML.PARAM" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="UB.PARAMETER_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="UB.PARAMETER" />
+		<parameter name="expectedWorksheet" value="canadaInterface" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

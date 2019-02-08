@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="ALT.ACCT.PARAMETER_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="ALT.ACCT.PARAMETER" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="ACCOUNT.ACCRUAL_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="ACCOUNT.ACCRUAL" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CHEQUE.TYPE_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CHEQUE.TYPE" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CHEQUE.STATUS_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CHEQUE.STATUS" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CHEQUE.CHARGE_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CHEQUE.CHARGE" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CARD.TYPE_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CARD.TYPE" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CARD.CHARGE_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CARD.CHARGE" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="PAYMENT.STOP.TYPE_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="PAYMENT.STOP.TYPE" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CONDITION.PRIORITY_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CONDITION.PRIORITY" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="ACCT.GEN.CONDITION_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="ACCT.GEN.CONDITION" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="ACCT.GROUP.CONDITION_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="ACCT.GROUP.CONDITION" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="GROUP.CAPITALISATION_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="GROUP.CAPITALISATION" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="GROUP.DEBIT.INT_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="GROUP.DEBIT.INT" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="GROUP.CREDIT.INT_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="GROUP.CREDIT.INT" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="STMT.GEN.CONDITION_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="STMT.GEN.CONDITION" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="DEBIT.INT.ADDON_VALIDATION">
+		<parameter name="expectedTabName" value="DEBIT.INT.ADDON" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="HIGHEST.DEBIT_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="HIGHEST.DEBIT" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="INTEREST.STATEMENT_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="INTEREST.STATEMENT" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="BALANCE.REQUIREMENT_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="BALANCE.REQUIREMENT" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="NUMBER.OF.CREDIT_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="NUMBER.OF.CREDIT" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="NUMBER.OF.DEBIT_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="NUMBER.OF.DEBIT" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="TURNOVER.DEBIT_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="TURNOVER.DEBIT" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="TURNOVER.CREDIT_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="TURNOVER.CREDIT" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="TRANSACTION.CHARGE_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="TRANSACTION.CHARGE" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="GENERAL.CHARGE_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="GENERAL.CHARGE" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="ACCT.GROUP.EVENT_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="ACCT.GROUP.EVENT" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="LD.TXN.TYPE.CONDITION_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="LD.TXN.TYPE.CONDITION" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="AC.SWEEP.TYPE_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="AC.SWEEP.TYPE" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.PLAN.TYPE.PARAM_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.PLAN.TYPE.PARAM" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.PLAN.TYPE_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.PLAN.TYPE" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.PLAN.TXNS_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.PLAN.TXNS" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.PLAN.FORMULAS_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.PLAN.FORMULAS" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.VERSION.PARMS_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.VERSION.PARMS" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.PROD.MAPPING_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.PROD.MAPPING" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.PLAN.TXN.TYPE_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.PLAN.TXN.TYPE" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.PAYMENT.PRIORITY_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.PAYMENT.PRIORITY" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.CONTR.PARAM_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.CONTR.PARAM" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.CHQ.PARAM_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.CHQ.PARAM" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.DRAFT.NUMBERS_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.DRAFT.NUMBERS" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.TX.TRANSACTION_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.TX.TRANSACTION" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.COVERDRAFT.PARAM_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.COVERDRAFT.PARAM" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.ACCT.STMT.SELECTION_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.ACCT.STMT.SELECTION" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.BANK.CODES_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.BANK.CODES" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.STMT.PARAMETER_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.STMT.PARAMETER" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAMB.H.INTENDED.USE.PARAM_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAMB.H.INTENDED.USE.PARAM" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAMB.H.OC.PARAM_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CAMB.H.OC.PARAM" />
+		<parameter name="expectedWorksheet" value="accountsAndDeposits" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

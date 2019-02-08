@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="CONDITION.PRIORITY_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CONDITION.PRIORITY" />
+		<parameter name="expectedWorksheet" value="payments" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="FT.GEN.CONDITION_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="FT.GEN.CONDITION" />
+		<parameter name="expectedWorksheet" value="payments" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="FT.GROUP.CONDITION.PARAM_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="FT.GROUP.CONDITION" />
+		<parameter name="expectedWorksheet" value="payments" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="FT.TXN.TYPE.CONDITION_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="FT.TXN.TYPE.CONDITION" />
+		<parameter name="expectedWorksheet" value="payments" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="ER.PARAMETER_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="ER.PARAMETER" />
+		<parameter name="expectedWorksheet" value="payments" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="DD.PARAMETER_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="DD.PARAMETER" />
+		<parameter name="expectedWorksheet" value="payments" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="DD.OUT.FORMAT_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="DD.OUT.FORMAT" />
+		<parameter name="expectedWorksheet" value="payments" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

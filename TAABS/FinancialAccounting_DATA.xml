@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="CATEGORY_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="CATEGORY" />
+		<parameter name="expectedWorksheet" value="financialAccounting" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="TRANSACTION_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="TRANSACTION" />
+		<parameter name="expectedWorksheet" value="financialAccounting" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="ACCOUNT.CLASS_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="ACCOUNT.CLASS" />
+		<parameter name="expectedWorksheet" value="financialAccounting" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="ACCOUNT.PARAMETER_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="ACCOUNT.PARAMETER" />
+		<parameter name="expectedWorksheet" value="financialAccounting" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="AC.CONSOLIDATE.COND_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="AC.CONSOLIDATE.COND" />
+		<parameter name="expectedWorksheet" value="financialAccounting" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="INTERNAL.ACCOUNT_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="INTERNAL.ACCOUNT" />
+		<parameter name="expectedWorksheet" value="financialAccounting" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+	<test name="PL.CLOSE.PARAMETER_DATA_VALIDATION">
+		<parameter name="expectedTabName" value="PL.CLOSE.PARAMETER" />
+		<parameter name="expectedWorksheet" value="financialAccounting" />
+		<classes>
+			<class name="testcases.DATA_VALIDATION" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

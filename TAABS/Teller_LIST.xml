@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="DENOM.TYPE_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="DENOM.TYPE" />
+		<parameter name="expectedWorksheet" value="teller" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="TELLER.DENOMINATION_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="TELLER.DENOMINATION" />
+		<parameter name="expectedWorksheet" value="teller" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="TELLER.TRANSACTION_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="TELLER.TRANSACTION" />
+		<parameter name="expectedWorksheet" value="teller" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="TFS.TRANSACTION_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="TFS.TRANSACTION" />
+		<parameter name="expectedWorksheet" value="teller" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="TFS.PARAMETER_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="TFS.PARAMETER" />
+		<parameter name="expectedWorksheet" value="teller" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAMB.ALL.TELLER.PARAM_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CAMB.ALL.TELLER.PARAM" />
+		<parameter name="expectedWorksheet" value="teller" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAMB.STAFF.RATE.PARAM_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CAMB.STAFF.RATE.PARAM" />
+		<parameter name="expectedWorksheet" value="teller" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

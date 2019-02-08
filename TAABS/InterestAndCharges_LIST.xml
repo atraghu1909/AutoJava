@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="BASIC.RATE.TEXT_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="BASIC.RATE.TEXT" />
+		<parameter name="expectedWorksheet" value="interestAndCharges" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="BASIC.INTEREST_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="BASIC.INTEREST" />
+		<parameter name="expectedWorksheet" value="interestAndCharges" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="PERIODIC.INTEREST_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="PERIODIC.INTEREST" />
+		<parameter name="expectedWorksheet" value="interestAndCharges" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="FT.COMMISSION.TYPE_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="FT.COMMISSION.TYPE" />
+		<parameter name="expectedWorksheet" value="interestAndCharges" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="FT.CHARGE.TYPE_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="FT.CHARGE.TYPE" />
+		<parameter name="expectedWorksheet" value="interestAndCharges" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="EB.ROUNDING.RULE_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="EB.ROUNDING.RULE" />
+		<parameter name="expectedWorksheet" value="interestAndCharges" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="EB.ACCRUAL.PARAM_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="EB.ACCRUAL.PARAM" />
+		<parameter name="expectedWorksheet" value="interestAndCharges" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="TAX.TYPE_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="TAX.TYPE" />
+		<parameter name="expectedWorksheet" value="interestAndCharges" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CONDITION.PRIORITY_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CONDITION.PRIORITY" />
+		<parameter name="expectedWorksheet" value="interestAndCharges" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="TAX.GEN.CONDITION_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="TAX.GEN.CONDITION" />
+		<parameter name="expectedWorksheet" value="interestAndCharges" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="TAX_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="TAX" />
+		<parameter name="expectedWorksheet" value="interestAndCharges" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="TAX.TYPE.CONDITION_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="TAX.TYPE.CONDITION" />
+		<parameter name="expectedWorksheet" value="interestAndCharges" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

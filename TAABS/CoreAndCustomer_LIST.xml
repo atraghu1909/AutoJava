@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="COUNTRY_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="COUNTRY" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="REGION_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="REGION" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CURRENCY.PARAM_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CURRENCY.PARAM" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CURRENCY.MARKET_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CURRENCY.MARKET" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CURRENCY_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CURRENCY" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="POSTING.RESTRICT_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="POSTING.RESTRICT" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="SECTOR_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="SECTOR" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="INDUSTRY_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="INDUSTRY" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="TARGET_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="TARGET" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CUSTOMER.STATUS_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CUSTOMER.STATUS" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="RELATION_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="RELATION" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="DEPT.LEVEL_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="DEPT.LEVEL" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="DEPT.ACCT.OFFICER_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="DEPT.ACCT.OFFICER" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CR.PROFILE.TYPE_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CR.PROFILE.TYPE" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="PW.TRANSITION_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="PW.TRANSITION" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CR.PROFILE_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CR.PROFILE" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CR.CONTACT.LOG.PARAM_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CR.CONTACT.LOG.PARAM" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.CUS.TYPE.PARAM_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.CUS.TYPE.PARAM" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.OWNERSHIP.RULE_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.OWNERSHIP.RULE" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.SIGNATORY.RULE_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.SIGNATORY.RULE" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.CUS.UNIQUE.PARAM_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.CUS.UNIQUE.PARAM" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.CASCADE.RULE_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.CASCADE.RULE" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.SIGNATURE.TYPE_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.SIGNATURE.TYPE" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.ONLINE.MESSAGES_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.ONLINE.MESSAGES" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.ACCT.STMT.PARAM_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.ACCT.STMT.PARAM" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAPL.H.STMT.ENTRY.PARAM_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CAPL.H.STMT.ENTRY.PARAM" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAMB.H.SHARES.RULE_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CAMB.H.SHARES.RULE" />
+		<parameter name="expectedWorksheet" value="coreAndCustomer" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

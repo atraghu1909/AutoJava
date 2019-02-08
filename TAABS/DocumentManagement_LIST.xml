@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="DM.APPLICATION.INFO_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="DM.APPLICATION.INFO" />
+		<parameter name="expectedWorksheet" value="documentManagement" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="DOCUMENT.CLASS_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="DOCUMENT.CLASS" />
+		<parameter name="expectedWorksheet" value="documentManagement" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="DOCUMENT.TYPE_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="DOCUMENT.TYPE" />
+		<parameter name="expectedWorksheet" value="documentManagement" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="DOCUMENT.STATUS_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="DOCUMENT.STATUS" />
+		<parameter name="expectedWorksheet" value="documentManagement" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="DOC.GEN.CONDITION_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="DOC.GEN.CONDITION" />
+		<parameter name="expectedWorksheet" value="documentManagement" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="DOCUMENT.REQUIRED_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="DOCUMENT.REQUIRED" />
+		<parameter name="expectedWorksheet" value="documentManagement" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

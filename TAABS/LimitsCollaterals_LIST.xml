@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<parameter name="environment" value="SIT1" />
+	<parameter name="runUrl" value="about:blank" />
+	<parameter name="runBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="testLibs.ListenerScreen" />
+		<listener class-name="testLibs.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="LIMIT.REFERENCE_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="LIMIT.REFERENCE" />
+		<parameter name="expectedWorksheet" value="limitsCollaterals" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="LIMIT.PARAMETER_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="LIMIT.PARAMETER" />
+		<parameter name="expectedWorksheet" value="limitsCollaterals" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="COLLATERAL.TYPE_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="COLLATERAL.TYPE" />
+		<parameter name="expectedWorksheet" value="limitsCollaterals" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="COLLATERAL.CODE_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="COLLATERAL.CODE" />
+		<parameter name="expectedWorksheet" value="limitsCollaterals" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+	<test name="CAMB.POSTING.LIMIT.PARAM_LIST_VALIDATION">
+		<parameter name="expectedTabName" value="CAMB.POSTING.LIMIT.PARAM" />
+		<parameter name="expectedWorksheet" value="limitsCollaterals" />
+		<classes>
+			<class name="testcases.LIST_VALIDATION" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->
